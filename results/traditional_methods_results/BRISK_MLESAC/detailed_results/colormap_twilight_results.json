@@ -1,0 +1,2380 @@
+[
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 36,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.40059532411398935,
+      "median_distance_ratio": 0.27959138352209634
+    },
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 441.04754638671875,
+    "max_corner_error": 741.1823120117188,
+    "corner_errors": [
+      741.1823120117188,
+      429.4434509277344,
+      138.01942443847656,
+      455.5450744628906
+    ],
+    "num_keypoints_A": 22,
+    "num_keypoints_B": 19,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.14275360107421875,
+    "H_estimated": [
+      [
+        -0.8117380191346154,
+        -0.7380653807861978,
+        184.8341200809456
+      ],
+      [
+        -0.8622235805620595,
+        -0.7867102036392455,
+        196.65607854184373
+      ],
+      [
+        -0.0043785770108827286,
+        -0.004013959952402094,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.13084309,
+        0.11816437,
+        -292.02198589
+      ],
+      [
+        0.21779449,
+        1.54761114,
+        -370.75864966
+      ],
+      [
+        0.00143605,
+        -0.00029237,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 22,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 18,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8221456335300711,
+      "median_distance_ratio": 0.9298029556650247
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.12696290016174316,
+      "best_log_likelihood": 94.4554795050152,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 441.04754638671875,
+      "corner_errors": [
+        741.1823120117188,
+        429.4434509277344,
+        138.01942443847656,
+        455.5450744628906
+      ],
+      "max_corner_error": 741.1823120117188,
+      "min_corner_error": 138.01942443847656,
+      "std_corner_error": 213.45477294921875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 419.8238525390625,
+      "median_reprojection_error": 429.4434509277344,
+      "max_reprojection_error": 741.1823120117188,
+      "std_reprojection_error": 178.56800842285156
+    },
+    "rmse": 456.22210693359375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.21052631578947367,
+      "f1_score": 0.34782608695652173,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 741.1931104900693,
+      "max_element_error": 567.4147282018437,
+      "mean_element_error": 116.8326134070972
+    },
+    "performance": {
+      "computation_time": 0.14275360107421875,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 332.19500732421875,
+    "max_corner_error": 492.1628112792969,
+    "corner_errors": [
+      492.1628112792969,
+      239.80908203125,
+      132.91307067871094,
+      463.8949890136719
+    ],
+    "num_keypoints_A": 39,
+    "num_keypoints_B": 24,
+    "num_matches": 18,
+    "num_inliers": 5,
+    "inlier_ratio": 0.2777777777777778,
+    "computation_time": 0.20707488059997559,
+    "H_estimated": [
+      [
+        -2.1091531958560514,
+        -0.551495775170594,
+        220.81550598144523
+      ],
+      [
+        -1.5371252251271068,
+        -0.40192342084551125,
+        160.9276580810516
+      ],
+      [
+        -0.009551653478688582,
+        -0.0024975409798301757,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.17166526,
+        -0.10007516,
+        -182.33997929
+      ],
+      [
+        0.25895346,
+        0.98780756,
+        -121.36632223
+      ],
+      [
+        0.0004117,
+        -0.0005636,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 39,
+      "good_matches": 18,
+      "ratio_test_passed": 18,
+      "ratio_test_failed": 21,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6495736342294792,
+      "median_distance_ratio": 0.8214285714285714
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.20707488059997559,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 5,
+      "outlier_count": 13
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 332.19500732421875,
+      "corner_errors": [
+        492.1628112792969,
+        239.80908203125,
+        132.91307067871094,
+        463.8949890136719
+      ],
+      "max_corner_error": 492.1628112792969,
+      "min_corner_error": 132.91307067871094,
+      "std_corner_error": 150.98263549804688
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 318.6109619140625,
+      "median_reprojection_error": 293.4298400878906,
+      "max_reprojection_error": 492.1628112792969,
+      "std_reprojection_error": 125.80264282226562
+    },
+    "rmse": 342.5481262207031,
+    "matching_metrics": {
+      "matching_precision": 0.2777777777777778,
+      "matching_recall": 0.75,
+      "f1_score": 0.4054054054054055,
+      "inlier_ratio": 0.2777777777777778
+    },
+    "matrix_error": {
+      "frobenius_norm": 492.1791965620589,
+      "max_element_error": 403.15548527144523,
+      "mean_element_error": 76.93104573488384
+    },
+    "performance": {
+      "computation_time": 0.20707488059997559,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 402.43377685546875,
+    "max_corner_error": 643.0148315429688,
+    "corner_errors": [
+      643.0148315429688,
+      285.1202392578125,
+      189.87644958496094,
+      491.72369384765625
+    ],
+    "num_keypoints_A": 39,
+    "num_keypoints_B": 30,
+    "num_matches": 20,
+    "num_inliers": 6,
+    "inlier_ratio": 0.3,
+    "computation_time": 0.20573735237121582,
+    "H_estimated": [
+      [
+        0.6533334705787527,
+        -1.7694319831384502,
+        248.38175282645264
+      ],
+      [
+        0.3857386725882802,
+        -1.0488856717295867,
+        147.34389289518464
+      ],
+      [
+        0.002585080573770696,
+        -0.0071024607090690505,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.48262731,
+        0.45625093,
+        -371.37231478
+      ],
+      [
+        0.08649507,
+        1.31968639,
+        -24.04156679
+      ],
+      [
+        0.0003306,
+        0.00052243,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 39,
+      "good_matches": 20,
+      "ratio_test_passed": 20,
+      "ratio_test_failed": 19,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6209782007374415,
+      "median_distance_ratio": 0.6666666666666666
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.1999056339263916,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 6,
+      "outlier_count": 14
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 402.43377685546875,
+      "corner_errors": [
+        643.0148315429688,
+        285.1202392578125,
+        189.87644958496094,
+        491.72369384765625
+      ],
+      "max_corner_error": 643.0148315429688,
+      "min_corner_error": 189.87644958496094,
+      "std_corner_error": 176.63168334960938
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 386.8282470703125,
+      "median_reprojection_error": 361.3295593261719,
+      "max_reprojection_error": 643.0148315429688,
+      "std_reprojection_error": 146.51414489746094
+    },
+    "rmse": 413.6452941894531,
+    "matching_metrics": {
+      "matching_precision": 0.3,
+      "matching_recall": 0.6666666666666666,
+      "f1_score": 0.41379310344827586,
+      "inlier_ratio": 0.3
+    },
+    "matrix_error": {
+      "frobenius_norm": 643.0236552744498,
+      "max_element_error": 619.7540676064526,
+      "mean_element_error": 88.54135545331084
+    },
+    "performance": {
+      "computation_time": 0.20573735237121582,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 300.56414794921875,
+    "max_corner_error": 472.7019958496094,
+    "corner_errors": [
+      445.2679748535156,
+      472.7019958496094,
+      96.49180603027344,
+      187.79478454589844
+    ],
+    "num_keypoints_A": 17,
+    "num_keypoints_B": 19,
+    "num_matches": 5,
+    "num_inliers": 5,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.13944363594055176,
+    "H_estimated": [
+      [
+        -0.9278603207250004,
+        -0.21995916657773354,
+        214.30844670667014
+      ],
+      [
+        -0.987997905757373,
+        -0.169070460777018,
+        222.69706293167644
+      ],
+      [
+        -0.004384009187546497,
+        -0.0009168727567690964,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.57913859,
+        0.49464448,
+        -45.16215709
+      ],
+      [
+        -0.10460445,
+        1.0669689,
+        -139.15727455
+      ],
+      [
+        -0.0009959,
+        0.00088284,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 17,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 11,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7078903079740291,
+      "median_distance_ratio": 0.9104776194048512
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.13944363594055176,
+      "best_log_likelihood": -0.6153742955300583,
+      "inlier_count": 5,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 300.56414794921875,
+      "corner_errors": [
+        445.2679748535156,
+        472.7019958496094,
+        96.49180603027344,
+        187.79478454589844
+      ],
+      "max_corner_error": 472.7019958496094,
+      "min_corner_error": 96.49180603027344,
+      "std_corner_error": 161.96688842773438
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 291.35540771484375,
+      "median_reprojection_error": 273.9876708984375,
+      "max_reprojection_error": 472.7019958496094,
+      "std_reprojection_error": 127.25682830810547
+    },
+    "rmse": 317.93438720703125,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.29411764705882354,
+      "f1_score": 0.45454545454545453,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 445.2736750415608,
+      "max_element_error": 361.85433748167645,
+      "mean_element_error": 69.51901827490312
+    },
+    "performance": {
+      "computation_time": 0.13944363594055176,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 17,
+    "num_keypoints_B": 39,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 17,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 16,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9446744407776354,
+      "median_distance_ratio": 0.9500993048659384
+    },
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 24,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9246111973182936,
+      "median_distance_ratio": 0.9244912118408881
+    },
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 271.1517639160156,
+    "max_corner_error": 361.2021789550781,
+    "corner_errors": [
+      209.32907104492188,
+      154.2798614501953,
+      359.7959289550781,
+      361.2021789550781
+    ],
+    "num_keypoints_A": 22,
+    "num_keypoints_B": 25,
+    "num_matches": 5,
+    "num_inliers": 5,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.15072989463806152,
+    "H_estimated": [
+      [
+        -0.32227506906118897,
+        -0.6158414129134959,
+        154.86416873092992
+      ],
+      [
+        -0.09500483958267965,
+        -0.45011050414610154,
+        101.41871878083228
+      ],
+      [
+        -0.0013330269959107989,
+        -0.004529454310486054,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.07380287,
+        -0.0090142,
+        -27.10438628
+      ],
+      [
+        -0.05644564,
+        0.8921034,
+        204.88901548
+      ],
+      [
+        2.52e-05,
+        -9.957e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 22,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 17,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7741116274790255,
+      "median_distance_ratio": 0.9278033794162825
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.14972758293151855,
+      "best_log_likelihood": -0.2313593500340307,
+      "inlier_count": 5,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 271.1517639160156,
+      "corner_errors": [
+        209.32907104492188,
+        154.2798614501953,
+        359.7959289550781,
+        361.2021789550781
+      ],
+      "max_corner_error": 361.2021789550781,
+      "min_corner_error": 154.2798614501953,
+      "std_corner_error": 91.44390869140625
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 262.74151611328125,
+      "median_reprojection_error": 303.0829162597656,
+      "max_reprojection_error": 361.2021789550781,
+      "std_reprojection_error": 96.38422393798828
+    },
+    "rmse": 279.86248779296875,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.22727272727272727,
+      "f1_score": 0.37037037037037035,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 209.3389061572237,
+      "max_element_error": 181.96855501092992,
+      "mean_element_error": 32.09203534190084
+    },
+    "performance": {
+      "computation_time": 0.15072989463806152,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 219.382568359375,
+    "max_corner_error": 262.7516174316406,
+    "corner_errors": [
+      207.68385314941406,
+      166.89682006835938,
+      240.197998046875,
+      262.7516174316406
+    ],
+    "num_keypoints_A": 25,
+    "num_keypoints_B": 26,
+    "num_matches": 13,
+    "num_inliers": 13,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.1825413703918457,
+    "H_estimated": [
+      [
+        0.9535567447737775,
+        0.004015441886294814,
+        -10.111710907891378
+      ],
+      [
+        -0.038932906260998434,
+        0.9820434940006948,
+        124.76828685202649
+      ],
+      [
+        -0.00018384486058143514,
+        1.5343444608818476e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.43533271,
+        -0.0908042,
+        151.24670485
+      ],
+      [
+        -0.10289432,
+        0.59590561,
+        -5.98357809
+      ],
+      [
+        -0.00049496,
+        -0.00022327,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 25,
+      "good_matches": 13,
+      "ratio_test_passed": 13,
+      "ratio_test_failed": 12,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5610075342046391,
+      "median_distance_ratio": 0.725
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.17758488655090332,
+      "best_log_likelihood": 1.0626764773191224,
+      "inlier_count": 13,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 219.382568359375,
+      "corner_errors": [
+        207.68385314941406,
+        166.89682006835938,
+        240.197998046875,
+        262.7516174316406
+      ],
+      "max_corner_error": 262.7516174316406,
+      "min_corner_error": 166.89682006835938,
+      "std_corner_error": 36.07551193237305
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 217.26443481445312,
+      "median_reprojection_error": 213.02288818359375,
+      "max_reprojection_error": 262.7516174316406,
+      "std_reprojection_error": 29.772520065307617
+    },
+    "rmse": 219.29486083984375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.52,
+      "f1_score": 0.6842105263157895,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 207.68490379011854,
+      "max_element_error": 161.35841575789135,
+      "mean_element_error": 32.574885933655736
+    },
+    "performance": {
+      "computation_time": 0.1825413703918457,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 357.7449035644531,
+    "max_corner_error": 753.9083862304688,
+    "corner_errors": [
+      168.10733032226562,
+      753.9083862304688,
+      209.78770446777344,
+      299.1761779785156
+    ],
+    "num_keypoints_A": 17,
+    "num_keypoints_B": 20,
+    "num_matches": 10,
+    "num_inliers": 10,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.1697251796722412,
+    "H_estimated": [
+      [
+        0.07311582317461582,
+        0.37119283088686794,
+        64.91258760512723
+      ],
+      [
+        -0.2916816037018866,
+        0.8969810821372615,
+        -51.11972055860072
+      ],
+      [
+        -0.0031282290933677924,
+        0.0017544490574105428,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.30871316,
+        -0.06752335,
+        -57.77707627
+      ],
+      [
+        0.19553278,
+        1.06803337,
+        63.8033768
+      ],
+      [
+        0.0003983,
+        -0.00019371,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 17,
+      "good_matches": 10,
+      "ratio_test_passed": 10,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.541919471275259,
+      "median_distance_ratio": 0.48469387755102045
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.16869187355041504,
+      "best_log_likelihood": 0.10512723784285226,
+      "inlier_count": 10,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 357.7449035644531,
+      "corner_errors": [
+        168.10733032226562,
+        753.9083862304688,
+        209.78770446777344,
+        299.1761779785156
+      ],
+      "max_corner_error": 753.9083862304688,
+      "min_corner_error": 168.10733032226562,
+      "std_corner_error": 233.57522583007812
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 286.9510498046875,
+      "median_reprojection_error": 232.8632049560547,
+      "max_reprojection_error": 753.9083862304688,
+      "std_reprojection_error": 168.97891235351562
+    },
+    "rmse": 333.0086669921875,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.5882352941176471,
+      "f1_score": 0.7407407407407407,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 168.11322896763616,
+      "max_element_error": 122.68966387512722,
+      "mean_element_error": 26.661201790128402
+    },
+    "performance": {
+      "computation_time": 0.1697251796722412,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_twilight",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 515.358642578125,
+    "max_corner_error": 682.4205932617188,
+    "corner_errors": [
+      682.4205932617188,
+      623.9528198242188,
+      345.0927429199219,
+      409.9683837890625
+    ],
+    "num_keypoints_A": 13,
+    "num_keypoints_B": 53,
+    "num_matches": 7,
+    "num_inliers": 7,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.1548445224761963,
+    "H_estimated": [
+      [
+        1.2368607687768143,
+        -0.16458426993378802,
+        31.304418419729085
+      ],
+      [
+        0.3659461032388253,
+        0.9743646088583765,
+        185.1467927372873
+      ],
+      [
+        0.0014149720117166283,
+        -0.0005270821669331912,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.82450746,
+        0.68013661,
+        -238.43619346
+      ],
+      [
+        -0.02396926,
+        2.2766471,
+        -441.70072869
+      ],
+      [
+        0.00028037,
+        0.00198896,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 13,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.633797184555555,
+      "median_distance_ratio": 0.6792452830188679
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.1496729850769043,
+      "best_log_likelihood": -1.3034846094911066,
+      "inlier_count": 7,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 515.358642578125,
+      "corner_errors": [
+        682.4205932617188,
+        623.9528198242188,
+        345.0927429199219,
+        409.9683837890625
+      ],
+      "max_corner_error": 682.4205932617188,
+      "min_corner_error": 345.0927429199219,
+      "std_corner_error": 141.24444580078125
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 492.1487731933594,
+      "median_reprojection_error": 447.8119812011719,
+      "max_reprojection_error": 682.4205932617188,
+      "std_reprojection_error": 118.65178680419922
+    },
+    "rmse": 506.2495422363281,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.5384615384615384,
+      "f1_score": 0.7000000000000001,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 682.4226840310027,
+      "max_element_error": 626.8475214272873,
+      "mean_element_error": 99.96848326408139
+    },
+    "performance": {
+      "computation_time": 0.1548445224761963,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 16,
+    "num_keypoints_B": 31,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 16,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9029879400703861,
+      "median_distance_ratio": 0.9401476251604621
+    },
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 13,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.915993033021569,
+      "median_distance_ratio": 0.9129032258064516
+    },
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 7,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.0,
+      "median_distance_ratio": 0.0
+    },
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 27,
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 525.1275024414062,
+    "max_corner_error": 863.5067138671875,
+    "corner_errors": [
+      863.5067138671875,
+      191.17147827148438,
+      205.82876586914062,
+      840.0031127929688
+    ],
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 49,
+    "num_matches": 4,
+    "num_inliers": 3,
+    "inlier_ratio": 0.75,
+    "computation_time": 0.13530874252319336,
+    "H_estimated": [
+      [
+        -9.418250628441285,
+        2.4022884115078393,
+        243.59576416015616
+      ],
+      [
+        -3.7756258468065362,
+        0.9630389523275794,
+        97.65364074707145
+      ],
+      [
+        -0.03866344171013209,
+        0.009861782366332167,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.83838263,
+        -0.19856092,
+        -517.03475877
+      ],
+      [
+        0.87932304,
+        1.9027731,
+        -311.10684661
+      ],
+      [
+        0.00277829,
+        -0.00015931,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.26678056014187,
+      "median_distance_ratio": 0.1770393811533052
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.1305396556854248,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 3,
+      "outlier_count": 1
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 525.1275024414062,
+      "corner_errors": [
+        863.5067138671875,
+        191.17147827148438,
+        205.82876586914062,
+        840.0031127929688
+      ],
+      "max_corner_error": 863.5067138671875,
+      "min_corner_error": 191.17147827148438,
+      "std_corner_error": 326.774169921875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 475.8630065917969,
+      "median_reprojection_error": 417.3403625488281,
+      "max_reprojection_error": 863.5067138671875,
+      "std_reprojection_error": 275.2405090332031
+    },
+    "rmse": 549.7298583984375,
+    "matching_metrics": {
+      "matching_precision": 0.75,
+      "matching_recall": 1.0,
+      "f1_score": 0.8571428571428571,
+      "inlier_ratio": 0.75
+    },
+    "matrix_error": {
+      "frobenius_norm": 863.6107174999145,
+      "max_element_error": 760.6305229301562,
+      "mean_element_error": 132.21051541508135
+    },
+    "performance": {
+      "computation_time": 0.13530874252319336,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 6,
+    "num_keypoints_B": 43,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 6,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8291987924191314,
+      "median_distance_ratio": 0.9476923076923076
+    },
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 17,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8023233559266089,
+      "median_distance_ratio": 0.7320574162679426
+    },
+    "image_name": "20241222_081954_680_IR_twilight",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 183.76280212402344,
+    "max_corner_error": 249.09535217285156,
+    "corner_errors": [
+      249.09535217285156,
+      186.81411743164062,
+      62.28129196166992,
+      236.86044311523438
+    ],
+    "num_keypoints_A": 76,
+    "num_keypoints_B": 10,
+    "num_matches": 7,
+    "num_inliers": 7,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.10749506950378418,
+    "H_estimated": [
+      [
+        -1.2546735222210263,
+        -0.4896904622756563,
+        194.88674926757812
+      ],
+      [
+        -0.7017378782090626,
+        -0.2738834763709938,
+        108.99999999999996
+      ],
+      [
+        -0.006437962185404245,
+        -0.0025126924437705858,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.76558828,
+        -0.11967925,
+        4.62035079
+      ],
+      [
+        -0.09464402,
+        0.91901241,
+        -51.77061928
+      ],
+      [
+        -7.836e-05,
+        -0.00016285,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 76,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 40,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8450728100207473,
+      "median_distance_ratio": 0.8638743455497382
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.10100150108337402,
+      "best_log_likelihood": 32.18273479905879,
+      "inlier_count": 7,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 183.76280212402344,
+      "corner_errors": [
+        249.09535217285156,
+        186.81411743164062,
+        62.28129196166992,
+        236.86044311523438
+      ],
+      "max_corner_error": 249.09535217285156,
+      "min_corner_error": 62.28129196166992,
+      "std_corner_error": 73.91679382324219
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 162.59352111816406,
+      "median_reprojection_error": 186.81411743164062,
+      "max_reprojection_error": 249.09535217285156,
+      "std_reprojection_error": 65.82454681396484
+    },
+    "rmse": 175.41244506835938,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.7,
+      "f1_score": 0.8235294117647058,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 249.1074153630611,
+      "max_element_error": 190.26639847757812,
+      "mean_element_error": 39.470665551253774
+    },
+    "performance": {
+      "computation_time": 0.10749506950378418,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 15,
+    "num_keypoints_B": 25,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 15,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 8,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8362049274262116,
+      "median_distance_ratio": 0.9304061323292092
+    },
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 210.67666625976562,
+    "max_corner_error": 227.1588134765625,
+    "corner_errors": [
+      218.00238037109375,
+      211.78152465820312,
+      227.1588134765625,
+      185.76394653320312
+    ],
+    "num_keypoints_A": 13,
+    "num_keypoints_B": 18,
+    "num_matches": 5,
+    "num_inliers": 5,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.13714098930358887,
+    "H_estimated": [
+      [
+        1.005443382536623,
+        0.024035565598132882,
+        -62.87240504615069
+      ],
+      [
+        -0.009325016876543022,
+        1.059377055835161,
+        94.44069493863421
+      ],
+      [
+        -5.6354692900016236e-05,
+        0.00023550893110049436,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.86425866,
+        -0.26287001,
+        142.77378681
+      ],
+      [
+        -0.16017765,
+        0.680209,
+        22.08956738
+      ],
+      [
+        -0.0001295,
+        -0.00043949,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 13,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.36879901881604465,
+      "median_distance_ratio": 0.132315175685066
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.13308930397033691,
+      "best_log_likelihood": 9.484928827532789,
+      "inlier_count": 5,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 210.67666625976562,
+      "corner_errors": [
+        218.00238037109375,
+        211.78152465820312,
+        227.1588134765625,
+        185.76394653320312
+      ],
+      "max_corner_error": 227.1588134765625,
+      "min_corner_error": 185.76394653320312,
+      "std_corner_error": 15.388238906860352
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 211.3179931640625,
+      "median_reprojection_error": 212.46839904785156,
+      "max_reprojection_error": 227.1588134765625,
+      "std_reprojection_error": 11.684466361999512
+    },
+    "rmse": 211.6407928466797,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.38461538461538464,
+      "f1_score": 0.5555555555555556,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 218.0030060739304,
+      "max_element_error": 205.6461918561507,
+      "mean_element_error": 30.9951309495685
+    },
+    "performance": {
+      "computation_time": 0.13714098930358887,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 307.27777099609375,
+    "max_corner_error": 337.13299560546875,
+    "corner_errors": [
+      310.71258544921875,
+      293.10888671875,
+      288.1565246582031,
+      337.13299560546875
+    ],
+    "num_keypoints_A": 57,
+    "num_keypoints_B": 18,
+    "num_matches": 8,
+    "num_inliers": 8,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.16058588027954102,
+    "H_estimated": [
+      [
+        1.00430088386112,
+        0.004972499093832665,
+        4.645633386535073
+      ],
+      [
+        0.0022707371948449463,
+        1.0095693046571295,
+        135.79385395565146
+      ],
+      [
+        1.11935163902868e-05,
+        2.9763977178306184e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.62610365,
+        0.1387761,
+        72.10139552
+      ],
+      [
+        0.10873704,
+        0.9413294,
+        -167.50800757
+      ],
+      [
+        -0.00043387,
+        0.00037706,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 57,
+      "good_matches": 8,
+      "ratio_test_passed": 8,
+      "ratio_test_failed": 34,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7846965906257539,
+      "median_distance_ratio": 0.9203612479474549
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.1575779914855957,
+      "best_log_likelihood": 5.2632578422794385,
+      "inlier_count": 8,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 307.27777099609375,
+      "corner_errors": [
+        310.71258544921875,
+        293.10888671875,
+        288.1565246582031,
+        337.13299560546875
+      ],
+      "max_corner_error": 337.13299560546875,
+      "min_corner_error": 288.1565246582031,
+      "std_corner_error": 19.167104721069336
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 304.7599792480469,
+      "median_reprojection_error": 299.8387145996094,
+      "max_reprojection_error": 337.13299560546875,
+      "std_reprojection_error": 15.643963813781738
+    },
+    "rmse": 305.1612243652344,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.4444444444444444,
+      "f1_score": 0.6153846153846153,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 310.7128513250785,
+      "max_element_error": 303.3018615256515,
+      "mean_element_error": 41.27168034009836
+    },
+    "performance": {
+      "computation_time": 0.16058588027954102,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 401.6873779296875,
+    "max_corner_error": 442.2277526855469,
+    "corner_errors": [
+      424.8933410644531,
+      358.65240478515625,
+      380.97589111328125,
+      442.2277526855469
+    ],
+    "num_keypoints_A": 66,
+    "num_keypoints_B": 17,
+    "num_matches": 7,
+    "num_inliers": 5,
+    "inlier_ratio": 0.7142857142857143,
+    "computation_time": 0.1647787094116211,
+    "H_estimated": [
+      [
+        1.0010557091490098,
+        0.0008428061976124951,
+        17.93780036327364
+      ],
+      [
+        0.0009914742147379507,
+        1.0015524213164357,
+        176.9459391591532
+      ],
+      [
+        3.999216121572017e-06,
+        2.0710790917596586e-06,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.11251761,
+        -0.18967832,
+        -7.27067844
+      ],
+      [
+        0.20701581,
+        0.95987056,
+        -247.19892943
+      ],
+      [
+        0.00027734,
+        -0.00043031,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 66,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 35,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7802527432219615,
+      "median_distance_ratio": 0.8580868470736311
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.16362857818603516,
+      "best_log_likelihood": -14.979389788933288,
+      "inlier_count": 5,
+      "outlier_count": 2
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 401.6873779296875,
+      "corner_errors": [
+        424.8933410644531,
+        358.65240478515625,
+        380.97589111328125,
+        442.2277526855469
+      ],
+      "max_corner_error": 442.2277526855469,
+      "min_corner_error": 358.65240478515625,
+      "std_corner_error": 33.40289306640625
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 403.15667724609375,
+      "median_reprojection_error": 406.1688232421875,
+      "max_reprojection_error": 442.2277526855469,
+      "std_reprojection_error": 27.38548469543457
+    },
+    "rmse": 404.085693359375,
+    "matching_metrics": {
+      "matching_precision": 0.7142857142857143,
+      "matching_recall": 0.4117647058823529,
+      "f1_score": 0.5223880597014926,
+      "inlier_ratio": 0.7142857142857143
+    },
+    "matrix_error": {
+      "frobenius_norm": 424.89343353340513,
+      "max_element_error": 424.1448685891532,
+      "mean_element_error": 49.98930470427112
+    },
+    "performance": {
+      "computation_time": 0.1647787094116211,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 24,
+    "num_keypoints_B": 14,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 24,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 14,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.844128029243325,
+      "median_distance_ratio": 0.8037383177570093
+    },
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 1718.493896484375,
+    "max_corner_error": 3556.378173828125,
+    "corner_errors": [
+      1685.318359375,
+      1265.505615234375,
+      366.7736511230469,
+      3556.378173828125
+    ],
+    "num_keypoints_A": 30,
+    "num_keypoints_B": 20,
+    "num_matches": 9,
+    "num_inliers": 3,
+    "inlier_ratio": 0.3333333333333333,
+    "computation_time": 0.17458605766296387,
+    "H_estimated": [
+      [
+        -2.460831034543049,
+        0.6827272219528256,
+        296.1476745605468
+      ],
+      [
+        -0.32492706203584204,
+        0.09014700614835854,
+        39.10321044921862
+      ],
+      [
+        -0.008309472759476072,
+        0.002305360739252549,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        -5.47190323,
+        -1.83027762,
+        1732.59326715
+      ],
+      [
+        -1.49421991,
+        -4.6463628,
+        920.53510262
+      ],
+      [
+        -0.00624573,
+        -0.00544841,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 30,
+      "good_matches": 9,
+      "ratio_test_passed": 9,
+      "ratio_test_failed": 15,
+      "matching_time": 0.0010020732879638672,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6830803988659205,
+      "median_distance_ratio": 0.8375688790196563
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.16953086853027344,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 3,
+      "outlier_count": 6
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 1718.493896484375,
+      "corner_errors": [
+        1685.318359375,
+        1265.505615234375,
+        366.7736511230469,
+        3556.378173828125
+      ],
+      "max_corner_error": 3556.378173828125,
+      "min_corner_error": 366.7736511230469,
+      "std_corner_error": 1163.1063232421875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 2313.739990234375,
+      "median_reprojection_error": 1685.318359375,
+      "max_reprojection_error": 6039.07666015625,
+      "std_reprojection_error": 1909.739990234375
+    },
+    "rmse": 3000.083251953125,
+    "matching_metrics": {
+      "matching_precision": 0.3333333333333333,
+      "matching_recall": 0.45,
+      "f1_score": 0.3829787234042553,
+      "inlier_ratio": 0.3333333333333333
+    },
+    "matrix_error": {
+      "frobenius_norm": 1685.3300283890449,
+      "max_element_error": 1436.445592589453,
+      "mean_element_error": 258.81302021836177
+    },
+    "performance": {
+      "computation_time": 0.17458605766296387,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 193.62261962890625,
+    "max_corner_error": 233.64649963378906,
+    "corner_errors": [
+      233.64649963378906,
+      131.92994689941406,
+      198.21478271484375,
+      210.69924926757812
+    ],
+    "num_keypoints_A": 30,
+    "num_keypoints_B": 17,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.13502764701843262,
+    "H_estimated": [
+      [
+        0.20592516234973282,
+        -0.2888606354431907,
+        27.352827073593346
+      ],
+      [
+        0.8337702877160326,
+        -1.169567683537194,
+        110.74884795986664
+      ],
+      [
+        0.00752847820153687,
+        -0.010560540403623407,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.99254164,
+        0.25420051,
+        -180.62722286
+      ],
+      [
+        -0.05625339,
+        1.35955314,
+        4.2829802
+      ],
+      [
+        -0.00025492,
+        0.00094548,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 30,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0009546279907226562,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7699676909780013,
+      "median_distance_ratio": 0.8148148148148148
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.13000917434692383,
+      "best_log_likelihood": 16.915911660255563,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 193.62261962890625,
+      "corner_errors": [
+        233.64649963378906,
+        131.92994689941406,
+        198.21478271484375,
+        210.69924926757812
+      ],
+      "max_corner_error": 233.64649963378906,
+      "min_corner_error": 131.92994689941406,
+      "std_corner_error": 37.81731033325195
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 156.5229034423828,
+      "median_reprojection_error": 166.61207580566406,
+      "max_reprojection_error": 233.64649963378906,
+      "std_reprojection_error": 52.91315460205078
+    },
+    "rmse": 165.2247772216797,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.23529411764705882,
+      "f1_score": 0.38095238095238093,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 233.66382825843783,
+      "max_element_error": 207.98004993359334,
+      "mean_element_error": 35.468225470712426
+    },
+    "performance": {
+      "computation_time": 0.13502764701843262,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 89,
+    "num_keypoints_B": 10,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 89,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 34,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8724743729616944,
+      "median_distance_ratio": 0.9
+    },
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 12,
+    "num_keypoints_B": 27,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 12,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.609952920763924,
+      "median_distance_ratio": 0.8392857142857143
+    },
+    "image_name": "20241222_141317_881_IR_twilight",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 3,
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 7,
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 20,
+    "num_keypoints_B": 27,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 20,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 13,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8818328004507909,
+      "median_distance_ratio": 0.9563110620863535
+    },
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 18,
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 33,
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 14,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_twilight",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 124.661376953125,
+    "max_corner_error": 154.71360778808594,
+    "corner_errors": [
+      137.20834350585938,
+      150.5252685546875,
+      56.19831466674805,
+      154.71360778808594
+    ],
+    "num_keypoints_A": 224,
+    "num_keypoints_B": 178,
+    "num_matches": 5,
+    "num_inliers": 4,
+    "inlier_ratio": 0.8,
+    "computation_time": 0.14820122718811035,
+    "H_estimated": [
+      [
+        0.2075321832796375,
+        -0.8736329931714393,
+        161.4656487659288
+      ],
+      [
+        0.09477998030333308,
+        -0.4478602898906705,
+        85.25959021394152
+      ],
+      [
+        0.0010657561009044655,
+        -0.005229854613179467,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.39933776,
+        -0.25695189,
+        92.5676777
+      ],
+      [
+        -0.06225403,
+        0.51691334,
+        -33.39621867
+      ],
+      [
+        -0.00044013,
+        -0.00065158,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 224,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 218,
+      "matching_time": 0.0010046958923339844,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9358421219075761,
+      "median_distance_ratio": 0.9570552147239264
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.13740921020507812,
+      "best_log_likelihood": -7.39317758101187,
+      "inlier_count": 4,
+      "outlier_count": 1
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 124.661376953125,
+      "corner_errors": [
+        137.20834350585938,
+        150.5252685546875,
+        56.19831466674805,
+        154.71360778808594
+      ],
+      "max_corner_error": 154.71360778808594,
+      "min_corner_error": 56.19831466674805,
+      "std_corner_error": 40.0521354675293
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 105.34374237060547,
+      "median_reprojection_error": 98.03435516357422,
+      "max_reprojection_error": 154.71360778808594,
+      "std_reprojection_error": 36.0573616027832
+    },
+    "rmse": 111.34378051757812,
+    "matching_metrics": {
+      "matching_precision": 0.8,
+      "matching_recall": 0.028089887640449437,
+      "f1_score": 0.05427408412483039,
+      "inlier_ratio": 0.8
+    },
+    "matrix_error": {
+      "frobenius_norm": 137.21335195574773,
+      "max_element_error": 118.65580888394152,
+      "mean_element_error": 21.054462047852244
+    },
+    "performance": {
+      "computation_time": 0.14820122718811035,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 141.32135009765625,
+    "max_corner_error": 167.2857208251953,
+    "corner_errors": [
+      139.8463897705078,
+      149.19386291503906,
+      108.95944213867188,
+      167.2857208251953
+    ],
+    "num_keypoints_A": 193,
+    "num_keypoints_B": 175,
+    "num_matches": 8,
+    "num_inliers": 4,
+    "inlier_ratio": 0.5,
+    "computation_time": 0.15273475646972656,
+    "H_estimated": [
+      [
+        0.06280367441037037,
+        -0.5882098035981448,
+        123.24828338623047
+      ],
+      [
+        0.01125623867866959,
+        -0.10542424475311908,
+        22.089664459228544
+      ],
+      [
+        0.0005095703784657085,
+        -0.0047725598072213046,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.60110252,
+        -0.20331897,
+        36.74832018
+      ],
+      [
+        -0.01585812,
+        0.73892642,
+        -87.79559674
+      ],
+      [
+        -0.00033307,
+        -0.00040678,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 193,
+      "good_matches": 8,
+      "ratio_test_passed": 8,
+      "ratio_test_failed": 180,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9168060357809668,
+      "median_distance_ratio": 0.935368724842409
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.14565253257751465,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 4,
+      "outlier_count": 4
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 141.32135009765625,
+      "corner_errors": [
+        139.8463897705078,
+        149.19386291503906,
+        108.95944213867188,
+        167.2857208251953
+      ],
+      "max_corner_error": 167.2857208251953,
+      "min_corner_error": 108.95944213867188,
+      "std_corner_error": 21.128143310546875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 111.43824768066406,
+      "median_reprojection_error": 112.92705535888672,
+      "max_reprojection_error": 167.2857208251953,
+      "std_reprojection_error": 38.75912094116211
+    },
+    "rmse": 117.98624420166016,
+    "matching_metrics": {
+      "matching_precision": 0.5,
+      "matching_recall": 0.045714285714285714,
+      "f1_score": 0.08376963350785341,
+      "inlier_ratio": 0.5
+    },
+    "matrix_error": {
+      "frobenius_norm": 139.85051252357442,
+      "max_element_error": 109.88526119922854,
+      "mean_element_error": 22.02056528091825
+    },
+    "performance": {
+      "computation_time": 0.15273475646972656,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 593,
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 3,
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 7,
+    "num_keypoints_B": 144,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 7,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6415114047370963,
+      "median_distance_ratio": 0.863013698630137
+    },
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 272.4850158691406,
+    "max_corner_error": 296.13336181640625,
+    "corner_errors": [
+      290.3998718261719,
+      296.13336181640625,
+      253.38160705566406,
+      250.02528381347656
+    ],
+    "num_keypoints_A": 27,
+    "num_keypoints_B": 507,
+    "num_matches": 9,
+    "num_inliers": 9,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.18422341346740723,
+    "H_estimated": [
+      [
+        1.0074051764427479,
+        -0.01046712925306831,
+        41.99692258568748
+      ],
+      [
+        0.0022815895044877854,
+        0.9968007552347923,
+        -144.10803052525114
+      ],
+      [
+        7.5890308714624e-05,
+        -8.108733488041393e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.62667791,
+        0.59212664,
+        9.67147425
+      ],
+      [
+        -0.09302355,
+        1.12721897,
+        144.48709795
+      ],
+      [
+        -0.00049414,
+        0.00096809,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 27,
+      "good_matches": 9,
+      "ratio_test_passed": 9,
+      "ratio_test_failed": 18,
+      "matching_time": 0.0010044574737548828,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6804651646760784,
+      "median_distance_ratio": 0.8976377952755905
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.16170763969421387,
+      "best_log_likelihood": 1.6916780224955532,
+      "inlier_count": 9,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 272.4850158691406,
+      "corner_errors": [
+        290.3998718261719,
+        296.13336181640625,
+        253.38160705566406,
+        250.02528381347656
+      ],
+      "max_corner_error": 296.13336181640625,
+      "min_corner_error": 250.02528381347656,
+      "std_corner_error": 20.913908004760742
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 274.1817626953125,
+      "median_reprojection_error": 277.59417724609375,
+      "max_reprojection_error": 296.13336181640625,
+      "std_reprojection_error": 18.59255027770996
+    },
+    "rmse": 274.8114318847656,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.3333333333333333,
+      "f1_score": 0.5,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 290.4007867683181,
+      "max_element_error": 288.59512847525116,
+      "mean_element_error": 35.79236004539419
+    },
+    "performance": {
+      "computation_time": 0.18422341346740723,
+      "memory_usage_mb": 258.3828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 521,
+    "num_keypoints_B": 14,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 521,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 84,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9516231960029102,
+      "median_distance_ratio": 0.9926606651662916
+    },
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 6,
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 58,
+    "num_keypoints_B": 124,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "float division by zero",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 358,
+    "num_keypoints_B": 2,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 358,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 21,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9056638418782974,
+      "median_distance_ratio": 0.9180327868852459
+    },
+    "image_name": "20241223_120707_069_IR_twilight",
+    "pair_name": "pair_0010"
+  }
+]

@@ -1,0 +1,991 @@
+[
+  {
+    "success": true,
+    "mean_corner_error": 275.2352600097656,
+    "max_corner_error": 390.0764465332031,
+    "corner_errors": [
+      348.31390380859375,
+      137.5040283203125,
+      225.04664611816406,
+      390.0764465332031
+    ],
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 5,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.017743349075317383,
+    "H_estimated": [
+      [
+        0.15329456028323848,
+        -1.725192359655893,
+        213.1721649169922
+      ],
+      [
+        0.05861168749599669,
+        -0.6596218108966296,
+        81.50569915771483
+      ],
+      [
+        0.0007191115235093209,
+        -0.008092953225519247,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.81646807,
+        -0.00984994,
+        -133.86411543
+      ],
+      [
+        -0.08682953,
+        0.80926772,
+        51.69986067
+      ],
+      [
+        -0.00043057,
+        3.146e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.4958491129785248,
+      "median_distance_ratio": 0.576
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 275.2352600097656,
+      "corner_errors": [
+        348.31390380859375,
+        137.5040283203125,
+        225.04664611816406,
+        390.0764465332031
+      ],
+      "max_corner_error": 390.0764465332031,
+      "min_corner_error": 137.5040283203125,
+      "std_corner_error": 100.022216796875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 267.8013916015625,
+      "median_reprojection_error": 255.3422088623047,
+      "max_reprojection_error": 390.0764465332031,
+      "std_reprojection_error": 84.6247329711914
+    },
+    "rmse": 280.8539123535156,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.8,
+      "f1_score": 0.888888888888889,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 348.32187548398696,
+      "max_element_error": 347.03628034699216,
+      "mean_element_error": 42.31602662302459
+    },
+    "performance": {
+      "computation_time": 0.017743349075317383,
+      "memory_usage_mb": 208.65625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 12,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 7,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 18,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 13,
+      "matching_time": 0.0003285408020019531,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8080179964050946,
+      "median_distance_ratio": 0.8413485221674877
+    },
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 12,
+    "num_keypoints_B": 14,
+    "num_matches": 5,
+    "matching_stats": {
+      "total_matches": 12,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.739742723405449,
+      "median_distance_ratio": 0.7943262411347518
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.001405477523803711,
+      "inlier_count": 0,
+      "outlier_count": 5
+    },
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 264.71240234375,
+    "max_corner_error": 285.49749755859375,
+    "corner_errors": [
+      285.49749755859375,
+      253.11244201660156,
+      251.0750274658203,
+      269.1646728515625
+    ],
+    "num_keypoints_A": 15,
+    "num_keypoints_B": 8,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.010540962219238281,
+    "H_estimated": [
+      [
+        1.017797392204265,
+        0.00042963073637545824,
+        91.10996808964163
+      ],
+      [
+        0.004934392585948859,
+        1.0069461633610783,
+        -99.3379110177006
+      ],
+      [
+        4.935454834842227e-05,
+        1.9152816284511416e-06,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.30365856,
+        0.03815496,
+        -126.83851836
+      ],
+      [
+        0.10046267,
+        1.20128927,
+        85.07272574
+      ],
+      [
+        0.00032305,
+        0.00054003,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 15,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6310331287693889,
+      "median_distance_ratio": 0.875
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 264.71240234375,
+      "corner_errors": [
+        285.49749755859375,
+        253.11244201660156,
+        251.0750274658203,
+        269.1646728515625
+      ],
+      "max_corner_error": 285.49749755859375,
+      "min_corner_error": 251.0750274658203,
+      "std_corner_error": 13.895862579345703
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 265.1756896972656,
+      "median_reprojection_error": 264.3429260253906,
+      "max_reprojection_error": 285.49749755859375,
+      "std_reprojection_error": 11.496766090393066
+    },
+    "rmse": 265.4248352050781,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.5,
+      "f1_score": 0.6666666666666666,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 285.4977333187381,
+      "max_element_error": 217.94848644964162,
+      "mean_element_error": 44.774821433180506
+    },
+    "performance": {
+      "computation_time": 0.010540962219238281,
+      "memory_usage_mb": 208.65625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 271.11669921875,
+    "max_corner_error": 345.8133850097656,
+    "corner_errors": [
+      300.73724365234375,
+      345.8133850097656,
+      240.0124053955078,
+      197.90371704101562
+    ],
+    "num_keypoints_A": 9,
+    "num_keypoints_B": 11,
+    "num_matches": 6,
+    "num_inliers": 6,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.012084484100341797,
+    "H_estimated": [
+      [
+        1.2653415763471714,
+        0.1481722788081064,
+        -2.7664024689404827
+      ],
+      [
+        -0.05565156976989655,
+        1.3578259591792294,
+        -165.3196116718963
+      ],
+      [
+        -0.0003994633702408468,
+        0.0015536946936992842,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.68717503,
+        -0.0162316,
+        19.0695291
+      ],
+      [
+        -0.1299519,
+        0.76510204,
+        134.62388565
+      ],
+      [
+        -0.000763,
+        2.911e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 9,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.33566471744321247,
+      "median_distance_ratio": 0.16292134831460675
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0009093284606933594,
+      "inlier_count": 6,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 271.11669921875,
+      "corner_errors": [
+        300.73724365234375,
+        345.8133850097656,
+        240.0124053955078,
+        197.90371704101562
+      ],
+      "max_corner_error": 345.8133850097656,
+      "min_corner_error": 197.90371704101562,
+      "std_corner_error": 56.53447723388672
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 260.5601501464844,
+      "median_reprojection_error": 240.3762969970703,
+      "max_reprojection_error": 345.8133850097656,
+      "std_reprojection_error": 47.01918411254883
+    },
+    "rmse": 264.7685852050781,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.6666666666666666,
+      "f1_score": 0.8,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 300.73847050719087,
+      "max_element_error": 299.9434973218963,
+      "mean_element_error": 35.910101298524985
+    },
+    "performance": {
+      "computation_time": 0.012084484100341797,
+      "memory_usage_mb": 208.65625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 9,
+    "num_keypoints_B": 4,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 9,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6445783132530121,
+      "median_distance_ratio": 0.6445783132530121
+    },
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 13,
+    "num_keypoints_B": 13,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 13,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 11,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8535231151896804,
+      "median_distance_ratio": 0.8611111111111112
+    },
+    "image_name": "20241221_100711_257_IR_hot",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 11,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8543213682081405,
+      "median_distance_ratio": 0.8823529411764706
+    },
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 205.84783935546875,
+    "max_corner_error": 241.6171417236328,
+    "corner_errors": [
+      206.00567626953125,
+      178.92787170410156,
+      196.8406982421875,
+      241.6171417236328
+    ],
+    "num_keypoints_A": 11,
+    "num_keypoints_B": 19,
+    "num_matches": 6,
+    "num_inliers": 5,
+    "inlier_ratio": 0.8333333333333334,
+    "computation_time": 0.009165525436401367,
+    "H_estimated": [
+      [
+        0.99134822932019,
+        0.0018082095267242244,
+        -87.08473876504216
+      ],
+      [
+        -0.0037917352522231816,
+        0.996492277362503,
+        27.41183342692387
+      ],
+      [
+        -3.5549676687289266e-05,
+        1.4414901364732378e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.72640288,
+        0.16880928,
+        113.67565117
+      ],
+      [
+        -0.02674144,
+        0.98406207,
+        -18.77907144
+      ],
+      [
+        -0.00044642,
+        0.00026534,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 11,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.42791641098412786,
+      "median_distance_ratio": 0.5666666666666667
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 5,
+      "outlier_count": 1
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 205.84783935546875,
+      "corner_errors": [
+        206.00567626953125,
+        178.92787170410156,
+        196.8406982421875,
+        241.6171417236328
+      ],
+      "max_corner_error": 241.6171417236328,
+      "min_corner_error": 178.92787170410156,
+      "std_corner_error": 22.832439422607422
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 203.72970581054688,
+      "median_reprojection_error": 199.55882263183594,
+      "max_reprojection_error": 241.6171417236328,
+      "std_reprojection_error": 18.876277923583984
+    },
+    "rmse": 204.60232543945312,
+    "matching_metrics": {
+      "matching_precision": 0.8333333333333334,
+      "matching_recall": 0.5454545454545454,
+      "f1_score": 0.6593406593406592,
+      "inlier_ratio": 0.8333333333333334
+    },
+    "matrix_error": {
+      "frobenius_norm": 206.0059043477197,
+      "max_element_error": 200.76038993504216,
+      "mean_element_error": 27.49103143658797
+    },
+    "performance": {
+      "computation_time": 0.009165525436401367,
+      "memory_usage_mb": 207.20703125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 9,
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 5,
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 13,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.3928847143592383,
+      "median_distance_ratio": 0.3805970149253731
+    },
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 240.10861206054688,
+    "max_corner_error": 368.6679992675781,
+    "corner_errors": [
+      275.881591796875,
+      368.6679992675781,
+      251.6002960205078,
+      64.28458404541016
+    ],
+    "num_keypoints_A": 15,
+    "num_keypoints_B": 16,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.009727001190185547,
+    "H_estimated": [
+      [
+        1.2096795759473176,
+        -3.2653250905340623,
+        117.11742401123048
+      ],
+      [
+        2.232042925413502,
+        -6.0250217598277285,
+        216.0994720458985
+      ],
+      [
+        0.010328775467528351,
+        -0.027880779637203597,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.05748135,
+        0.01728681,
+        66.25303301
+      ],
+      [
+        -0.11379386,
+        0.83631759,
+        -55.05263231
+      ],
+      [
+        5.197e-05,
+        -0.00020557,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 15,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6951738130623337,
+      "median_distance_ratio": 0.8429752066115702
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 240.10861206054688,
+      "corner_errors": [
+        275.881591796875,
+        368.6679992675781,
+        251.6002960205078,
+        64.28458404541016
+      ],
+      "max_corner_error": 368.6679992675781,
+      "min_corner_error": 64.28458404541016,
+      "std_corner_error": 110.51399993896484
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 226.9203643798828,
+      "median_reprojection_error": 251.6002960205078,
+      "max_reprojection_error": 368.6679992675781,
+      "std_reprojection_error": 91.50948333740234
+    },
+    "rmse": 244.67701721191406,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.26666666666666666,
+      "f1_score": 0.4210526315789474,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 275.99643199355836,
+      "max_element_error": 271.1521043558985,
+      "mean_element_error": 37.188492625995146
+    },
+    "performance": {
+      "computation_time": 0.009727001190185547,
+      "memory_usage_mb": 207.6015625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 15,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6062155386889042,
+      "median_distance_ratio": 0.8020264531003518
+    },
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 13,
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 11,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 7,
+    "image_name": "20241222_081954_680_IR_hot",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 7,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0009768009185791016,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.4415204678362573,
+      "median_distance_ratio": 0.4415204678362573
+    },
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 5,
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 1,
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 5,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.0,
+      "median_distance_ratio": 0.0
+    },
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 7,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 3,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9905660377358491,
+      "median_distance_ratio": 0.9905660377358491
+    },
+    "image_name": "20241222_141317_881_IR_hot",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_hot",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_hot",
+    "pair_name": "pair_0008"
+  }
+]

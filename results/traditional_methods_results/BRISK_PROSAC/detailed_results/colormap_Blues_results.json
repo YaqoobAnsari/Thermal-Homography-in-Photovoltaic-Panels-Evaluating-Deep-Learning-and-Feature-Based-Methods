@@ -1,0 +1,648 @@
+[
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 5,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 6,
+    "num_keypoints_B": 2,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 6,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6221671486254048,
+      "median_distance_ratio": 0.6193181818181819
+    },
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 221.76223754882812,
+    "max_corner_error": 338.3241882324219,
+    "corner_errors": [
+      338.3241882324219,
+      164.31118774414062,
+      80.01464080810547,
+      304.3988952636719
+    ],
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 12,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.1122739315032959,
+    "H_estimated": [
+      [
+        -0.02136346403050878,
+        -0.9450183422298141,
+        167.9493184735126
+      ],
+      [
+        -0.013744723513426885,
+        -0.9793725396572122,
+        173.5415230556004
+      ],
+      [
+        -7.9921783226766e-05,
+        -0.005643880310795199,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.1335841,
+        0.00113729,
+        -122.20185046
+      ],
+      [
+        0.04463753,
+        1.03637524,
+        -0.45721283
+      ],
+      [
+        0.0004253,
+        -4.035e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.35582229314267494,
+      "median_distance_ratio": 0.29333333333333333
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.1122739315032959,
+      "final_subset_size": 4,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 221.76223754882812,
+      "corner_errors": [
+        338.3241882324219,
+        164.31118774414062,
+        80.01464080810547,
+        304.3988952636719
+      ],
+      "max_corner_error": 338.3241882324219,
+      "min_corner_error": 80.01464080810547,
+      "std_corner_error": 104.65241241455078
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 196.45213317871094,
+      "median_reprojection_error": 169.59262084960938,
+      "max_reprojection_error": 338.3241882324219,
+      "std_reprojection_error": 95.86729431152344
+    },
+    "rmse": 218.59547424316406,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.8,
+      "f1_score": 0.888888888888889,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 338.33349925314855,
+      "max_element_error": 290.1511689335126,
+      "mean_element_error": 52.036805200070894
+    },
+    "performance": {
+      "computation_time": 0.1122739315032959,
+      "memory_usage_mb": 260.26953125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 12,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8994949494949496,
+      "median_distance_ratio": 0.8994949494949496
+    },
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 8,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8676030907173241,
+      "median_distance_ratio": 0.9082901902776843
+    },
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 5,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9488606253312135,
+      "median_distance_ratio": 0.9607843137254901
+    },
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 301.174560546875,
+    "max_corner_error": 476.21044921875,
+    "corner_errors": [
+      369.2235412597656,
+      41.222721099853516,
+      318.04156494140625,
+      476.21044921875
+    ],
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 10,
+    "num_matches": 5,
+    "num_inliers": 5,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.11463665962219238,
+    "H_estimated": [
+      [
+        -0.8630972210422423,
+        -0.07363132784172013,
+        203.9421844482421
+      ],
+      [
+        -0.34616468561046354,
+        -0.029531511435791077,
+        81.79563140869085
+      ],
+      [
+        -0.004232068139199936,
+        -0.00036104020382505576,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.79471159,
+        0.07734518,
+        -160.54170092
+      ],
+      [
+        0.26206759,
+        1.61524157,
+        22.82518697
+      ],
+      [
+        0.0008727,
+        0.00018252,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6320168522289961,
+      "median_distance_ratio": 0.7402003484320558
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11463665962219238,
+      "final_subset_size": 5,
+      "inlier_count": 5,
+      "outlier_count": 0
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 301.174560546875,
+      "corner_errors": [
+        369.2235412597656,
+        41.222721099853516,
+        318.04156494140625,
+        476.21044921875
+      ],
+      "max_corner_error": 476.21044921875,
+      "min_corner_error": 41.222721099853516,
+      "std_corner_error": 160.56748962402344
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 271.1243896484375,
+      "median_reprojection_error": 318.04156494140625,
+      "max_reprojection_error": 476.21044921875,
+      "std_reprojection_error": 132.0323028564453
+    },
+    "rmse": 301.564208984375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.5,
+      "f1_score": 0.6666666666666666,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 369.2372922706389,
+      "max_element_error": 364.4838853682421,
+      "mean_element_error": 47.61352986791181
+    },
+    "performance": {
+      "computation_time": 0.11463665962219238,
+      "memory_usage_mb": 260.26953125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 5,
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241221_100711_257_IR_Blues",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 4,
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 3,
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 7,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 3,
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 3,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.736781664574365,
+      "median_distance_ratio": 0.7108433734939759
+    },
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 1,
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 6,
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 2,
+    "image_name": "20241222_081954_680_IR_Blues",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Blues",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Blues",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_Blues",
+    "pair_name": "pair_0010"
+  }
+]

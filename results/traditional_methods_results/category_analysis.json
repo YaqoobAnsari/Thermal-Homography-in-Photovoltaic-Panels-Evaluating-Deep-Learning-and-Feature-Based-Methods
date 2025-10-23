@@ -1,0 +1,4647 @@
+{
+  "categories": {
+    "diverging": {
+      "datatypes": [
+        "colormap_RdBu",
+        "colormap_BrBG",
+        "colormap_seismic",
+        "colormap_PiYG"
+      ],
+      "count": 4,
+      "description": "Diverging colormaps with central neutral point and contrasting extremes",
+      "characteristics": "Two contrasting hues, light middle, emphasizes deviations from center",
+      "pros": "Strong contrast at extremes, emphasizes hot/cold boundaries, sharp transitions",
+      "cons": "Middle values may lose definition, bimodal emphasis",
+      "expected_performance": "Good - high contrast aids feature detection, especially at boundaries",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 0.25580665093809685,
+          "avg_mace": 305.20117945548816,
+          "avg_time": 0.17594222877270135,
+          "avg_precision": 0.6920282386700123,
+          "avg_f1_score": 0.5247736810780805,
+          "samples": 4
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 0.2663622064936524,
+          "avg_mace": 367.77514894925633,
+          "avg_time": 0.12643382381170223,
+          "avg_precision": 0.8416979788207409,
+          "avg_f1_score": 0.5993610195436231,
+          "samples": 4
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 0.2564829794405123,
+          "avg_mace": 301.4981464084826,
+          "avg_time": 0.013947378125107079,
+          "avg_precision": 0.8088400872726993,
+          "avg_f1_score": 0.64468030311176,
+          "samples": 4
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.2974098415908325,
+          "avg_mace": 378.57818835552473,
+          "avg_time": 0.2701938735437871,
+          "avg_precision": 0.7582713185708334,
+          "avg_f1_score": 0.48112502702403914,
+          "samples": 4
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.2760403325469048,
+          "avg_mace": 375.93772899889746,
+          "avg_time": 0.13743211936185704,
+          "avg_precision": 0.9180591393884628,
+          "avg_f1_score": 0.5666725272860061,
+          "samples": 4
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.27629873047972137,
+          "avg_mace": 383.4595316333931,
+          "avg_time": 0.009670348578140515,
+          "avg_precision": 0.9396208134459636,
+          "avg_f1_score": 0.5592943248490609,
+          "samples": 4
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 0.3465818447365464,
+          "avg_mace": 306.07519148802146,
+          "avg_time": 0.2486846414896158,
+          "avg_precision": 0.7785367279217099,
+          "avg_f1_score": 0.6023352322289524,
+          "samples": 4
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 0.3520166273452421,
+          "avg_mace": 335.69319772720337,
+          "avg_time": 0.1861822858452797,
+          "avg_precision": 0.9324155799294036,
+          "avg_f1_score": 0.6783862149163845,
+          "samples": 4
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 0.3365818447365465,
+          "avg_mace": 311.08508228888877,
+          "avg_time": 0.07897404906077263,
+          "avg_precision": 0.924235476090449,
+          "avg_f1_score": 0.689695480730565,
+          "samples": 4
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 0.7236962139085497,
+          "avg_mace": 355.0127453498155,
+          "avg_time": 0.27553226248596524,
+          "avg_precision": 0.5252694681295285,
+          "avg_f1_score": 0.20572309065649455,
+          "samples": 4
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 0.7288169868554095,
+          "avg_mace": 326.4226261872724,
+          "avg_time": 0.12919503269905863,
+          "avg_precision": 0.8291962441603677,
+          "avg_f1_score": 0.2919428616056784,
+          "samples": 4
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.7024862375014044,
+          "avg_mace": 332.90399830438645,
+          "avg_time": 0.0077474706770196584,
+          "avg_precision": 0.8233282883053006,
+          "avg_f1_score": 0.2865301206460712,
+          "samples": 4
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 0.8126452084035501,
+          "avg_mace": 320.4031032253174,
+          "avg_time": 0.848927621164199,
+          "avg_precision": 0.7845700968489591,
+          "avg_f1_score": 0.4959737749325325,
+          "samples": 4
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 0.801831254915178,
+          "avg_mace": 332.72002782986425,
+          "avg_time": 0.1745660720813491,
+          "avg_precision": 0.9724523838661169,
+          "avg_f1_score": 0.5896374284609722,
+          "samples": 4
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 0.8012756993596225,
+          "avg_mace": 330.2840698054327,
+          "avg_time": 0.03750527792146381,
+          "avg_precision": 0.9716856877231284,
+          "avg_f1_score": 0.5881376815167734,
+          "samples": 4
+        }
+      },
+      "individual_colormap_performance": {
+        "colormap_RdBu": {
+          "avg_success_rate_across_methods": 0.41860465116279066,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.046511627906976744,
+              "mean_mace": 162.04358673095703,
+              "mean_f1": 0.916083916083916
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.046511627906976744,
+              "mean_mace": 279.2761993408203,
+              "mean_f1": 0.8248299319727892
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.046511627906976744,
+              "mean_mace": 279.21871185302734,
+              "mean_f1": 0.8615384615384616
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.32558139534883723,
+              "mean_mace": 533.7108317783901,
+              "mean_f1": 0.4564443876822066
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.3023255813953488,
+              "mean_mace": 521.9203538161057,
+              "mean_f1": 0.5679568427958676
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.32558139534883723,
+              "mean_mace": 524.2785361153739,
+              "mean_f1": 0.5977861696708343
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.11627906976744186,
+              "mean_mace": 268.96262512207034,
+              "mean_f1": 0.9483990147783251
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.11627906976744186,
+              "mean_mace": 268.96262512207034,
+              "mean_f1": 0.9483990147783251
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.11627906976744186,
+              "mean_mace": 268.96262512207034,
+              "mean_f1": 0.9483990147783251
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.7674418604651163,
+              "mean_mace": 352.9805369521632,
+              "mean_f1": 0.26008841426252977
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.7674418604651163,
+              "mean_mace": 357.0427870316939,
+              "mean_f1": 0.37342501157075936
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.6976744186046512,
+              "mean_mace": 366.9308110555013,
+              "mean_f1": 0.3556394737076605
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.8837209302325582,
+              "mean_mace": 322.80934383994656,
+              "mean_f1": 0.5272788711154677
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.8604651162790697,
+              "mean_mace": 337.07570668813344,
+              "mean_f1": 0.6059244067043448
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.8604651162790697,
+              "mean_mace": 336.0593583390519,
+              "mean_f1": 0.6061442405446616
+            }
+          }
+        },
+        "colormap_BrBG": {
+          "avg_success_rate_across_methods": 0.392,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.04,
+              "mean_mace": 426.4673309326172,
+              "mean_f1": 0.48012291146533514
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.06,
+              "mean_mace": 556.8712463378906,
+              "mean_f1": 0.6520133667502088
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.02,
+              "mean_mace": 260.62060546875,
+              "mean_f1": 0.6896551724137931
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.38,
+              "mean_mace": 363.29461268374797,
+              "mean_f1": 0.5201304715486758
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.34,
+              "mean_mace": 357.52633577234604,
+              "mean_f1": 0.6451982152749257
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.34,
+              "mean_mace": 389.16980159983916,
+              "mean_f1": 0.6366435347064974
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.2,
+              "mean_mace": 340.0380661010742,
+              "mean_f1": 0.5207579681261493
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.2,
+              "mean_mace": 342.99157562255857,
+              "mean_f1": 0.6551509691465209
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.16,
+              "mean_mace": 342.05976486206055,
+              "mean_f1": 0.6899224221469259
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.68,
+              "mean_mace": 491.9392709171071,
+              "mean_f1": 0.18511625949012
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.7,
+              "mean_mace": 333.4302939278739,
+              "mean_f1": 0.2933292200096724
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.62,
+              "mean_mace": 335.50060936712447,
+              "mean_f1": 0.30710614383420426
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.72,
+              "mean_mace": 331.1319885253906,
+              "mean_f1": 0.4810309091720367
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.7,
+              "mean_mace": 361.9604570661272,
+              "mean_f1": 0.5921336407143298
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.72,
+              "mean_mace": 354.43936750623914,
+              "mean_f1": 0.5771368123901638
+            }
+          }
+        },
+        "colormap_seismic": {
+          "avg_success_rate_across_methods": 0.7318840579710143,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 290.67920665251904,
+              "mean_f1": 0.31168185039084745
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 304.5149054894081,
+              "mean_f1": 0.4533292937070735
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.8260869565217391,
+              "mean_mace": 322.9811186539499,
+              "mean_f1": 0.43511602810287675
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.21739130434782608,
+              "mean_mace": 286.11842041015626,
+              "mean_f1": 0.3505080464990057
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.21739130434782608,
+              "mean_mace": 290.64292297363284,
+              "mean_f1": 0.3795954532595789
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.21739130434782608,
+              "mean_mace": 290.68248138427737,
+              "mean_f1": 0.37679968508334216
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 279.39478908441004,
+              "mean_f1": 0.3592904149401221
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.8695652173913043,
+              "mean_mace": 388.35949897766113,
+              "mean_f1": 0.5099975710845731
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 290.8588479849008,
+              "mean_f1": 0.5204631813408902
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.8695652173913043,
+              "mean_mace": 265.704842376709,
+              "mean_f1": 0.16845321470730337
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 304.479247655624,
+              "mean_f1": 0.2284425874899501
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 275.60711865547376,
+              "mean_f1": 0.22925427859075237
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.8913043478260869,
+              "mean_mace": 281.42433873618523,
+              "mean_f1": 0.5480980025931823
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.8913043478260869,
+              "mean_mace": 289.23916905100754,
+              "mean_f1": 0.5885249072223823
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.8913043478260869,
+              "mean_mace": 289.2394589679997,
+              "mean_f1": 0.588729101709692
+            }
+          }
+        },
+        "colormap_PiYG": {
+          "avg_success_rate_across_methods": 0.38666666666666666,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.08888888888888889,
+              "mean_mace": 341.6145935058594,
+              "mean_f1": 0.39120604637222367
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.1111111111111111,
+              "mean_mace": 330.43824462890626,
+              "mean_f1": 0.467271485744421
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.13333333333333333,
+              "mean_mace": 343.1721496582031,
+              "mean_f1": 0.5924115503919082
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.26666666666666666,
+              "mean_mace": 331.1888885498047,
+              "mean_f1": 0.5974172023662686
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.24444444444444444,
+              "mean_mace": 333.661303433505,
+              "mean_f1": 0.6739395978136524
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.2222222222222222,
+              "mean_mace": 329.70730743408205,
+              "mean_f1": 0.6259479099355698
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.2222222222222222,
+              "mean_mace": 335.90528564453126,
+              "mean_f1": 0.5808935310712131
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.2222222222222222,
+              "mean_mace": 342.45909118652344,
+              "mean_f1": 0.5999973046561188
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.2222222222222222,
+              "mean_mace": 342.45909118652344,
+              "mean_f1": 0.5999973046561188
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.5777777777777777,
+              "mean_mace": 309.4263311532828,
+              "mean_f1": 0.20923447416602506
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.6,
+              "mean_mace": 310.7381761338976,
+              "mean_f1": 0.2725746273523316
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.6444444444444445,
+              "mean_mace": 353.5774541394464,
+              "mean_f1": 0.25412058645166763
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.7555555555555555,
+              "mean_mace": 346.24674179974727,
+              "mean_f1": 0.4274873168494432
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.7555555555555555,
+              "mean_mace": 342.60477851418887,
+              "mean_f1": 0.5719667592028317
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.7333333333333333,
+              "mean_mace": 341.3980944084399,
+              "mean_f1": 0.580540571422576
+            }
+          }
+        }
+      },
+      "best_method_by_success": "SIFT_MLESAC",
+      "best_method_by_accuracy": "AKAZE_RANSAC",
+      "difficulty_score": 0.517711156049882,
+      "avg_success_rate_across_methods": 0.48228884395011795,
+      "performance_gap": 0.5568385574654533
+    },
+    "qualitative": {
+      "datatypes": [
+        "colormap_Set1",
+        "colormap_Set2",
+        "colormap_tab10",
+        "colormap_Pastel1"
+      ],
+      "count": 4,
+      "description": "Qualitative colormaps for categorical/discrete data",
+      "characteristics": "Distinct colors, not ordered, designed for categories not continuous data",
+      "pros": "Maximum color distinction, each value highly distinguishable",
+      "cons": "Not designed for continuous thermal data, creates artificial segmentation",
+      "expected_performance": "Good - high contrast between values creates strong feature boundaries",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 0.42934782608695654,
+          "avg_mace": 386.03502166041073,
+          "avg_time": 0.3132638836152458,
+          "avg_precision": 0.4995832159302297,
+          "avg_f1_score": 0.27659612308347203,
+          "samples": 4
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 0.4347826086956522,
+          "avg_mace": 399.2632899209436,
+          "avg_time": 0.14388927403371488,
+          "avg_precision": 0.8453827576860995,
+          "avg_f1_score": 0.429061265829464,
+          "samples": 4
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 0.4347826086956522,
+          "avg_mace": 400.83863917841694,
+          "avg_time": 0.01232374576110648,
+          "avg_precision": 0.8379468827125574,
+          "avg_f1_score": 0.42982628454950833,
+          "samples": 4
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.19715736740509238,
+          "avg_mace": 472.7112899294086,
+          "avg_time": 0.9703605204236273,
+          "avg_precision": 0.7018970667824108,
+          "avg_f1_score": 0.2915275645578235,
+          "samples": 4
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.19715736740509238,
+          "avg_mace": 485.6915719649371,
+          "avg_time": 0.16951709576681548,
+          "avg_precision": 0.9112227646346627,
+          "avg_f1_score": 0.3817185113956822,
+          "samples": 4
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.19715736740509238,
+          "avg_mace": 486.214815457662,
+          "avg_time": 0.03188246400917277,
+          "avg_precision": 0.9068496490798931,
+          "avg_f1_score": 0.38160907222573387,
+          "samples": 4
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 0.45108695652173914,
+          "avg_mace": 396.9801927131519,
+          "avg_time": 0.5061472744969597,
+          "avg_precision": 0.7909695136202535,
+          "avg_f1_score": 0.4096018449637148,
+          "samples": 4
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 0.45108695652173914,
+          "avg_mace": 403.6884823849326,
+          "avg_time": 0.2080404383397242,
+          "avg_precision": 0.9552267558491968,
+          "avg_f1_score": 0.4698744928567967,
+          "samples": 4
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 0.45108695652173914,
+          "avg_mace": 404.88135045815625,
+          "avg_time": 0.08294321856303521,
+          "avg_precision": 0.9556039834923862,
+          "avg_f1_score": 0.4696692574151615,
+          "samples": 4
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 0.740974584061035,
+          "avg_mace": 337.25077728664917,
+          "avg_time": 0.34458140382677455,
+          "avg_precision": 0.3144712101500513,
+          "avg_f1_score": 0.13937779748710616,
+          "samples": 4
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 0.7355398014523393,
+          "avg_mace": 347.9024300644994,
+          "avg_time": 0.13118567897794975,
+          "avg_precision": 0.7921098409996565,
+          "avg_f1_score": 0.2637513284193472,
+          "samples": 4
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.7464093666697307,
+          "avg_mace": 362.94266119807986,
+          "avg_time": 0.007316377711674524,
+          "avg_precision": 0.7800898062206452,
+          "avg_f1_score": 0.26161442048224937,
+          "samples": 4
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 0.757278931887122,
+          "avg_mace": 342.5937733228732,
+          "avg_time": 1.0050460584254037,
+          "avg_precision": 0.7410773588252006,
+          "avg_f1_score": 0.49708255549231817,
+          "samples": 4
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 0.757278931887122,
+          "avg_mace": 352.34315774956787,
+          "avg_time": 0.17990239144206938,
+          "avg_precision": 0.9629115356242339,
+          "avg_f1_score": 0.6309672669886103,
+          "samples": 4
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 0.757278931887122,
+          "avg_mace": 352.3472633141079,
+          "avg_time": 0.03803489276821993,
+          "avg_precision": 0.9623448165485327,
+          "avg_f1_score": 0.6312067907141523,
+          "samples": 4
+        }
+      },
+      "individual_colormap_performance": {
+        "colormap_Set1": {
+          "avg_success_rate_across_methods": 0.8260869565217391,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.9130434782608695,
+              "mean_mace": 435.16363743373324,
+              "mean_f1": 0.25187534361981906
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.9347826086956522,
+              "mean_mace": 445.08232968352564,
+              "mean_f1": 0.44075085002324194
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.9347826086956522,
+              "mean_mace": 447.9050846543423,
+              "mean_f1": 0.44103141818071645
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.2608695652173913,
+              "mean_mace": 762.3555895487467,
+              "mean_f1": 0.2628431605573139
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.2608695652173913,
+              "mean_mace": 800.5620574951172,
+              "mean_f1": 0.39179460232830526
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.2608695652173913,
+              "mean_mace": 802.5937131245931,
+              "mean_f1": 0.39177249251993523
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.9782608695652174,
+              "mean_mace": 448.3129236857096,
+              "mean_f1": 0.39941599473935646
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.9782608695652174,
+              "mean_mace": 455.11297607421875,
+              "mean_f1": 0.47805924703100444
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.9782608695652174,
+              "mean_mace": 457.545846218533,
+              "mean_f1": 0.4782409052132833
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.9565217391304348,
+              "mean_mace": 423.4853938709606,
+              "mean_f1": 0.11024612781748623
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.9565217391304348,
+              "mean_mace": 444.45213109796697,
+              "mean_f1": 0.21411641758441313
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.9782608695652174,
+              "mean_mace": 481.8536651611328,
+              "mean_f1": 0.21050035764488628
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 443.5198689336362,
+              "mean_f1": 0.47812836712315665
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 450.6936293892239,
+              "mean_f1": 0.5867152965665323
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 450.6999252982761,
+              "mean_f1": 0.5869144738306941
+            }
+          }
+        },
+        "colormap_Set2": {
+          "avg_success_rate_across_methods": 0.09090909090909091,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.045454545454545456,
+              "mean_mace": 328.80970001220703,
+              "mean_f1": 0.3901119968644642
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.045454545454545456,
+              "mean_mace": 328.78309631347656,
+              "mean_f1": 0.39450613125299755
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.045454545454545456,
+              "mean_mace": 328.79640197753906,
+              "mean_f1": 0.39319216838669285
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.20454545454545456,
+              "mean_mace": 268.68241034613715,
+              "mean_f1": 0.1645714723834167
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.20454545454545456,
+              "mean_mace": 276.6359558105469,
+              "mean_f1": 0.2917091707486219
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.20454545454545456,
+              "mean_mace": 286.361316257053,
+              "mean_f1": 0.2886658783581226
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.20454545454545456,
+              "mean_mace": 282.7791341145833,
+              "mean_f1": 0.6846365737946699
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.20454545454545456,
+              "mean_mace": 282.7790273030599,
+              "mean_f1": 0.6850018269948271
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.20454545454545456,
+              "mean_mace": 282.77903917100696,
+              "mean_f1": 0.6846329097700603
+            }
+          }
+        },
+        "colormap_tab10": {
+          "avg_success_rate_across_methods": 0.6768115942028986,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.8043478260869565,
+              "mean_mace": 336.9064058870883,
+              "mean_f1": 0.30131690254712507
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.8043478260869565,
+              "mean_mace": 353.4442501583615,
+              "mean_f1": 0.41737168163568605
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.8043478260869565,
+              "mean_mace": 353.77219370249156,
+              "mean_f1": 0.41862115091830016
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.08695652173913043,
+              "mean_mace": 474.83153533935547,
+              "mean_f1": 0.31201486959568275
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.08695652173913043,
+              "mean_mace": 474.7890090942383,
+              "mean_f1": 0.31216320642554507
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.08695652173913043,
+              "mean_mace": 474.8047637939453,
+              "mean_f1": 0.31146938463650664
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.8260869565217391,
+              "mean_mace": 345.64746174059417,
+              "mean_f1": 0.4197876951880732
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.8260869565217391,
+              "mean_mace": 352.26398869564656,
+              "mean_f1": 0.46168973868258906
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.8260869565217391,
+              "mean_mace": 352.2168546977796,
+              "mean_f1": 0.46109760961703977
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.8260869565217391,
+              "mean_mace": 358.06418167917354,
+              "mean_f1": 0.12123034779884409
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.8043478260869565,
+              "mean_mace": 356.242901776288,
+              "mean_f1": 0.22777053439682604
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.8260869565217391,
+              "mean_mace": 361.8653110704924,
+              "mean_f1": 0.2251198613630357
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 344.5438756698217,
+              "mean_f1": 0.46888709516954297
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 353.7793226975661,
+              "mean_f1": 0.5638690968218987
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.8478260869565217,
+              "mean_mace": 353.7894557072566,
+              "mean_f1": 0.5644590294786419
+            }
+          }
+        },
+        "colormap_Pastel1": {
+          "avg_success_rate_across_methods": 0.4697674418604651,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.3953488372093023,
+              "mean_mace": 324.8483348173254,
+              "mean_f1": 0.20114023121383337
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.3953488372093023,
+              "mean_mace": 338.63212495691636,
+              "mean_f1": 0.42841010557588094
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.3953488372093023,
+              "mean_mace": 338.6643829345703,
+              "mean_f1": 0.43000224335980075
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 298.7711232503255,
+              "mean_f1": 0.1614632419486776
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 314.27873157319567,
+              "mean_f1": 0.3214091909475277
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 321.6903523036412,
+              "mean_f1": 0.3221715845629528
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 299.5322145734514,
+              "mean_f1": 0.35667818588190336
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 322.12065160842167,
+              "mean_f1": 0.688282847571183
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 322.1206330798921,
+              "mean_f1": 0.6888207497772129
+            }
+          }
+        }
+      },
+      "best_method_by_success": "SIFT_MLESAC",
+      "best_method_by_accuracy": "ORB_MLESAC",
+      "difficulty_score": 0.4841062291264516,
+      "avg_success_rate_across_methods": 0.5158937708735484,
+      "performance_gap": 0.5601215644820297
+    },
+    "sequential_multi_hue": {
+      "datatypes": [
+        "colormap_cool",
+        "colormap_nipy_spectral",
+        "colormap_terrain",
+        "colormap_coolwarm",
+        "colormap_hot"
+      ],
+      "count": 5,
+      "description": "Multi-hue sequential colormaps spanning color spectrum",
+      "characteristics": "Multiple hues, varying luminance, wide perceptual range",
+      "pros": "High dynamic range, distinct color transitions, good for temperature gradients",
+      "cons": "Non-monotonic luminance can confuse feature detectors",
+      "expected_performance": "Variable - depends on luminance profile and hue transitions",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 0.11131047690465726,
+          "avg_mace": 289.0716647123679,
+          "avg_time": 0.19416712568356442,
+          "avg_precision": 0.7841653500650754,
+          "avg_f1_score": 0.6782519411825985,
+          "samples": 5
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 0.09414822272088061,
+          "avg_mace": 273.8640213706277,
+          "avg_time": 0.13018603975122625,
+          "avg_precision": 0.9108005020189893,
+          "avg_f1_score": 0.7761155643452715,
+          "samples": 5
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 0.09357869258324417,
+          "avg_mace": 291.0856849034627,
+          "avg_time": 0.012167145808537802,
+          "avg_precision": 0.9219742402543154,
+          "avg_f1_score": 0.7557496708147158,
+          "samples": 5
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.3219458770750948,
+          "avg_mace": 399.56044827731745,
+          "avg_time": 0.20199458297982228,
+          "avg_precision": 0.7475339657786899,
+          "avg_f1_score": 0.5068719794437977,
+          "samples": 5
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.3091314489782747,
+          "avg_mace": 411.4225578720951,
+          "avg_time": 0.12912307389370806,
+          "avg_precision": 0.8802127636422534,
+          "avg_f1_score": 0.5895719052913152,
+          "samples": 5
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.2917955082986231,
+          "avg_mace": 389.8860218502226,
+          "avg_time": 0.007370668649673463,
+          "avg_precision": 0.8920033816978347,
+          "avg_f1_score": 0.6222704634014377,
+          "samples": 5
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 0.21467541128707576,
+          "avg_mace": 297.15788196737753,
+          "avg_time": 0.24236443400025723,
+          "avg_precision": 0.6228568231385228,
+          "avg_f1_score": 0.5066204721514371,
+          "samples": 5
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 0.21467541128707576,
+          "avg_mace": 308.0015171014187,
+          "avg_time": 0.1881881712120531,
+          "avg_precision": 0.9212404740992421,
+          "avg_f1_score": 0.6781729028389996,
+          "samples": 5
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 0.19733947060742416,
+          "avg_mace": 305.298123550415,
+          "avg_time": 0.07460029820601145,
+          "avg_precision": 0.9011798770007651,
+          "avg_f1_score": 0.6578158224153002,
+          "samples": 5
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 0.5780116379318545,
+          "avg_mace": 324.2582606352688,
+          "avg_time": 0.23371181781787126,
+          "avg_precision": 0.541578067766555,
+          "avg_f1_score": 0.3727830057905266,
+          "samples": 5
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 0.5903490428290585,
+          "avg_mace": 356.6416137631314,
+          "avg_time": 0.12431987846942136,
+          "avg_precision": 0.8431016366064992,
+          "avg_f1_score": 0.48445312666209495,
+          "samples": 5
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.5729835397360545,
+          "avg_mace": 365.2829702101029,
+          "avg_time": 0.006395631720630197,
+          "avg_precision": 0.7974725744178496,
+          "avg_f1_score": 0.3584737914438138,
+          "samples": 5
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 0.6495579028892283,
+          "avg_mace": 337.0104379450144,
+          "avg_time": 0.44710770562869545,
+          "avg_precision": 0.7165077833369797,
+          "avg_f1_score": 0.4605404055730479,
+          "samples": 5
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 0.6495579028892283,
+          "avg_mace": 354.48800365657127,
+          "avg_time": 0.16804000687961723,
+          "avg_precision": 0.9687260226496803,
+          "avg_f1_score": 0.60614853441652,
+          "samples": 5
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 0.6369656319382948,
+          "avg_mace": 353.0729207537842,
+          "avg_time": 0.027795285828100348,
+          "avg_precision": 0.9744705787871006,
+          "avg_f1_score": 0.6159862624599775,
+          "samples": 5
+        }
+      },
+      "individual_colormap_performance": {
+        "colormap_cool": {
+          "avg_success_rate_across_methods": 0.0031746031746031746,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.023809523809523808,
+              "mean_mace": 265.0484619140625,
+              "mean_f1": 1.0
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.023809523809523808,
+              "mean_mace": 265.0484619140625,
+              "mean_f1": 1.0
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            }
+          }
+        },
+        "colormap_nipy_spectral": {
+          "avg_success_rate_across_methods": 0.6040816326530611,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.2653061224489796,
+              "mean_mace": 349.2207535963792,
+              "mean_f1": 0.5011599174272553
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.22448979591836735,
+              "mean_mace": 341.226880160245,
+              "mean_f1": 0.8071447806333993
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.24489795918367346,
+              "mean_mace": 397.91159947713214,
+              "mean_f1": 0.7612331968523341
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.46938775510204084,
+              "mean_mace": 316.3803133757218,
+              "mean_f1": 0.32429689112740556
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.42857142857142855,
+              "mean_mace": 322.3141058058966,
+              "mean_f1": 0.3859696232851615
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.40816326530612246,
+              "mean_mace": 422.7078681945801,
+              "mean_f1": 0.39437904909539945
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.42857142857142855,
+              "mean_mace": 348.23287164597286,
+              "mean_f1": 0.4486073435928814
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.42857142857142855,
+              "mean_mace": 367.57537551153274,
+              "mean_f1": 0.6616798349639826
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.40816326530612246,
+              "mean_mace": 354.6222290039062,
+              "mean_f1": 0.6467617947041218
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.8979591836734694,
+              "mean_mace": 302.01334242387253,
+              "mean_f1": 0.14843600676027768
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.9591836734693877,
+              "mean_mace": 319.76387445977394,
+              "mean_f1": 0.21085581470787781
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.9183673469387755,
+              "mean_mace": 340.1394758436415,
+              "mean_f1": 0.21409179584561558
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 319.6898968754982,
+              "mean_f1": 0.3811529838818451
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 360.11000310158244,
+              "mean_f1": 0.5261071144713964
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.9795918367346939,
+              "mean_mace": 342.1937834421794,
+              "mean_f1": 0.5368202753638162
+            }
+          }
+        },
+        "colormap_terrain": {
+          "avg_success_rate_across_methods": 0.5612403100775194,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.13953488372093023,
+              "mean_mace": 290.85050201416016,
+              "mean_f1": 0.6943640947000409
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.11627906976744186,
+              "mean_mace": 271.7369781494141,
+              "mean_f1": 0.6482412561646165
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.09302325581395349,
+              "mean_mace": 298.11573791503906,
+              "mean_f1": 0.5745757171114966
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.5348837209302325,
+              "mean_mace": 330.39773824940556,
+              "mean_f1": 0.4418123596603775
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.5116279069767442,
+              "mean_mace": 355.17588459361684,
+              "mean_f1": 0.5495760337426472
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.4883720930232558,
+              "mean_mace": 334.03145490373885,
+              "mean_f1": 0.5722056625745824
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.2558139534883721,
+              "mean_mace": 297.174824107777,
+              "mean_f1": 0.548552705104341
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.2558139534883721,
+              "mean_mace": 302.2294491854581,
+              "mean_f1": 0.6729506348643062
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.23255813953488372,
+              "mean_mace": 307.32520904541013,
+              "mean_f1": 0.6249679205729589
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.9534883720930233,
+              "mean_mace": 331.1242787430926,
+              "mean_f1": 0.16698690465712263
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.9534883720930233,
+              "mean_mace": 344.0910592428068,
+              "mean_f1": 0.247649358440677
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.9534883720930233,
+              "mean_mace": 353.8569663443216,
+              "mean_f1": 0.24711064010490763
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 325.786000932966,
+              "mean_f1": 0.5150557619631507
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 334.1461123511905,
+              "mean_f1": 0.6253289860494358
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.9767441860465116,
+              "mean_mace": 334.1483325049991,
+              "mean_f1": 0.6253687705823283
+            }
+          }
+        },
+        "colormap_coolwarm": {
+          "avg_success_rate_across_methods": 0.21843971631205675,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.02127659574468085,
+              "mean_mace": 216.91123962402344,
+              "mean_f1": 1.0
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.02127659574468085,
+              "mean_mace": 216.91123962402344,
+              "mean_f1": 1.0
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.02127659574468085,
+              "mean_mace": 216.91123962402344,
+              "mean_f1": 1.0
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.14893617021276595,
+              "mean_mace": 627.6077161516462,
+              "mean_f1": 0.6836709656258529
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.14893617021276595,
+              "mean_mace": 631.1948089599609,
+              "mean_f1": 0.7536536253564118
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.1276595744680851,
+              "mean_mace": 291.4231694539388,
+              "mean_f1": 0.8651824003089378
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.10638297872340426,
+              "mean_mace": 268.5565124511719,
+              "mean_f1": 0.4917447949511609
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.10638297872340426,
+              "mean_mace": 278.1440795898437,
+              "mean_f1": 0.7633224961617898
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0851063829787234,
+              "mean_mace": 279.4129180908203,
+              "mean_f1": 0.7666531202022373
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.3191489361702128,
+              "mean_mace": 432.0553782145182,
+              "mean_f1": 0.3187092841492962
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.2978723404255319,
+              "mean_mace": 542.3596529279437,
+              "mean_f1": 0.6312921564289707
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.3191489361702128,
+              "mean_mace": 453.2596028645833,
+              "mean_f1": 0.6300998478717923
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.5319148936170213,
+              "mean_mace": 395.6898590087891,
+              "mean_f1": 0.5167105622679288
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.5319148936170213,
+              "mean_mace": 400.45235229492187,
+              "mean_f1": 0.7078191036932947
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.48936170212765956,
+              "mean_mace": 412.7060201893682,
+              "mean_f1": 0.7364170704418121
+            }
+          }
+        },
+        "colormap_hot": {
+          "avg_success_rate_across_methods": 0.4550724637681159,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.13043478260869565,
+              "mean_mace": 299.3041636149089,
+              "mean_f1": 0.5174837526030974
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.10869565217391304,
+              "mean_mace": 265.58098754882815,
+              "mean_f1": 0.6490762205830698
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.10869565217391304,
+              "mean_mace": 251.40416259765624,
+              "mean_f1": 0.6871897692950324
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.45652173913043476,
+              "mean_mace": 323.8560253324963,
+              "mean_f1": 0.5777077013615549
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.45652173913043476,
+              "mean_mace": 337.00543212890625,
+              "mean_f1": 0.6690883387810405
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.43478260869565216,
+              "mean_mace": 511.3815948486328,
+              "mean_f1": 0.657314741626831
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.2826086956521739,
+              "mean_mace": 274.6673196645883,
+              "mean_f1": 0.5375770449573655
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.2826086956521739,
+              "mean_mace": 284.05716411884015,
+              "mean_f1": 0.6147386453659192
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.2608695652173913,
+              "mean_mace": 279.83213806152344,
+              "mean_f1": 0.5928804541818828
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.6956521739130435,
+              "mean_mace": 291.04984188079834,
+              "mean_f1": 0.22978283338593633
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.717391304347826,
+              "mean_mace": 311.94502027107006,
+              "mean_f1": 0.33246830373294894
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.6739130434782609,
+              "mean_mace": 313.8758357878654,
+              "mean_f1": 0.3425928819529395
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.7391304347826086,
+              "mean_mace": 306.87599496280444,
+              "mean_f1": 0.42924231417926684
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.7391304347826086,
+              "mean_mace": 323.2435468785903,
+              "mean_f1": 0.5653389334519532
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.7391304347826086,
+              "mean_mace": 323.2435468785903,
+              "mean_f1": 0.5653389334519532
+            }
+          }
+        }
+      },
+      "best_method_by_success": "SIFT_MLESAC",
+      "best_method_by_accuracy": "AKAZE_PROSAC",
+      "difficulty_score": 0.6315982548029287,
+      "avg_success_rate_across_methods": 0.36840174519707125,
+      "performance_gap": 0.5559792103059842
+    },
+    "sequential_single_hue": {
+      "datatypes": [
+        "colormap_Oranges",
+        "colormap_Blues",
+        "colormap_copper",
+        "colormap_Reds"
+      ],
+      "count": 4,
+      "description": "Single-hue sequential colormaps with monotonic luminance",
+      "characteristics": "One primary hue, varying luminance and saturation",
+      "pros": "Maintains some gradient sharpness, intuitive temperature mapping",
+      "cons": "Limited color range, potential loss of detail in extreme values",
+      "expected_performance": "Moderate - better than perceptual but loses some feature definition",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 0.0,
+          "avg_mace": null,
+          "avg_time": null,
+          "avg_precision": null,
+          "avg_f1_score": null,
+          "samples": 4
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 0.01,
+          "avg_mace": 331.1376647949219,
+          "avg_time": 0.126489520072937,
+          "avg_precision": 0.875,
+          "avg_f1_score": 1.0454545454545454,
+          "samples": 4
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 0.005,
+          "avg_mace": 285.7803649902344,
+          "avg_time": 0.01656055450439453,
+          "avg_precision": 1.0,
+          "avg_f1_score": 1.0,
+          "samples": 4
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.03563829787234043,
+          "avg_mace": 539.7328262329102,
+          "avg_time": 0.15447622537612915,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8407925407925407,
+          "samples": 4
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.03563829787234043,
+          "avg_mace": 551.6271102905273,
+          "avg_time": 0.11777124404907227,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8165501165501166,
+          "samples": 4
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.030319148936170215,
+          "avg_mace": 293.4831207275391,
+          "avg_time": 0.0033249616622924804,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8963480963480963,
+          "samples": 4
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 0.020753931544865864,
+          "avg_mace": 4311.381896972656,
+          "avg_time": 0.2062763770421346,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8284493284493285,
+          "samples": 4
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 0.020753931544865864,
+          "avg_mace": 4311.381896972656,
+          "avg_time": 0.1870185931523641,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8284493284493285,
+          "samples": 4
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 0.020753931544865864,
+          "avg_mace": 4311.381896972656,
+          "avg_time": 0.08920915921529134,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8284493284493285,
+          "samples": 4
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 0.20701665124884366,
+          "avg_mace": 397.58115956938116,
+          "avg_time": 0.17045787042611604,
+          "avg_precision": 0.6593382888774861,
+          "avg_f1_score": 0.5161604838958583,
+          "samples": 4
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 0.22320536540240515,
+          "avg_mace": 299.67460427651037,
+          "avg_time": 0.11909488313473189,
+          "avg_precision": 0.9797976970191644,
+          "avg_f1_score": 0.6284725470340979,
+          "samples": 4
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.20777058279370952,
+          "avg_mace": 698.5324549674988,
+          "avg_time": 0.015106158167646641,
+          "avg_precision": 0.9185487640581277,
+          "avg_f1_score": 0.6460646518687331,
+          "samples": 4
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 0.25352451433857537,
+          "avg_mace": 324.53184352311166,
+          "avg_time": 0.17186523153377248,
+          "avg_precision": 0.832549424384782,
+          "avg_f1_score": 0.6462642606632992,
+          "samples": 4
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 0.25352451433857537,
+          "avg_mace": 333.22333157717526,
+          "avg_time": 0.13742629585103092,
+          "avg_precision": 0.9645144426099218,
+          "avg_f1_score": 0.7102394433419685,
+          "samples": 4
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 0.2217853839037928,
+          "avg_mace": 339.97163335103835,
+          "avg_time": 0.021932759928324864,
+          "avg_precision": 0.9598309788002771,
+          "avg_f1_score": 0.6825367377745125,
+          "samples": 4
+        }
+      },
+      "individual_colormap_performance": {
+        "colormap_Oranges": {
+          "avg_success_rate_across_methods": 0.10724637681159419,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.021739130434782608,
+              "mean_mace": 11197.7412109375,
+              "mean_f1": 0.8571428571428571
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.021739130434782608,
+              "mean_mace": 11197.7412109375,
+              "mean_f1": 0.8571428571428571
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.021739130434782608,
+              "mean_mace": 11197.7412109375,
+              "mean_f1": 0.8571428571428571
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.2391304347826087,
+              "mean_mace": 330.2994578968395,
+              "mean_f1": 0.5777115216401915
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.2826086956521739,
+              "mean_mace": 288.7982870248648,
+              "mean_f1": 0.6249284296858525
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.2608695652173913,
+              "mean_mace": 316.9346351623535,
+              "mean_f1": 0.5661501531763579
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.2826086956521739,
+              "mean_mace": 314.88168276273285,
+              "mean_f1": 0.553145026754781
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.2826086956521739,
+              "mean_mace": 336.73654116117035,
+              "mean_f1": 0.7088454470466571
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.1956521739130435,
+              "mean_mace": 380.02966647677954,
+              "mean_f1": 0.6613036928721073
+            }
+          }
+        },
+        "colormap_Blues": {
+          "avg_success_rate_across_methods": 0.08226950354609928,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0425531914893617,
+              "mean_mace": 261.46839904785156,
+              "mean_f1": 0.7777777777777778
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0425531914893617,
+              "mean_mace": 261.46839904785156,
+              "mean_f1": 0.7777777777777778
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.02127659574468085,
+              "mean_mace": 221.76223754882812,
+              "mean_f1": 0.888888888888889
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.02127659574468085,
+              "mean_mace": 228.03488159179688,
+              "mean_f1": 0.6666666666666666
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.02127659574468085,
+              "mean_mace": 228.03488159179688,
+              "mean_f1": 0.6666666666666666
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.02127659574468085,
+              "mean_mace": 228.03488159179688,
+              "mean_f1": 0.6666666666666666
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.14893617021276595,
+              "mean_mace": 293.92154802594865,
+              "mean_f1": 0.4659561448315768
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.1702127659574468,
+              "mean_mace": 288.68018531799316,
+              "mean_f1": 0.7371291386868991
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.1702127659574468,
+              "mean_mace": 296.1704807281494,
+              "mean_f1": 0.7121033837868743
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.19148936170212766,
+              "mean_mace": 294.2101525200738,
+              "mean_f1": 0.7296793683345347
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.19148936170212766,
+              "mean_mace": 292.5000762939453,
+              "mean_f1": 0.7386580439798771
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.19148936170212766,
+              "mean_mace": 271.4502716064453,
+              "mean_f1": 0.7325910827035682
+            }
+          }
+        },
+        "colormap_copper": {
+          "avg_success_rate_across_methods": 0.028,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.04,
+              "mean_mace": 260.67335510253906,
+              "mean_f1": 0.5607843137254902
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.04,
+              "mean_mace": 214.66197967529297,
+              "mean_f1": 0.6018306636155607
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.02,
+              "mean_mace": 1089.8917236328125,
+              "mean_f1": 0.7461139896373057
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.12,
+              "mean_mace": 298.6698989868164,
+              "mean_f1": 0.7207939293170263
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.12,
+              "mean_mace": 276.8991978963216,
+              "mean_f1": 0.7402053743049911
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.08,
+              "mean_mace": 312.1097297668457,
+              "mean_f1": 0.6868512713340299
+            }
+          }
+        },
+        "colormap_Reds": {
+          "avg_success_rate_across_methods": 0.19466666666666665,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.04,
+              "mean_mace": 331.1376647949219,
+              "mean_f1": 1.0454545454545454
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.02,
+              "mean_mace": 285.7803649902344,
+              "mean_f1": 1.0
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.1,
+              "mean_mace": 817.9972534179688,
+              "mean_f1": 0.9038073038073037
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.1,
+              "mean_mace": 841.7858215332031,
+              "mean_f1": 0.8553224553224552
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.1,
+              "mean_mace": 365.20400390625,
+              "mean_f1": 0.9038073038073037
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.04,
+              "mean_mace": 1508.3695983886719,
+              "mean_f1": 0.9615384615384615
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.04,
+              "mean_mace": 1508.3695983886719,
+              "mean_f1": 0.9615384615384615
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.04,
+              "mean_mace": 1508.3695983886719,
+              "mean_f1": 0.9615384615384615
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.4,
+              "mean_mace": 705.4302772521972,
+              "mean_f1": 0.4601899553861749
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.4,
+              "mean_mace": 406.55796508789064,
+              "mean_f1": 0.5500019561480792
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.38,
+              "mean_mace": 1091.1329803466797,
+              "mean_f1": 0.5598910808743941
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.42,
+              "mean_mace": 390.36563982282365,
+              "mean_f1": 0.5814387182468547
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.42,
+              "mean_mace": 426.7575109572638,
+              "mean_f1": 0.6532489080363487
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.42,
+              "mean_mace": 396.29686555408296,
+              "mean_f1": 0.6494009041883447
+            }
+          }
+        }
+      },
+      "best_method_by_success": "SIFT_MLESAC",
+      "best_method_by_accuracy": "AKAZE_RANSAC",
+      "difficulty_score": 0.89695436324391,
+      "avg_success_rate_across_methods": 0.10304563675609005,
+      "performance_gap": 0.25352451433857537
+    },
+    "miscellaneous": {
+      "datatypes": [
+        "colormap_flag"
+      ],
+      "count": 1,
+      "description": "Special-purpose colormaps with unique characteristics",
+      "characteristics": "High contrast, discrete steps, unconventional color schemes",
+      "pros": "Maximum visual distinction, creates sharp boundaries",
+      "cons": "Arbitrary color mapping, may not represent thermal data meaningfully",
+      "expected_performance": "Unpredictable - high contrast helps but arbitrary mapping may confuse",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 329.9107102893648,
+          "avg_time": 0.7192162332080659,
+          "avg_precision": 0.8343078678428587,
+          "avg_f1_score": 0.34312312270125817,
+          "samples": 1
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 329.7597278413318,
+          "avg_time": 0.15995275974273682,
+          "avg_precision": 0.9132519497343212,
+          "avg_f1_score": 0.38988198758507325,
+          "samples": 1
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 329.98182678222656,
+          "avg_time": 0.018857586951482864,
+          "avg_precision": 0.9116213592050951,
+          "avg_f1_score": 0.38982204141525123,
+          "samples": 1
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.09523809523809523,
+          "avg_mace": 257.65100860595703,
+          "avg_time": 2.7997742295265198,
+          "avg_precision": 0.9832858067651987,
+          "avg_f1_score": 0.355756205220954,
+          "samples": 1
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.09523809523809523,
+          "avg_mace": 257.71398162841797,
+          "avg_time": 0.28501224517822266,
+          "avg_precision": 0.982974600068374,
+          "avg_f1_score": 0.35686464562063874,
+          "samples": 1
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.09523809523809523,
+          "avg_mace": 257.70996856689453,
+          "avg_time": 0.11686098575592041,
+          "avg_precision": 0.984527185717569,
+          "avg_f1_score": 0.3574179026735185,
+          "samples": 1
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 326.48982711065383,
+          "avg_time": 1.3630378927503313,
+          "avg_precision": 0.8110863733694106,
+          "avg_f1_score": 0.3793982590127576,
+          "samples": 1
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.54968988327755,
+          "avg_time": 0.24609326180957614,
+          "avg_precision": 0.9356125030431421,
+          "avg_f1_score": 0.4283474933609587,
+          "samples": 1
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.63897087460475,
+          "avg_time": 0.10858070850372314,
+          "avg_precision": 0.93746814553836,
+          "avg_f1_score": 0.42817703720403716,
+          "samples": 1
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 295.07183329264325,
+          "avg_time": 0.3086168822788057,
+          "avg_precision": 0.3757635450812969,
+          "avg_f1_score": 0.0924127690980311,
+          "samples": 1
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 471.24344053722564,
+          "avg_time": 0.13346018677666074,
+          "avg_precision": 0.7338002681431463,
+          "avg_f1_score": 0.15522228367123592,
+          "samples": 1
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.9761904761904762,
+          "avg_mace": 351.82158642280393,
+          "avg_time": 0.012214573418221823,
+          "avg_precision": 0.7282419019731834,
+          "avg_f1_score": 0.15886422475027753,
+          "samples": 1
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 328.87325904482884,
+          "avg_time": 2.009039458774385,
+          "avg_precision": 0.9642247412263472,
+          "avg_f1_score": 0.5413138799212696,
+          "samples": 1
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.6489453996931,
+          "avg_time": 0.2305293083190918,
+          "avg_precision": 0.9867554246897926,
+          "avg_f1_score": 0.5534996037096936,
+          "samples": 1
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.6500807262602,
+          "avg_time": 0.06412621906825475,
+          "avg_precision": 0.9878777260195071,
+          "avg_f1_score": 0.5534170098928679,
+          "samples": 1
+        }
+      },
+      "individual_colormap_performance": {
+        "colormap_flag": {
+          "avg_success_rate_across_methods": 0.8174603174603176,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 329.9107102893648,
+              "mean_f1": 0.34312312270125817
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 329.7597278413318,
+              "mean_f1": 0.38988198758507325
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 329.98182678222656,
+              "mean_f1": 0.38982204141525123
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.09523809523809523,
+              "mean_mace": 257.65100860595703,
+              "mean_f1": 0.355756205220954
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.09523809523809523,
+              "mean_mace": 257.71398162841797,
+              "mean_f1": 0.35686464562063874
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.09523809523809523,
+              "mean_mace": 257.70996856689453,
+              "mean_f1": 0.3574179026735185
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 326.48982711065383,
+              "mean_f1": 0.3793982590127576
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 331.54968988327755,
+              "mean_f1": 0.4283474933609587
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 331.63897087460475,
+              "mean_f1": 0.42817703720403716
+            },
+            "ORB_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 295.07183329264325,
+              "mean_f1": 0.0924127690980311
+            },
+            "ORB_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 471.24344053722564,
+              "mean_f1": 0.15522228367123592
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.9761904761904762,
+              "mean_mace": 351.82158642280393,
+              "mean_f1": 0.15886422475027753
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 328.87325904482884,
+              "mean_f1": 0.5413138799212696
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 331.6489453996931,
+              "mean_f1": 0.5534996037096936
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 331.6500807262602,
+              "mean_f1": 0.5534170098928679
+            }
+          }
+        }
+      },
+      "best_method_by_success": "AKAZE_MLESAC",
+      "best_method_by_accuracy": "BRISK_MLESAC",
+      "difficulty_score": 0.18253968253968245,
+      "avg_success_rate_across_methods": 0.8174603174603176,
+      "performance_gap": 0.9047619047619048
+    },
+    "grayscale": {
+      "datatypes": [
+        "preprocessed",
+        "colormap_Greys",
+        "raw"
+      ],
+      "count": 3,
+      "description": "Single-channel intensity mapping preserving original thermal data",
+      "characteristics": "Monotonic luminance, maximum feature preservation",
+      "pros": "Preserves original intensity relationships, no color artifacts, optimal for feature detection",
+      "cons": "Limited perceptual range, harder to distinguish subtle temperature differences",
+      "expected_performance": "Best - maintains original gradient information crucial for feature matching",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 0.014492753623188406,
+          "avg_mace": 247.5248260498047,
+          "avg_time": 0.13826942443847656,
+          "avg_precision": 0.7,
+          "avg_f1_score": 0.7147147147147148,
+          "samples": 3
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 0.014492753623188406,
+          "avg_mace": 266.47731018066406,
+          "avg_time": 0.13975834846496582,
+          "avg_precision": 0.9,
+          "avg_f1_score": 0.9081632653061225,
+          "samples": 3
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 0.014492753623188406,
+          "avg_mace": 266.47174072265625,
+          "avg_time": 0.010745406150817871,
+          "avg_precision": 0.9,
+          "avg_f1_score": 0.852607709750567,
+          "samples": 3
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.10491937130026537,
+          "avg_mace": 307.08280532836915,
+          "avg_time": 0.1739628106355667,
+          "avg_precision": 0.8185155614313222,
+          "avg_f1_score": 0.5527913204981671,
+          "samples": 3
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.10773627270871607,
+          "avg_mace": 311.14328976397246,
+          "avg_time": 0.12054363202373936,
+          "avg_precision": 0.9459085041084208,
+          "avg_f1_score": 0.6495988018914693,
+          "samples": 3
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.1014288630332721,
+          "avg_mace": 293.6827305990552,
+          "avg_time": 0.005400226860450058,
+          "avg_precision": 0.9554394182098254,
+          "avg_f1_score": 0.6154621050694401,
+          "samples": 3
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 0.04441722800571545,
+          "avg_mace": 308.154904683431,
+          "avg_time": 0.22429074843724567,
+          "avg_precision": 0.603021978021978,
+          "avg_f1_score": 0.6744905613364094,
+          "samples": 3
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 0.04441722800571545,
+          "avg_mace": 379.93750762939453,
+          "avg_time": 0.18687786658604938,
+          "avg_precision": 0.9623778998778998,
+          "avg_f1_score": 0.9051158996946643,
+          "samples": 3
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 0.037170851194121245,
+          "avg_mace": 413.11224975585935,
+          "avg_time": 0.0763465404510498,
+          "avg_precision": 0.9453296703296703,
+          "avg_f1_score": 0.8224368813810956,
+          "samples": 3
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 0.35783126854774133,
+          "avg_mace": 364.5843998444514,
+          "avg_time": 0.1725202279102399,
+          "avg_precision": 0.6617275937246845,
+          "avg_f1_score": 0.5009508567210275,
+          "samples": 3
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 0.35783126854774133,
+          "avg_mace": 370.969989846137,
+          "avg_time": 0.11995849556497801,
+          "avg_precision": 0.821196036197691,
+          "avg_f1_score": 0.5831243824262843,
+          "samples": 3
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.3468290231915461,
+          "avg_mace": 399.9085669986785,
+          "avg_time": 0.005105847467190374,
+          "avg_precision": 0.9001960238099592,
+          "avg_f1_score": 0.6351333604107117,
+          "samples": 3
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 0.16344151867728107,
+          "avg_mace": 328.3316190810431,
+          "avg_time": 0.18379594030834379,
+          "avg_precision": 0.8105653473510616,
+          "avg_f1_score": 0.6698330679711884,
+          "samples": 3
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 0.16344151867728107,
+          "avg_mace": 380.12643768673854,
+          "avg_time": 0.1358393260410854,
+          "avg_precision": 0.9542291835148978,
+          "avg_f1_score": 0.7620719008869047,
+          "samples": 3
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 0.14331496223719126,
+          "avg_mace": 338.61597757172166,
+          "avg_time": 0.020778938343650417,
+          "avg_precision": 0.9671430324061903,
+          "avg_f1_score": 0.7709251148390479,
+          "samples": 3
+        }
+      },
+      "individual_colormap_performance": {
+        "preprocessed": {
+          "avg_success_rate_across_methods": 0.015384615384615385,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.07692307692307693,
+              "mean_mace": 375.06911214192706,
+              "mean_f1": 0.8136200716845878
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.07692307692307693,
+              "mean_mace": 375.06911214192706,
+              "mean_f1": 0.8136200716845878
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.07692307692307693,
+              "mean_mace": 375.06911214192706,
+              "mean_f1": 0.9629629629629629
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            }
+          }
+        },
+        "colormap_Greys": {
+          "avg_success_rate_across_methods": 0.24927536231884054,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.043478260869565216,
+              "mean_mace": 247.5248260498047,
+              "mean_f1": 0.7147147147147148
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.043478260869565216,
+              "mean_mace": 266.47731018066406,
+              "mean_f1": 0.9081632653061225
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.043478260869565216,
+              "mean_mace": 266.47174072265625,
+              "mean_f1": 0.852607709750567
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.17391304347826086,
+              "mean_mace": 290.7098083496094,
+              "mean_f1": 0.6166451600701435
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.17391304347826086,
+              "mean_mace": 293.4142017364502,
+              "mean_f1": 0.7905198729286896
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.15217391304347827,
+              "mean_mace": 265.6297934395926,
+              "mean_f1": 0.7229337949098812
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.13043478260869565,
+              "mean_mace": 313.7763926188151,
+              "mean_f1": 0.7736386569193942
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.13043478260869565,
+              "mean_mace": 318.8483123779297,
+              "mean_f1": 0.8768984660559953
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.10869565217391304,
+              "mean_mace": 385.1977966308594,
+              "mean_f1": 0.7115404294288578
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.4782608695652174,
+              "mean_mace": 412.5281822898171,
+              "mean_f1": 0.43841904826840994
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.4782608695652174,
+              "mean_mace": 400.66348682750356,
+              "mean_f1": 0.5965165312821036
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.45652173913043476,
+              "mean_mace": 419.5639880952381,
+              "mean_f1": 0.6136480873355326
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.45652173913043476,
+              "mean_mace": 369.35816664922805,
+              "mean_f1": 0.5581414901884818
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.45652173913043476,
+              "mean_mace": 382.97447495233445,
+              "mean_f1": 0.7006234412969271
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.41304347826086957,
+              "mean_mace": 367.5759670859889,
+              "mean_f1": 0.6839314978463206
+            }
+          }
+        },
+        "raw": {
+          "avg_success_rate_across_methods": 0.13859154929577464,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.14084507042253522,
+              "mean_mace": 323.4558023071289,
+              "mean_f1": 0.4889374809261908
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.14929577464788732,
+              "mean_mace": 328.87237779149467,
+              "mean_f1": 0.5086777308542492
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.15211267605633802,
+              "mean_mace": 321.7356677585178,
+              "mean_f1": 0.507990415228999
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0028169014084507044,
+              "mean_mace": 302.5334167480469,
+              "mean_f1": 0.5753424657534246
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0028169014084507044,
+              "mean_mace": 441.0267028808594,
+              "mean_f1": 0.9333333333333333
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0028169014084507044,
+              "mean_mace": 441.0267028808594,
+              "mean_f1": 0.9333333333333333
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.5183098591549296,
+              "mean_mace": 306.15590510161024,
+              "mean_f1": 0.2508134502100847
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.5183098591549296,
+              "mean_mace": 337.17737056898034,
+              "mean_f1": 0.3392365443121617
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.5070422535211268,
+              "mean_mace": 405.09260075887045,
+              "mean_f1": 0.32878903093363976
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.03380281690140845,
+              "mean_mace": 287.3050715128581,
+              "mean_f1": 0.7815246457538948
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.03380281690140845,
+              "mean_mace": 377.2784004211426,
+              "mean_f1": 0.8235203604768823
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.016901408450704224,
+              "mean_mace": 309.6559880574544,
+              "mean_f1": 0.8579187318317754
+            }
+          }
+        }
+      },
+      "best_method_by_success": "ORB_MLESAC",
+      "best_method_by_accuracy": "AKAZE_MLESAC",
+      "difficulty_score": 0.8655828243335898,
+      "avg_success_rate_across_methods": 0.1344171756664102,
+      "performance_gap": 0.3433385149245529
+    },
+    "perceptual_uniform": {
+      "datatypes": [
+        "colormap_plasma",
+        "colormap_viridis",
+        "colormap_magma",
+        "colormap_inferno",
+        "colormap_cividis"
+      ],
+      "count": 5,
+      "description": "Perceptually uniform colormaps designed for consistent visual interpretation",
+      "characteristics": "Smooth gradients, perceptually linear, colorblind-friendly",
+      "pros": "Beautiful visualization, perceptually uniform, scientifically sound for human interpretation",
+      "cons": "Smooths gradients too much, reduces sharp edges, diminishes feature distinctiveness",
+      "expected_performance": "Poor - perceptual uniformity eliminates sharp transitions needed for feature detection",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 0.008888888888888889,
+          "avg_mace": 334.22496032714844,
+          "avg_time": 0.14680755138397217,
+          "avg_precision": 0.7,
+          "avg_f1_score": 0.9369369369369369,
+          "samples": 5
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 0.0044444444444444444,
+          "avg_mace": 466.41241455078125,
+          "avg_time": 0.13454127311706543,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8,
+          "samples": 5
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 0.0044444444444444444,
+          "avg_mace": 466.41241455078125,
+          "avg_time": 0.012113809585571289,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8,
+          "samples": 5
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.025941043083900227,
+          "avg_mace": 406.4166030883789,
+          "avg_time": 0.14401030540466309,
+          "avg_precision": 0.85625,
+          "avg_f1_score": 0.836234410430839,
+          "samples": 5
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.025941043083900227,
+          "avg_mace": 409.9920349121094,
+          "avg_time": 0.11871567368507385,
+          "avg_precision": 0.85625,
+          "avg_f1_score": 0.836234410430839,
+          "samples": 5
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.025941043083900227,
+          "avg_mace": 399.48171615600586,
+          "avg_time": 0.004793494939804077,
+          "avg_precision": 0.95,
+          "avg_f1_score": 0.9007582199546487,
+          "samples": 5
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 0.017052154195011337,
+          "avg_mace": 294.6577949523926,
+          "avg_time": 0.19762790203094482,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.9430555555555555,
+          "samples": 5
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 0.017052154195011337,
+          "avg_mace": 294.6577949523926,
+          "avg_time": 0.1751021146774292,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.9430555555555555,
+          "samples": 5
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 0.012970521541950114,
+          "avg_mace": 281.36334228515625,
+          "avg_time": 0.0729060173034668,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8388888888888889,
+          "samples": 5
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 0.0726530612244898,
+          "avg_mace": 272.18473233117,
+          "avg_time": 0.18323572807841831,
+          "avg_precision": 0.6097616218204454,
+          "avg_f1_score": 0.5387575163428028,
+          "samples": 5
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 0.06412698412698412,
+          "avg_mace": 296.6212382997785,
+          "avg_time": 0.11990727058478765,
+          "avg_precision": 0.956539465101109,
+          "avg_f1_score": 0.718618752820043,
+          "samples": 5
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.06448979591836734,
+          "avg_mace": 335.19519382052954,
+          "avg_time": 0.0055030518107944066,
+          "avg_precision": 0.9582762557077626,
+          "avg_f1_score": 0.7134504883822785,
+          "samples": 5
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 0.12397959183673471,
+          "avg_mace": 305.6555069817437,
+          "avg_time": 0.19618159665001764,
+          "avg_precision": 0.8054727805631735,
+          "avg_f1_score": 0.7411915366346967,
+          "samples": 5
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 0.12397959183673471,
+          "avg_mace": 306.38625513712566,
+          "avg_time": 0.1491972777578566,
+          "avg_precision": 0.956871647590309,
+          "avg_f1_score": 0.8714441835521031,
+          "samples": 5
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 0.1150907029478458,
+          "avg_mace": 327.65685712374176,
+          "avg_time": 0.0211153835312933,
+          "avg_precision": 0.9697441142169562,
+          "avg_f1_score": 0.8492021806992595,
+          "samples": 5
+        }
+      },
+      "individual_colormap_performance": {
+        "colormap_plasma": {
+          "avg_success_rate_across_methods": 0.008333333333333333,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.041666666666666664,
+              "mean_mace": 273.48741149902344,
+              "mean_f1": 0.9166666666666666
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.041666666666666664,
+              "mean_mace": 273.48741149902344,
+              "mean_f1": 0.9166666666666666
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.041666666666666664,
+              "mean_mace": 273.48741149902344,
+              "mean_f1": 0.9166666666666666
+            }
+          }
+        },
+        "colormap_viridis": {
+          "avg_success_rate_across_methods": 0.0,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            }
+          }
+        },
+        "colormap_magma": {
+          "avg_success_rate_across_methods": 0.1348148148148148,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.044444444444444446,
+              "mean_mace": 334.22496032714844,
+              "mean_f1": 0.9369369369369369
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.022222222222222223,
+              "mean_mace": 466.41241455078125,
+              "mean_f1": 0.8
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.022222222222222223,
+              "mean_mace": 466.41241455078125,
+              "mean_f1": 0.8
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.08888888888888889,
+              "mean_mace": 247.74398040771484,
+              "mean_f1": 0.8476388888888889
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.08888888888888889,
+              "mean_mace": 247.74398040771484,
+              "mean_f1": 0.8476388888888889
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.08888888888888889,
+              "mean_mace": 247.74398040771484,
+              "mean_f1": 0.976686507936508
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.044444444444444446,
+              "mean_mace": 347.44532775878906,
+              "mean_f1": 0.8444444444444446
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.044444444444444446,
+              "mean_mace": 347.44532775878906,
+              "mean_f1": 0.8444444444444446
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.044444444444444446,
+              "mean_mace": 347.44532775878906,
+              "mean_f1": 0.8444444444444446
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.2,
+              "mean_mace": 293.0279557969835,
+              "mean_f1": 0.5030571209971264
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.17777777777777778,
+              "mean_mace": 331.2258052825928,
+              "mean_f1": 0.7768032590462497
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.2,
+              "mean_mace": 392.0746120876736,
+              "mean_f1": 0.7267412997240577
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.3333333333333333,
+              "mean_mace": 324.7739562988281,
+              "mean_f1": 0.7743213696510584
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.3333333333333333,
+              "mean_mace": 330.30730590820315,
+              "mean_f1": 0.8616290716944214
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.28888888888888886,
+              "mean_mace": 344.8105715238131,
+              "mean_f1": 0.789347507580335
+            }
+          }
+        },
+        "colormap_inferno": {
+          "avg_success_rate_across_methods": 0.09251700680272108,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.04081632653061224,
+              "mean_mace": 565.089225769043,
+              "mean_f1": 0.8248299319727892
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.04081632653061224,
+              "mean_mace": 572.2400894165039,
+              "mean_f1": 0.8248299319727892
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.04081632653061224,
+              "mean_mace": 551.2194519042969,
+              "mean_f1": 0.8248299319727892
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.04081632653061224,
+              "mean_mace": 241.8702621459961,
+              "mean_f1": 1.0416666666666665
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.04081632653061224,
+              "mean_mace": 241.8702621459961,
+              "mean_f1": 1.0416666666666665
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.02040816326530612,
+              "mean_mace": 215.28135681152344,
+              "mean_f1": 0.8333333333333333
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.16326530612244897,
+              "mean_mace": 251.34150886535645,
+              "mean_f1": 0.5744579116884792
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.14285714285714285,
+              "mean_mace": 262.0166713169643,
+              "mean_f1": 0.6604342465938363
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.12244897959183673,
+              "mean_mace": 278.31577555338544,
+              "mean_f1": 0.7001596770404993
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.24489795918367346,
+              "mean_mace": 318.7051531473796,
+              "mean_f1": 0.5325865735863649
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.24489795918367346,
+              "mean_mace": 315.3640480041504,
+              "mean_f1": 0.8360368122952212
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.24489795918367346,
+              "mean_mace": 364.6725883483887,
+              "mean_f1": 0.8415923678507767
+            }
+          }
+        },
+        "colormap_cividis": {
+          "avg_success_rate_across_methods": 0.0,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.0,
+              "mean_mace": null,
+              "mean_f1": null
+            }
+          }
+        }
+      },
+      "best_method_by_success": "SIFT_MLESAC",
+      "best_method_by_accuracy": "ORB_MLESAC",
+      "difficulty_score": 0.9528669690098261,
+      "avg_success_rate_across_methods": 0.04713303099017385,
+      "performance_gap": 0.11953514739229026
+    },
+    "cyclic": {
+      "datatypes": [
+        "colormap_twilight_shifted",
+        "colormap_twilight",
+        "colormap_hsv"
+      ],
+      "count": 3,
+      "description": "Cyclic colormaps for periodic data or angular measurements",
+      "characteristics": "Seamless wraparound, suitable for periodic phenomena",
+      "pros": "HSV provides maximum color variation, twilight has perceptual balance",
+      "cons": "May create artificial boundaries, HSV has luminance variations",
+      "expected_performance": "Variable - HSV better due to color diversity, twilight may smooth features",
+      "methods": {
+        "AKAZE_MLESAC": {
+          "avg_success_rate": 0.3258832035229551,
+          "avg_mace": 549.8536676800439,
+          "avg_time": 0.21564225393628314,
+          "avg_precision": 0.6558616114296764,
+          "avg_f1_score": 0.5058180842347478,
+          "samples": 3
+        },
+        "AKAZE_PROSAC": {
+          "avg_success_rate": 0.3335732360577081,
+          "avg_mace": 557.3139289256995,
+          "avg_time": 0.13025579888234576,
+          "avg_precision": 0.89224441566463,
+          "avg_f1_score": 0.6692415955008064,
+          "samples": 3
+        },
+        "AKAZE_RANSAC": {
+          "avg_success_rate": 0.3115120444312991,
+          "avg_mace": 586.8835351166903,
+          "avg_time": 0.013548145912311696,
+          "avg_precision": 0.8832202332773994,
+          "avg_f1_score": 0.6392929435228569,
+          "samples": 3
+        },
+        "BRISK_MLESAC": {
+          "avg_success_rate": 0.3285681422327385,
+          "avg_mace": 313.1562857592548,
+          "avg_time": 0.2581866586649859,
+          "avg_precision": 0.6566221940944958,
+          "avg_f1_score": 0.36708178411300424,
+          "samples": 3
+        },
+        "BRISK_PROSAC": {
+          "avg_success_rate": 0.32796345591376647,
+          "avg_mace": 325.43719422189815,
+          "avg_time": 0.13110771670676113,
+          "avg_precision": 0.8988422102437469,
+          "avg_f1_score": 0.5035119105629229,
+          "samples": 3
+        },
+        "BRISK_RANSAC": {
+          "avg_success_rate": 0.31496270005586774,
+          "avg_mace": 373.6551203409831,
+          "avg_time": 0.008622561891873678,
+          "avg_precision": 0.8695319890057007,
+          "avg_f1_score": 0.4978755829264819,
+          "samples": 3
+        },
+        "KAZE_MLESAC": {
+          "avg_success_rate": 0.4990666798120214,
+          "avg_mace": 538.4175073734926,
+          "avg_time": 0.253732891275013,
+          "avg_precision": 0.7660089103019088,
+          "avg_f1_score": 0.5226252755170097,
+          "samples": 3
+        },
+        "KAZE_PROSAC": {
+          "avg_success_rate": 0.4990666798120214,
+          "avg_mace": 538.7641711761238,
+          "avg_time": 0.19148816790553772,
+          "avg_precision": 0.9245830932687187,
+          "avg_f1_score": 0.6030177772192552,
+          "samples": 3
+        },
+        "KAZE_RANSAC": {
+          "avg_success_rate": 0.4844128955930198,
+          "avg_mace": 545.4046274397109,
+          "avg_time": 0.07644822442973101,
+          "avg_precision": 0.9261491510892131,
+          "avg_f1_score": 0.6050362418212333,
+          "samples": 3
+        },
+        "ORB_MLESAC": {
+          "avg_success_rate": 0.8961451247165533,
+          "avg_mace": 502.0492476847773,
+          "avg_time": 0.2941924723198856,
+          "avg_precision": 0.4281836153218482,
+          "avg_f1_score": 0.1760019769541636,
+          "samples": 3
+        },
+        "ORB_PROSAC": {
+          "avg_success_rate": 0.910959939531368,
+          "avg_mace": 543.2510916345145,
+          "avg_time": 0.1306581083442803,
+          "avg_precision": 0.8262432685339113,
+          "avg_f1_score": 0.27923332941507273,
+          "samples": 3
+        },
+        "ORB_RANSAC": {
+          "avg_success_rate": 0.8831443688586545,
+          "avg_mace": 517.4226916648269,
+          "avg_time": 0.0076231539713835115,
+          "avg_precision": 0.8200474480444714,
+          "avg_f1_score": 0.2805268984113464,
+          "samples": 3
+        },
+        "SIFT_MLESAC": {
+          "avg_success_rate": 0.9387755102040817,
+          "avg_mace": 517.4912590659567,
+          "avg_time": 0.8142328402462405,
+          "avg_precision": 0.8245568834156066,
+          "avg_f1_score": 0.516782012400364,
+          "samples": 3
+        },
+        "SIFT_PROSAC": {
+          "avg_success_rate": 0.9387755102040817,
+          "avg_mace": 519.3530947846491,
+          "avg_time": 0.1883170600290652,
+          "avg_precision": 0.9728050535387239,
+          "avg_f1_score": 0.5929066724117328,
+          "samples": 3
+        },
+        "SIFT_RANSAC": {
+          "avg_success_rate": 0.945578231292517,
+          "avg_mace": 530.5950454126397,
+          "avg_time": 0.034648159287121096,
+          "avg_precision": 0.9700038140811124,
+          "avg_f1_score": 0.5880408767495893,
+          "samples": 3
+        }
+      },
+      "individual_colormap_performance": {
+        "colormap_twilight_shifted": {
+          "avg_success_rate_across_methods": 0.5896296296296296,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.15555555555555556,
+              "mean_mace": 306.42486790248324,
+              "mean_f1": 0.4830546748337792
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.15555555555555556,
+              "mean_mace": 276.51637050083707,
+              "mean_f1": 0.680097054527368
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.1111111111111111,
+              "mean_mace": 344.4449096679688,
+              "mean_f1": 0.5569548129329253
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.4444444444444444,
+              "mean_mace": 302.18078765869143,
+              "mean_f1": 0.34679663533737987
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.4222222222222222,
+              "mean_mace": 323.24416471782484,
+              "mean_f1": 0.4816466565026024
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.4444444444444444,
+              "mean_mace": 399.0470375061035,
+              "mean_f1": 0.46033592017783376
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.4222222222222222,
+              "mean_mace": 308.0762594122636,
+              "mean_f1": 0.51358699208628
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.4222222222222222,
+              "mean_mace": 309.7725934480366,
+              "mean_f1": 0.6117958996399873
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.4,
+              "mean_mace": 312.2548022800022,
+              "mean_f1": 0.6050101979621753
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.9333333333333333,
+              "mean_mace": 290.98088001069567,
+              "mean_f1": 0.13056130980403885
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.9777777777777777,
+              "mean_mace": 298.19370685924184,
+              "mean_f1": 0.2299365339764439
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.9555555555555556,
+              "mean_mace": 323.77643993288973,
+              "mean_f1": 0.23353136579463196
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 314.64640842013887,
+              "mean_f1": 0.5194638058379919
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 319.4088948567708,
+              "mean_f1": 0.5678409741052595
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 319.4072018093533,
+              "mean_f1": 0.5677022200188782
+            }
+          }
+        },
+        "colormap_twilight": {
+          "avg_success_rate_across_methods": 0.42993197278911566,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.061224489795918366,
+              "mean_mace": 309.88047281901044,
+              "mean_f1": 0.775946275946276
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.04081632653061224,
+              "mean_mace": 382.5991973876953,
+              "mean_f1": 0.8333333333333333
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.04081632653061224,
+              "mean_mace": 386.1278839111328,
+              "mean_f1": 0.8782051282051282
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.3673469387755102,
+              "mean_mace": 384.3885964287652,
+              "mean_f1": 0.49404816718450584
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.3877551020408163,
+              "mean_mace": 385.3930977269223,
+              "mean_f1": 0.6005329768489985
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.32653061224489793,
+              "mean_mace": 458.7837734222412,
+              "mean_f1": 0.6009677168649695
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.1836734693877551,
+              "mean_mace": 369.9558461507161,
+              "mean_f1": 0.6040437149638923
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.1836734693877551,
+              "mean_mace": 369.52637566460504,
+              "mean_f1": 0.666815289205228
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.1836734693877551,
+              "mean_mace": 369.06233893500433,
+              "mean_f1": 0.6886022669376249
+            },
+            "ORB_MLESAC": {
+              "success_rate": 0.7551020408163265,
+              "mean_mace": 339.40431667018584,
+              "mean_f1": 0.24244843253562615
+            },
+            "ORB_PROSAC": {
+              "success_rate": 0.7551020408163265,
+              "mean_mace": 357.77068102037583,
+              "mean_f1": 0.3869648384551582
+            },
+            "ORB_RANSAC": {
+              "success_rate": 0.6938775510204082,
+              "mean_mace": 364.4821149040671,
+              "mean_f1": 0.38887743851049683
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 0.8163265306122449,
+              "mean_mace": 359.400915145874,
+              "mean_f1": 0.47861148450365787
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 0.8163265306122449,
+              "mean_mace": 361.1390090942383,
+              "mean_f1": 0.6182794654098137
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 0.8367346938775511,
+              "mean_mace": 394.86525968225993,
+              "mean_f1": 0.6042836116230353
+            }
+          }
+        },
+        "colormap_hsv": {
+          "avg_success_rate_across_methods": 0.7681159420289856,
+          "by_method": {
+            "AKAZE_MLESAC": {
+              "success_rate": 0.7608695652173914,
+              "mean_mace": 1033.2556623186383,
+              "mean_f1": 0.2584533019241887
+            },
+            "AKAZE_PROSAC": {
+              "success_rate": 0.8043478260869565,
+              "mean_mace": 1012.8262188885662,
+              "mean_f1": 0.49429439864171804
+            },
+            "AKAZE_RANSAC": {
+              "success_rate": 0.782608695652174,
+              "mean_mace": 1030.077811770969,
+              "mean_f1": 0.4827188894305174
+            },
+            "BRISK_MLESAC": {
+              "success_rate": 0.17391304347826086,
+              "mean_mace": 252.89947319030762,
+              "mean_f1": 0.260400549817127
+            },
+            "BRISK_PROSAC": {
+              "success_rate": 0.17391304347826086,
+              "mean_mace": 267.67432022094727,
+              "mean_f1": 0.4283560983371676
+            },
+            "BRISK_RANSAC": {
+              "success_rate": 0.17391304347826086,
+              "mean_mace": 263.1345500946045,
+              "mean_f1": 0.4323231117366424
+            },
+            "KAZE_MLESAC": {
+              "success_rate": 0.8913043478260869,
+              "mean_mace": 937.2204165574981,
+              "mean_f1": 0.4502451195008566
+            },
+            "KAZE_PROSAC": {
+              "success_rate": 0.8913043478260869,
+              "mean_mace": 936.9935444157298,
+              "mean_f1": 0.5304421428125506
+            },
+            "KAZE_RANSAC": {
+              "success_rate": 0.8695652173913043,
+              "mean_mace": 954.896741104126,
+              "mean_f1": 0.5214962605638995
+            },
+            "ORB_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 875.7625463734503,
+              "mean_f1": 0.15499618852282582
+            },
+            "ORB_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 973.7888870239258,
+              "mean_f1": 0.220798615813616
+            },
+            "ORB_RANSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 864.0095201575238,
+              "mean_f1": 0.21917189092891043
+            },
+            "SIFT_MLESAC": {
+              "success_rate": 1.0,
+              "mean_mace": 878.4264536318572,
+              "mean_f1": 0.5522707468594423
+            },
+            "SIFT_PROSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 877.5113804029381,
+              "mean_f1": 0.5925995777201255
+            },
+            "SIFT_RANSAC": {
+              "success_rate": 1.0,
+              "mean_mace": 877.5126747463061,
+              "mean_f1": 0.5921367986068543
+            }
+          }
+        }
+      },
+      "best_method_by_success": "SIFT_RANSAC",
+      "best_method_by_accuracy": "BRISK_MLESAC",
+      "difficulty_score": 0.4041074851840898,
+      "avg_success_rate_across_methods": 0.5958925148159102,
+      "performance_gap": 0.6340661868612179
+    }
+  },
+  "overall_insights": {
+    "easiest_category": "miscellaneous",
+    "hardest_category": "perceptual_uniform",
+    "categories_ranked_by_difficulty": [
+      {
+        "category": "perceptual_uniform",
+        "difficulty_score": 0.9528669690098261,
+        "avg_success_rate": 0.04713303099017385,
+        "performance_gap": 0.11953514739229026,
+        "description": "Perceptually uniform colormaps designed for consistent visual interpretation"
+      },
+      {
+        "category": "sequential_single_hue",
+        "difficulty_score": 0.89695436324391,
+        "avg_success_rate": 0.10304563675609005,
+        "performance_gap": 0.25352451433857537,
+        "description": "Single-hue sequential colormaps with monotonic luminance"
+      },
+      {
+        "category": "grayscale",
+        "difficulty_score": 0.8655828243335898,
+        "avg_success_rate": 0.1344171756664102,
+        "performance_gap": 0.3433385149245529,
+        "description": "Single-channel intensity mapping preserving original thermal data"
+      },
+      {
+        "category": "sequential_multi_hue",
+        "difficulty_score": 0.6315982548029287,
+        "avg_success_rate": 0.36840174519707125,
+        "performance_gap": 0.5559792103059842,
+        "description": "Multi-hue sequential colormaps spanning color spectrum"
+      },
+      {
+        "category": "diverging",
+        "difficulty_score": 0.517711156049882,
+        "avg_success_rate": 0.48228884395011795,
+        "performance_gap": 0.5568385574654533,
+        "description": "Diverging colormaps with central neutral point and contrasting extremes"
+      },
+      {
+        "category": "qualitative",
+        "difficulty_score": 0.4841062291264516,
+        "avg_success_rate": 0.5158937708735484,
+        "performance_gap": 0.5601215644820297,
+        "description": "Qualitative colormaps for categorical/discrete data"
+      },
+      {
+        "category": "cyclic",
+        "difficulty_score": 0.4041074851840898,
+        "avg_success_rate": 0.5958925148159102,
+        "performance_gap": 0.6340661868612179,
+        "description": "Cyclic colormaps for periodic data or angular measurements"
+      },
+      {
+        "category": "miscellaneous",
+        "difficulty_score": 0.18253968253968245,
+        "avg_success_rate": 0.8174603174603176,
+        "performance_gap": 0.9047619047619048,
+        "description": "Special-purpose colormaps with unique characteristics"
+      }
+    ],
+    "best_colormap": {
+      "name": "colormap_Set1",
+      "avg_success_rate": 0.8260869565217391,
+      "category": "qualitative"
+    },
+    "worst_colormap": {
+      "name": "colormap_viridis",
+      "avg_success_rate": 0.0,
+      "category": "perceptual_uniform"
+    },
+    "performance_range": {
+      "range": 0.8260869565217391,
+      "interpretation": "Performance varies by 82.6% between best and worst colormaps"
+    },
+    "top_5_colormaps": [
+      {
+        "name": "colormap_Set1",
+        "avg_success_rate": 0.8260869565217391,
+        "category": "qualitative"
+      },
+      {
+        "name": "colormap_flag",
+        "avg_success_rate": 0.8174603174603176,
+        "category": "miscellaneous"
+      },
+      {
+        "name": "colormap_hsv",
+        "avg_success_rate": 0.7681159420289856,
+        "category": "cyclic"
+      },
+      {
+        "name": "colormap_seismic",
+        "avg_success_rate": 0.7318840579710143,
+        "category": "diverging"
+      },
+      {
+        "name": "colormap_tab10",
+        "avg_success_rate": 0.6768115942028986,
+        "category": "qualitative"
+      }
+    ],
+    "bottom_5_colormaps": [
+      {
+        "name": "preprocessed",
+        "avg_success_rate": 0.015384615384615385,
+        "category": "grayscale"
+      },
+      {
+        "name": "colormap_plasma",
+        "avg_success_rate": 0.008333333333333333,
+        "category": "perceptual_uniform"
+      },
+      {
+        "name": "colormap_cool",
+        "avg_success_rate": 0.0031746031746031746,
+        "category": "sequential_multi_hue"
+      },
+      {
+        "name": "colormap_viridis",
+        "avg_success_rate": 0.0,
+        "category": "perceptual_uniform"
+      },
+      {
+        "name": "colormap_cividis",
+        "avg_success_rate": 0.0,
+        "category": "perceptual_uniform"
+      }
+    ]
+  },
+  "method_performance_by_category": {
+    "AKAZE_MLESAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "sequential_single_hue",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.25580665093809685,
+          "avg_mace": 305.20117945548816,
+          "avg_time": 0.17594222877270135,
+          "avg_precision": 0.6920282386700123,
+          "avg_f1_score": 0.5247736810780805,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.42934782608695654,
+          "avg_mace": 386.03502166041073,
+          "avg_time": 0.3132638836152458,
+          "avg_precision": 0.4995832159302297,
+          "avg_f1_score": 0.27659612308347203,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.11131047690465726,
+          "avg_mace": 289.0716647123679,
+          "avg_time": 0.19416712568356442,
+          "avg_precision": 0.7841653500650754,
+          "avg_f1_score": 0.6782519411825985,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.0,
+          "avg_mace": null,
+          "avg_time": null,
+          "avg_precision": null,
+          "avg_f1_score": null,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 329.9107102893648,
+          "avg_time": 0.7192162332080659,
+          "avg_precision": 0.8343078678428587,
+          "avg_f1_score": 0.34312312270125817,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.014492753623188406,
+          "avg_mace": 247.5248260498047,
+          "avg_time": 0.13826942443847656,
+          "avg_precision": 0.7,
+          "avg_f1_score": 0.7147147147147148,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.008888888888888889,
+          "avg_mace": 334.22496032714844,
+          "avg_time": 0.14680755138397217,
+          "avg_precision": 0.7,
+          "avg_f1_score": 0.9369369369369369,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.3258832035229551,
+          "avg_mace": 549.8536676800439,
+          "avg_time": 0.21564225393628314,
+          "avg_precision": 0.6558616114296764,
+          "avg_f1_score": 0.5058180842347478,
+          "samples": 3
+        }
+      }
+    },
+    "AKAZE_PROSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.2663622064936524,
+          "avg_mace": 367.77514894925633,
+          "avg_time": 0.12643382381170223,
+          "avg_precision": 0.8416979788207409,
+          "avg_f1_score": 0.5993610195436231,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.4347826086956522,
+          "avg_mace": 399.2632899209436,
+          "avg_time": 0.14388927403371488,
+          "avg_precision": 0.8453827576860995,
+          "avg_f1_score": 0.429061265829464,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.09414822272088061,
+          "avg_mace": 273.8640213706277,
+          "avg_time": 0.13018603975122625,
+          "avg_precision": 0.9108005020189893,
+          "avg_f1_score": 0.7761155643452715,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.01,
+          "avg_mace": 331.1376647949219,
+          "avg_time": 0.126489520072937,
+          "avg_precision": 0.875,
+          "avg_f1_score": 1.0454545454545454,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 329.7597278413318,
+          "avg_time": 0.15995275974273682,
+          "avg_precision": 0.9132519497343212,
+          "avg_f1_score": 0.38988198758507325,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.014492753623188406,
+          "avg_mace": 266.47731018066406,
+          "avg_time": 0.13975834846496582,
+          "avg_precision": 0.9,
+          "avg_f1_score": 0.9081632653061225,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.0044444444444444444,
+          "avg_mace": 466.41241455078125,
+          "avg_time": 0.13454127311706543,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.3335732360577081,
+          "avg_mace": 557.3139289256995,
+          "avg_time": 0.13025579888234576,
+          "avg_precision": 0.89224441566463,
+          "avg_f1_score": 0.6692415955008064,
+          "samples": 3
+        }
+      }
+    },
+    "AKAZE_RANSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.2564829794405123,
+          "avg_mace": 301.4981464084826,
+          "avg_time": 0.013947378125107079,
+          "avg_precision": 0.8088400872726993,
+          "avg_f1_score": 0.64468030311176,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.4347826086956522,
+          "avg_mace": 400.83863917841694,
+          "avg_time": 0.01232374576110648,
+          "avg_precision": 0.8379468827125574,
+          "avg_f1_score": 0.42982628454950833,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.09357869258324417,
+          "avg_mace": 291.0856849034627,
+          "avg_time": 0.012167145808537802,
+          "avg_precision": 0.9219742402543154,
+          "avg_f1_score": 0.7557496708147158,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.005,
+          "avg_mace": 285.7803649902344,
+          "avg_time": 0.01656055450439453,
+          "avg_precision": 1.0,
+          "avg_f1_score": 1.0,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 329.98182678222656,
+          "avg_time": 0.018857586951482864,
+          "avg_precision": 0.9116213592050951,
+          "avg_f1_score": 0.38982204141525123,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.014492753623188406,
+          "avg_mace": 266.47174072265625,
+          "avg_time": 0.010745406150817871,
+          "avg_precision": 0.9,
+          "avg_f1_score": 0.852607709750567,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.0044444444444444444,
+          "avg_mace": 466.41241455078125,
+          "avg_time": 0.012113809585571289,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.3115120444312991,
+          "avg_mace": 586.8835351166903,
+          "avg_time": 0.013548145912311696,
+          "avg_precision": 0.8832202332773994,
+          "avg_f1_score": 0.6392929435228569,
+          "samples": 3
+        }
+      }
+    },
+    "BRISK_MLESAC": {
+      "best_category": "cyclic",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.2974098415908325,
+          "avg_mace": 378.57818835552473,
+          "avg_time": 0.2701938735437871,
+          "avg_precision": 0.7582713185708334,
+          "avg_f1_score": 0.48112502702403914,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.19715736740509238,
+          "avg_mace": 472.7112899294086,
+          "avg_time": 0.9703605204236273,
+          "avg_precision": 0.7018970667824108,
+          "avg_f1_score": 0.2915275645578235,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.3219458770750948,
+          "avg_mace": 399.56044827731745,
+          "avg_time": 0.20199458297982228,
+          "avg_precision": 0.7475339657786899,
+          "avg_f1_score": 0.5068719794437977,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.03563829787234043,
+          "avg_mace": 539.7328262329102,
+          "avg_time": 0.15447622537612915,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8407925407925407,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 0.09523809523809523,
+          "avg_mace": 257.65100860595703,
+          "avg_time": 2.7997742295265198,
+          "avg_precision": 0.9832858067651987,
+          "avg_f1_score": 0.355756205220954,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.10491937130026537,
+          "avg_mace": 307.08280532836915,
+          "avg_time": 0.1739628106355667,
+          "avg_precision": 0.8185155614313222,
+          "avg_f1_score": 0.5527913204981671,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.025941043083900227,
+          "avg_mace": 406.4166030883789,
+          "avg_time": 0.14401030540466309,
+          "avg_precision": 0.85625,
+          "avg_f1_score": 0.836234410430839,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.3285681422327385,
+          "avg_mace": 313.1562857592548,
+          "avg_time": 0.2581866586649859,
+          "avg_precision": 0.6566221940944958,
+          "avg_f1_score": 0.36708178411300424,
+          "samples": 3
+        }
+      }
+    },
+    "BRISK_PROSAC": {
+      "best_category": "cyclic",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.2760403325469048,
+          "avg_mace": 375.93772899889746,
+          "avg_time": 0.13743211936185704,
+          "avg_precision": 0.9180591393884628,
+          "avg_f1_score": 0.5666725272860061,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.19715736740509238,
+          "avg_mace": 485.6915719649371,
+          "avg_time": 0.16951709576681548,
+          "avg_precision": 0.9112227646346627,
+          "avg_f1_score": 0.3817185113956822,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.3091314489782747,
+          "avg_mace": 411.4225578720951,
+          "avg_time": 0.12912307389370806,
+          "avg_precision": 0.8802127636422534,
+          "avg_f1_score": 0.5895719052913152,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.03563829787234043,
+          "avg_mace": 551.6271102905273,
+          "avg_time": 0.11777124404907227,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8165501165501166,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 0.09523809523809523,
+          "avg_mace": 257.71398162841797,
+          "avg_time": 0.28501224517822266,
+          "avg_precision": 0.982974600068374,
+          "avg_f1_score": 0.35686464562063874,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.10773627270871607,
+          "avg_mace": 311.14328976397246,
+          "avg_time": 0.12054363202373936,
+          "avg_precision": 0.9459085041084208,
+          "avg_f1_score": 0.6495988018914693,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.025941043083900227,
+          "avg_mace": 409.9920349121094,
+          "avg_time": 0.11871567368507385,
+          "avg_precision": 0.85625,
+          "avg_f1_score": 0.836234410430839,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.32796345591376647,
+          "avg_mace": 325.43719422189815,
+          "avg_time": 0.13110771670676113,
+          "avg_precision": 0.8988422102437469,
+          "avg_f1_score": 0.5035119105629229,
+          "samples": 3
+        }
+      }
+    },
+    "BRISK_RANSAC": {
+      "best_category": "cyclic",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.27629873047972137,
+          "avg_mace": 383.4595316333931,
+          "avg_time": 0.009670348578140515,
+          "avg_precision": 0.9396208134459636,
+          "avg_f1_score": 0.5592943248490609,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.19715736740509238,
+          "avg_mace": 486.214815457662,
+          "avg_time": 0.03188246400917277,
+          "avg_precision": 0.9068496490798931,
+          "avg_f1_score": 0.38160907222573387,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.2917955082986231,
+          "avg_mace": 389.8860218502226,
+          "avg_time": 0.007370668649673463,
+          "avg_precision": 0.8920033816978347,
+          "avg_f1_score": 0.6222704634014377,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.030319148936170215,
+          "avg_mace": 293.4831207275391,
+          "avg_time": 0.0033249616622924804,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8963480963480963,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 0.09523809523809523,
+          "avg_mace": 257.70996856689453,
+          "avg_time": 0.11686098575592041,
+          "avg_precision": 0.984527185717569,
+          "avg_f1_score": 0.3574179026735185,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.1014288630332721,
+          "avg_mace": 293.6827305990552,
+          "avg_time": 0.005400226860450058,
+          "avg_precision": 0.9554394182098254,
+          "avg_f1_score": 0.6154621050694401,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.025941043083900227,
+          "avg_mace": 399.48171615600586,
+          "avg_time": 0.004793494939804077,
+          "avg_precision": 0.95,
+          "avg_f1_score": 0.9007582199546487,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.31496270005586774,
+          "avg_mace": 373.6551203409831,
+          "avg_time": 0.008622561891873678,
+          "avg_precision": 0.8695319890057007,
+          "avg_f1_score": 0.4978755829264819,
+          "samples": 3
+        }
+      }
+    },
+    "KAZE_MLESAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.3465818447365464,
+          "avg_mace": 306.07519148802146,
+          "avg_time": 0.2486846414896158,
+          "avg_precision": 0.7785367279217099,
+          "avg_f1_score": 0.6023352322289524,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.45108695652173914,
+          "avg_mace": 396.9801927131519,
+          "avg_time": 0.5061472744969597,
+          "avg_precision": 0.7909695136202535,
+          "avg_f1_score": 0.4096018449637148,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.21467541128707576,
+          "avg_mace": 297.15788196737753,
+          "avg_time": 0.24236443400025723,
+          "avg_precision": 0.6228568231385228,
+          "avg_f1_score": 0.5066204721514371,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.020753931544865864,
+          "avg_mace": 4311.381896972656,
+          "avg_time": 0.2062763770421346,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8284493284493285,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 326.48982711065383,
+          "avg_time": 1.3630378927503313,
+          "avg_precision": 0.8110863733694106,
+          "avg_f1_score": 0.3793982590127576,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.04441722800571545,
+          "avg_mace": 308.154904683431,
+          "avg_time": 0.22429074843724567,
+          "avg_precision": 0.603021978021978,
+          "avg_f1_score": 0.6744905613364094,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.017052154195011337,
+          "avg_mace": 294.6577949523926,
+          "avg_time": 0.19762790203094482,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.9430555555555555,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.4990666798120214,
+          "avg_mace": 538.4175073734926,
+          "avg_time": 0.253732891275013,
+          "avg_precision": 0.7660089103019088,
+          "avg_f1_score": 0.5226252755170097,
+          "samples": 3
+        }
+      }
+    },
+    "KAZE_PROSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.3520166273452421,
+          "avg_mace": 335.69319772720337,
+          "avg_time": 0.1861822858452797,
+          "avg_precision": 0.9324155799294036,
+          "avg_f1_score": 0.6783862149163845,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.45108695652173914,
+          "avg_mace": 403.6884823849326,
+          "avg_time": 0.2080404383397242,
+          "avg_precision": 0.9552267558491968,
+          "avg_f1_score": 0.4698744928567967,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.21467541128707576,
+          "avg_mace": 308.0015171014187,
+          "avg_time": 0.1881881712120531,
+          "avg_precision": 0.9212404740992421,
+          "avg_f1_score": 0.6781729028389996,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.020753931544865864,
+          "avg_mace": 4311.381896972656,
+          "avg_time": 0.1870185931523641,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8284493284493285,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.54968988327755,
+          "avg_time": 0.24609326180957614,
+          "avg_precision": 0.9356125030431421,
+          "avg_f1_score": 0.4283474933609587,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.04441722800571545,
+          "avg_mace": 379.93750762939453,
+          "avg_time": 0.18687786658604938,
+          "avg_precision": 0.9623778998778998,
+          "avg_f1_score": 0.9051158996946643,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.017052154195011337,
+          "avg_mace": 294.6577949523926,
+          "avg_time": 0.1751021146774292,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.9430555555555555,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.4990666798120214,
+          "avg_mace": 538.7641711761238,
+          "avg_time": 0.19148816790553772,
+          "avg_precision": 0.9245830932687187,
+          "avg_f1_score": 0.6030177772192552,
+          "samples": 3
+        }
+      }
+    },
+    "KAZE_RANSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.3365818447365465,
+          "avg_mace": 311.08508228888877,
+          "avg_time": 0.07897404906077263,
+          "avg_precision": 0.924235476090449,
+          "avg_f1_score": 0.689695480730565,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.45108695652173914,
+          "avg_mace": 404.88135045815625,
+          "avg_time": 0.08294321856303521,
+          "avg_precision": 0.9556039834923862,
+          "avg_f1_score": 0.4696692574151615,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.19733947060742416,
+          "avg_mace": 305.298123550415,
+          "avg_time": 0.07460029820601145,
+          "avg_precision": 0.9011798770007651,
+          "avg_f1_score": 0.6578158224153002,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.020753931544865864,
+          "avg_mace": 4311.381896972656,
+          "avg_time": 0.08920915921529134,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8284493284493285,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.63897087460475,
+          "avg_time": 0.10858070850372314,
+          "avg_precision": 0.93746814553836,
+          "avg_f1_score": 0.42817703720403716,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.037170851194121245,
+          "avg_mace": 413.11224975585935,
+          "avg_time": 0.0763465404510498,
+          "avg_precision": 0.9453296703296703,
+          "avg_f1_score": 0.8224368813810956,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.012970521541950114,
+          "avg_mace": 281.36334228515625,
+          "avg_time": 0.0729060173034668,
+          "avg_precision": 1.0,
+          "avg_f1_score": 0.8388888888888889,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.4844128955930198,
+          "avg_mace": 545.4046274397109,
+          "avg_time": 0.07644822442973101,
+          "avg_precision": 0.9261491510892131,
+          "avg_f1_score": 0.6050362418212333,
+          "samples": 3
+        }
+      }
+    },
+    "ORB_MLESAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.7236962139085497,
+          "avg_mace": 355.0127453498155,
+          "avg_time": 0.27553226248596524,
+          "avg_precision": 0.5252694681295285,
+          "avg_f1_score": 0.20572309065649455,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.740974584061035,
+          "avg_mace": 337.25077728664917,
+          "avg_time": 0.34458140382677455,
+          "avg_precision": 0.3144712101500513,
+          "avg_f1_score": 0.13937779748710616,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.5780116379318545,
+          "avg_mace": 324.2582606352688,
+          "avg_time": 0.23371181781787126,
+          "avg_precision": 0.541578067766555,
+          "avg_f1_score": 0.3727830057905266,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.20701665124884366,
+          "avg_mace": 397.58115956938116,
+          "avg_time": 0.17045787042611604,
+          "avg_precision": 0.6593382888774861,
+          "avg_f1_score": 0.5161604838958583,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 295.07183329264325,
+          "avg_time": 0.3086168822788057,
+          "avg_precision": 0.3757635450812969,
+          "avg_f1_score": 0.0924127690980311,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.35783126854774133,
+          "avg_mace": 364.5843998444514,
+          "avg_time": 0.1725202279102399,
+          "avg_precision": 0.6617275937246845,
+          "avg_f1_score": 0.5009508567210275,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.0726530612244898,
+          "avg_mace": 272.18473233117,
+          "avg_time": 0.18323572807841831,
+          "avg_precision": 0.6097616218204454,
+          "avg_f1_score": 0.5387575163428028,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.8961451247165533,
+          "avg_mace": 502.0492476847773,
+          "avg_time": 0.2941924723198856,
+          "avg_precision": 0.4281836153218482,
+          "avg_f1_score": 0.1760019769541636,
+          "samples": 3
+        }
+      }
+    },
+    "ORB_PROSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.7288169868554095,
+          "avg_mace": 326.4226261872724,
+          "avg_time": 0.12919503269905863,
+          "avg_precision": 0.8291962441603677,
+          "avg_f1_score": 0.2919428616056784,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.7355398014523393,
+          "avg_mace": 347.9024300644994,
+          "avg_time": 0.13118567897794975,
+          "avg_precision": 0.7921098409996565,
+          "avg_f1_score": 0.2637513284193472,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.5903490428290585,
+          "avg_mace": 356.6416137631314,
+          "avg_time": 0.12431987846942136,
+          "avg_precision": 0.8431016366064992,
+          "avg_f1_score": 0.48445312666209495,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.22320536540240515,
+          "avg_mace": 299.67460427651037,
+          "avg_time": 0.11909488313473189,
+          "avg_precision": 0.9797976970191644,
+          "avg_f1_score": 0.6284725470340979,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 471.24344053722564,
+          "avg_time": 0.13346018677666074,
+          "avg_precision": 0.7338002681431463,
+          "avg_f1_score": 0.15522228367123592,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.35783126854774133,
+          "avg_mace": 370.969989846137,
+          "avg_time": 0.11995849556497801,
+          "avg_precision": 0.821196036197691,
+          "avg_f1_score": 0.5831243824262843,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.06412698412698412,
+          "avg_mace": 296.6212382997785,
+          "avg_time": 0.11990727058478765,
+          "avg_precision": 0.956539465101109,
+          "avg_f1_score": 0.718618752820043,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.910959939531368,
+          "avg_mace": 543.2510916345145,
+          "avg_time": 0.1306581083442803,
+          "avg_precision": 0.8262432685339113,
+          "avg_f1_score": 0.27923332941507273,
+          "samples": 3
+        }
+      }
+    },
+    "ORB_RANSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.7024862375014044,
+          "avg_mace": 332.90399830438645,
+          "avg_time": 0.0077474706770196584,
+          "avg_precision": 0.8233282883053006,
+          "avg_f1_score": 0.2865301206460712,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.7464093666697307,
+          "avg_mace": 362.94266119807986,
+          "avg_time": 0.007316377711674524,
+          "avg_precision": 0.7800898062206452,
+          "avg_f1_score": 0.26161442048224937,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.5729835397360545,
+          "avg_mace": 365.2829702101029,
+          "avg_time": 0.006395631720630197,
+          "avg_precision": 0.7974725744178496,
+          "avg_f1_score": 0.3584737914438138,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.20777058279370952,
+          "avg_mace": 698.5324549674988,
+          "avg_time": 0.015106158167646641,
+          "avg_precision": 0.9185487640581277,
+          "avg_f1_score": 0.6460646518687331,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 0.9761904761904762,
+          "avg_mace": 351.82158642280393,
+          "avg_time": 0.012214573418221823,
+          "avg_precision": 0.7282419019731834,
+          "avg_f1_score": 0.15886422475027753,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.3468290231915461,
+          "avg_mace": 399.9085669986785,
+          "avg_time": 0.005105847467190374,
+          "avg_precision": 0.9001960238099592,
+          "avg_f1_score": 0.6351333604107117,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.06448979591836734,
+          "avg_mace": 335.19519382052954,
+          "avg_time": 0.0055030518107944066,
+          "avg_precision": 0.9582762557077626,
+          "avg_f1_score": 0.7134504883822785,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.8831443688586545,
+          "avg_mace": 517.4226916648269,
+          "avg_time": 0.0076231539713835115,
+          "avg_precision": 0.8200474480444714,
+          "avg_f1_score": 0.2805268984113464,
+          "samples": 3
+        }
+      }
+    },
+    "SIFT_MLESAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.8126452084035501,
+          "avg_mace": 320.4031032253174,
+          "avg_time": 0.848927621164199,
+          "avg_precision": 0.7845700968489591,
+          "avg_f1_score": 0.4959737749325325,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.757278931887122,
+          "avg_mace": 342.5937733228732,
+          "avg_time": 1.0050460584254037,
+          "avg_precision": 0.7410773588252006,
+          "avg_f1_score": 0.49708255549231817,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.6495579028892283,
+          "avg_mace": 337.0104379450144,
+          "avg_time": 0.44710770562869545,
+          "avg_precision": 0.7165077833369797,
+          "avg_f1_score": 0.4605404055730479,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.25352451433857537,
+          "avg_mace": 324.53184352311166,
+          "avg_time": 0.17186523153377248,
+          "avg_precision": 0.832549424384782,
+          "avg_f1_score": 0.6462642606632992,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 328.87325904482884,
+          "avg_time": 2.009039458774385,
+          "avg_precision": 0.9642247412263472,
+          "avg_f1_score": 0.5413138799212696,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.16344151867728107,
+          "avg_mace": 328.3316190810431,
+          "avg_time": 0.18379594030834379,
+          "avg_precision": 0.8105653473510616,
+          "avg_f1_score": 0.6698330679711884,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.12397959183673471,
+          "avg_mace": 305.6555069817437,
+          "avg_time": 0.19618159665001764,
+          "avg_precision": 0.8054727805631735,
+          "avg_f1_score": 0.7411915366346967,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.9387755102040817,
+          "avg_mace": 517.4912590659567,
+          "avg_time": 0.8142328402462405,
+          "avg_precision": 0.8245568834156066,
+          "avg_f1_score": 0.516782012400364,
+          "samples": 3
+        }
+      }
+    },
+    "SIFT_PROSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.801831254915178,
+          "avg_mace": 332.72002782986425,
+          "avg_time": 0.1745660720813491,
+          "avg_precision": 0.9724523838661169,
+          "avg_f1_score": 0.5896374284609722,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.757278931887122,
+          "avg_mace": 352.34315774956787,
+          "avg_time": 0.17990239144206938,
+          "avg_precision": 0.9629115356242339,
+          "avg_f1_score": 0.6309672669886103,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.6495579028892283,
+          "avg_mace": 354.48800365657127,
+          "avg_time": 0.16804000687961723,
+          "avg_precision": 0.9687260226496803,
+          "avg_f1_score": 0.60614853441652,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.25352451433857537,
+          "avg_mace": 333.22333157717526,
+          "avg_time": 0.13742629585103092,
+          "avg_precision": 0.9645144426099218,
+          "avg_f1_score": 0.7102394433419685,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.6489453996931,
+          "avg_time": 0.2305293083190918,
+          "avg_precision": 0.9867554246897926,
+          "avg_f1_score": 0.5534996037096936,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.16344151867728107,
+          "avg_mace": 380.12643768673854,
+          "avg_time": 0.1358393260410854,
+          "avg_precision": 0.9542291835148978,
+          "avg_f1_score": 0.7620719008869047,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.12397959183673471,
+          "avg_mace": 306.38625513712566,
+          "avg_time": 0.1491972777578566,
+          "avg_precision": 0.956871647590309,
+          "avg_f1_score": 0.8714441835521031,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.9387755102040817,
+          "avg_mace": 519.3530947846491,
+          "avg_time": 0.1883170600290652,
+          "avg_precision": 0.9728050535387239,
+          "avg_f1_score": 0.5929066724117328,
+          "samples": 3
+        }
+      }
+    },
+    "SIFT_RANSAC": {
+      "best_category": "miscellaneous",
+      "worst_category": "perceptual_uniform",
+      "performance_by_category": {
+        "diverging": {
+          "avg_success_rate": 0.8012756993596225,
+          "avg_mace": 330.2840698054327,
+          "avg_time": 0.03750527792146381,
+          "avg_precision": 0.9716856877231284,
+          "avg_f1_score": 0.5881376815167734,
+          "samples": 4
+        },
+        "qualitative": {
+          "avg_success_rate": 0.757278931887122,
+          "avg_mace": 352.3472633141079,
+          "avg_time": 0.03803489276821993,
+          "avg_precision": 0.9623448165485327,
+          "avg_f1_score": 0.6312067907141523,
+          "samples": 4
+        },
+        "sequential_multi_hue": {
+          "avg_success_rate": 0.6369656319382948,
+          "avg_mace": 353.0729207537842,
+          "avg_time": 0.027795285828100348,
+          "avg_precision": 0.9744705787871006,
+          "avg_f1_score": 0.6159862624599775,
+          "samples": 5
+        },
+        "sequential_single_hue": {
+          "avg_success_rate": 0.2217853839037928,
+          "avg_mace": 339.97163335103835,
+          "avg_time": 0.021932759928324864,
+          "avg_precision": 0.9598309788002771,
+          "avg_f1_score": 0.6825367377745125,
+          "samples": 4
+        },
+        "miscellaneous": {
+          "avg_success_rate": 1.0,
+          "avg_mace": 331.6500807262602,
+          "avg_time": 0.06412621906825475,
+          "avg_precision": 0.9878777260195071,
+          "avg_f1_score": 0.5534170098928679,
+          "samples": 1
+        },
+        "grayscale": {
+          "avg_success_rate": 0.14331496223719126,
+          "avg_mace": 338.61597757172166,
+          "avg_time": 0.020778938343650417,
+          "avg_precision": 0.9671430324061903,
+          "avg_f1_score": 0.7709251148390479,
+          "samples": 3
+        },
+        "perceptual_uniform": {
+          "avg_success_rate": 0.1150907029478458,
+          "avg_mace": 327.65685712374176,
+          "avg_time": 0.0211153835312933,
+          "avg_precision": 0.9697441142169562,
+          "avg_f1_score": 0.8492021806992595,
+          "samples": 5
+        },
+        "cyclic": {
+          "avg_success_rate": 0.945578231292517,
+          "avg_mace": 530.5950454126397,
+          "avg_time": 0.034648159287121096,
+          "avg_precision": 0.9700038140811124,
+          "avg_f1_score": 0.5880408767495893,
+          "samples": 3
+        }
+      }
+    }
+  }
+}

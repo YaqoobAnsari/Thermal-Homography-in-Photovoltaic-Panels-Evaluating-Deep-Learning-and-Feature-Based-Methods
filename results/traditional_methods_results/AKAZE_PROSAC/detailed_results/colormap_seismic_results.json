@@ -1,0 +1,4281 @@
+[
+  {
+    "success": true,
+    "mean_corner_error": 230.50489807128906,
+    "max_corner_error": 277.103759765625,
+    "corner_errors": [
+      186.20164489746094,
+      273.2565002441406,
+      277.103759765625,
+      185.4577178955078
+    ],
+    "num_keypoints_A": 32,
+    "num_keypoints_B": 63,
+    "num_matches": 9,
+    "num_inliers": 7,
+    "inlier_ratio": 0.7777777777777778,
+    "computation_time": 0.13816428184509277,
+    "H_estimated": [
+      [
+        1.11136843353964,
+        0.030217606045404327,
+        134.61588466033274
+      ],
+      [
+        0.04862020746978301,
+        1.064340496677012,
+        30.866101874748026
+      ],
+      [
+        0.0002792080366154619,
+        0.00017564892762603134,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.47234922,
+        -0.07563547,
+        -25.18936574
+      ],
+      [
+        -0.30953067,
+        0.5174909,
+        126.43459792
+      ],
+      [
+        -0.00075062,
+        -0.00036739,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 32,
+      "good_matches": 9,
+      "ratio_test_passed": 9,
+      "ratio_test_failed": 23,
+      "matching_time": 0.0007441043853759766,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7297521621560839,
+      "median_distance_ratio": 0.9115858954316485
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12615227699279785,
+      "final_subset_size": 9,
+      "inlier_count": 7,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 230.50489807128906,
+      "corner_errors": [
+        186.20164489746094,
+        273.2565002441406,
+        277.103759765625,
+        185.4577178955078
+      ],
+      "max_corner_error": 277.103759765625,
+      "min_corner_error": 185.4577178955078,
+      "std_corner_error": 44.69670104980469
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 232.0612030029297,
+      "median_reprojection_error": 236.10916137695312,
+      "max_reprojection_error": 277.103759765625,
+      "std_reprojection_error": 38.06557083129883
+    },
+    "rmse": 235.1624755859375,
+    "matching_metrics": {
+      "matching_precision": 0.7777777777777778,
+      "matching_recall": 0.28125,
+      "f1_score": 0.4131147540983607,
+      "inlier_ratio": 0.7777777777777778
+    },
+    "matrix_error": {
+      "frobenius_norm": 186.20392681192635,
+      "max_element_error": 159.80525040033274,
+      "mean_element_error": 28.55835467514231
+    },
+    "performance": {
+      "computation_time": 0.13816428184509277,
+      "memory_usage_mb": 205.8515625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 312.10858154296875,
+    "max_corner_error": 333.3797607421875,
+    "corner_errors": [
+      293.5768737792969,
+      299.7669677734375,
+      333.3797607421875,
+      321.7106628417969
+    ],
+    "num_keypoints_A": 88,
+    "num_keypoints_B": 77,
+    "num_matches": 8,
+    "num_inliers": 7,
+    "inlier_ratio": 0.875,
+    "computation_time": 0.12761163711547852,
+    "H_estimated": [
+      [
+        1.0000008662448583,
+        -1.6577769508239814e-07,
+        7.999966828427432
+      ],
+      [
+        3.312107893558092e-07,
+        1.0000003396506916,
+        -147.0000892177658
+      ],
+      [
+        5.05561401090754e-09,
+        -1.589128370273638e-09,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.78653912,
+        -0.27781715,
+        55.88952783
+      ],
+      [
+        0.04104828,
+        0.61402388,
+        142.64447639
+      ],
+      [
+        1.231e-05,
+        -0.00117819,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 88,
+      "good_matches": 8,
+      "ratio_test_passed": 8,
+      "ratio_test_failed": 69,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8384035636974239,
+      "median_distance_ratio": 0.9197080291970803
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11968064308166504,
+      "final_subset_size": 8,
+      "inlier_count": 7,
+      "outlier_count": 1
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 312.10858154296875,
+      "corner_errors": [
+        293.5768737792969,
+        299.7669677734375,
+        333.3797607421875,
+        321.7106628417969
+      ],
+      "max_corner_error": 333.3797607421875,
+      "min_corner_error": 293.5768737792969,
+      "std_corner_error": 16.12763786315918
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 303.0177001953125,
+      "median_reprojection_error": 295.36578369140625,
+      "max_reprojection_error": 333.3797607421875,
+      "std_reprojection_error": 18.268552780151367
+    },
+    "rmse": 303.56787109375,
+    "matching_metrics": {
+      "matching_precision": 0.875,
+      "matching_recall": 0.1038961038961039,
+      "f1_score": 0.1857379767827529,
+      "inlier_ratio": 0.875
+    },
+    "matrix_error": {
+      "frobenius_norm": 293.57734560312775,
+      "max_element_error": 289.6445656077658,
+      "mean_element_error": 37.6059578046223
+    },
+    "performance": {
+      "computation_time": 0.12761163711547852,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 595.426513671875,
+    "max_corner_error": 1370.010986328125,
+    "corner_errors": [
+      1370.010986328125,
+      395.0714416503906,
+      398.95916748046875,
+      217.6644287109375
+    ],
+    "num_keypoints_A": 42,
+    "num_keypoints_B": 40,
+    "num_matches": 6,
+    "num_inliers": 4,
+    "inlier_ratio": 0.6666666666666666,
+    "computation_time": 0.14271831512451172,
+    "H_estimated": [
+      [
+        9.1042641138206,
+        -9.5918968947718,
+        -267.5050011761533
+      ],
+      [
+        15.109241531800999,
+        -29.272787421691774,
+        1238.173328992608
+      ],
+      [
+        0.07368284176697111,
+        -0.09479380434575181,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.9130322,
+        0.05258941,
+        -82.07120293
+      ],
+      [
+        -0.03120544,
+        1.07887945,
+        -119.23016707
+      ],
+      [
+        -0.00019838,
+        0.00014881,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 42,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 30,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8405589624092851,
+      "median_distance_ratio": 0.8939333065488149
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12319016456604004,
+      "final_subset_size": 6,
+      "inlier_count": 4,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 595.426513671875,
+      "corner_errors": [
+        1370.010986328125,
+        395.0714416503906,
+        398.95916748046875,
+        217.6644287109375
+      ],
+      "max_corner_error": 1370.010986328125,
+      "min_corner_error": 217.6644287109375,
+      "std_corner_error": 453.16302490234375
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 423.6640930175781,
+      "median_reprojection_error": 356.70843505859375,
+      "max_reprojection_error": 1370.010986328125,
+      "std_reprojection_error": 347.34259033203125
+    },
+    "rmse": 547.8486328125,
+    "matching_metrics": {
+      "matching_precision": 0.6666666666666666,
+      "matching_recall": 0.15,
+      "f1_score": 0.24489795918367346,
+      "inlier_ratio": 0.6666666666666666
+    },
+    "matrix_error": {
+      "frobenius_norm": 1370.4891565934647,
+      "max_element_error": 1357.4034960626082,
+      "mean_element_error": 178.4815500229955
+    },
+    "performance": {
+      "computation_time": 0.14271831512451172,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 229.55226135253906,
+    "max_corner_error": 415.8726806640625,
+    "corner_errors": [
+      277.06439208984375,
+      415.8726806640625,
+      156.7643280029297,
+      68.50765228271484
+    ],
+    "num_keypoints_A": 48,
+    "num_keypoints_B": 100,
+    "num_matches": 6,
+    "num_inliers": 4,
+    "inlier_ratio": 0.6666666666666666,
+    "computation_time": 0.12376260757446289,
+    "H_estimated": [
+      [
+        -3.456587559389384,
+        1.957754066978597,
+        130.0237208243597
+      ],
+      [
+        -5.209444587506044,
+        4.162901371351531,
+        115.16070517108437
+      ],
+      [
+        -0.0348946947835727,
+        0.024847324885357704,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.72660015,
+        -0.07609984,
+        145.53808158
+      ],
+      [
+        -0.07144125,
+        1.0411363,
+        -161.46896519
+      ],
+      [
+        -8.133e-05,
+        9.91e-06,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 48,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 42,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8769489036208808,
+      "median_distance_ratio": 0.9174906964380649
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12376260757446289,
+      "final_subset_size": 6,
+      "inlier_count": 4,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 229.55226135253906,
+      "corner_errors": [
+        277.06439208984375,
+        415.8726806640625,
+        156.7643280029297,
+        68.50765228271484
+      ],
+      "max_corner_error": 415.8726806640625,
+      "min_corner_error": 68.50765228271484,
+      "std_corner_error": 130.58152770996094
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 227.13641357421875,
+      "median_reprojection_error": 188.52401733398438,
+      "max_reprojection_error": 415.8726806640625,
+      "std_reprojection_error": 110.88023376464844
+    },
+    "rmse": 252.75555419921875,
+    "matching_metrics": {
+      "matching_precision": 0.6666666666666666,
+      "matching_recall": 0.125,
+      "f1_score": 0.21052631578947367,
+      "inlier_ratio": 0.6666666666666666
+    },
+    "matrix_error": {
+      "frobenius_norm": 277.1686343351097,
+      "max_element_error": 276.6296703610844,
+      "mean_element_error": 34.07561021351324
+    },
+    "performance": {
+      "computation_time": 0.12376260757446289,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 702.44970703125,
+    "max_corner_error": 1182.575439453125,
+    "corner_errors": [
+      196.7312469482422,
+      382.7196960449219,
+      1182.575439453125,
+      1047.7723388671875
+    ],
+    "num_keypoints_A": 44,
+    "num_keypoints_B": 58,
+    "num_matches": 12,
+    "num_inliers": 8,
+    "inlier_ratio": 0.6666666666666666,
+    "computation_time": 0.15653610229492188,
+    "H_estimated": [
+      [
+        0.11189327657923077,
+        -0.37854712212970976,
+        66.90693629955186
+      ],
+      [
+        0.2043466813898196,
+        -0.06447413898469756,
+        73.23145193486121
+      ],
+      [
+        -0.000655314681669993,
+        -0.003681096822459359,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.85898425,
+        0.01627258,
+        108.6419033
+      ],
+      [
+        -0.06215748,
+        1.05462718,
+        -119.02197378
+      ],
+      [
+        -0.00030208,
+        9.261e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 44,
+      "good_matches": 12,
+      "ratio_test_passed": 12,
+      "ratio_test_failed": 29,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7469366220763441,
+      "median_distance_ratio": 0.9006622516556292
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.13990283012390137,
+      "final_subset_size": 12,
+      "inlier_count": 8,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 702.44970703125,
+      "corner_errors": [
+        196.7312469482422,
+        382.7196960449219,
+        1182.575439453125,
+        1047.7723388671875
+      ],
+      "max_corner_error": 1182.575439453125,
+      "min_corner_error": 196.7312469482422,
+      "std_corner_error": 420.6384582519531
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 798.4227905273438,
+      "median_reprojection_error": 382.7196960449219,
+      "max_reprojection_error": 3324.48486328125,
+      "std_reprojection_error": 960.7855224609375
+    },
+    "rmse": 1249.23486328125,
+    "matching_metrics": {
+      "matching_precision": 0.6666666666666666,
+      "matching_recall": 0.2727272727272727,
+      "f1_score": 0.3870967741935484,
+      "inlier_ratio": 0.6666666666666666
+    },
+    "matrix_error": {
+      "frobenius_norm": 196.73643440843318,
+      "max_element_error": 192.2534257148612,
+      "mean_element_error": 26.28000397919316
+    },
+    "performance": {
+      "computation_time": 0.15653610229492188,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 172.7659454345703,
+    "max_corner_error": 218.68406677246094,
+    "corner_errors": [
+      218.68406677246094,
+      103.11746978759766,
+      152.12646484375,
+      217.13575744628906
+    ],
+    "num_keypoints_A": 59,
+    "num_keypoints_B": 37,
+    "num_matches": 9,
+    "num_inliers": 5,
+    "inlier_ratio": 0.5555555555555556,
+    "computation_time": 0.14156794548034668,
+    "H_estimated": [
+      [
+        -1.8378497250777714,
+        -0.6235802718190012,
+        209.55975336592596
+      ],
+      [
+        -1.1736572010330824,
+        -0.07442637401681883,
+        100.20816854390621
+      ],
+      [
+        -0.009293782518569925,
+        -0.0026919553154350438,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.59869066,
+        -0.16511215,
+        -6.94403869
+      ],
+      [
+        -0.0990332,
+        0.58100625,
+        69.40516526
+      ],
+      [
+        -0.00026415,
+        -0.0004864,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 59,
+      "good_matches": 9,
+      "ratio_test_passed": 9,
+      "ratio_test_failed": 46,
+      "matching_time": 0.0010039806365966797,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8188312116587624,
+      "median_distance_ratio": 0.8738738738738738
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.1257779598236084,
+      "final_subset_size": 9,
+      "inlier_count": 5,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 172.7659454345703,
+      "corner_errors": [
+        218.68406677246094,
+        103.11746978759766,
+        152.12646484375,
+        217.13575744628906
+      ],
+      "max_corner_error": 218.68406677246094,
+      "min_corner_error": 103.11746978759766,
+      "std_corner_error": 48.358177185058594
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 175.63864135742188,
+      "median_reprojection_error": 214.65611267089844,
+      "max_reprojection_error": 243.29238891601562,
+      "std_reprojection_error": 60.95296096801758
+    },
+    "rmse": 185.91448974609375,
+    "matching_metrics": {
+      "matching_precision": 0.5555555555555556,
+      "matching_recall": 0.24324324324324326,
+      "f1_score": 0.33834586466165417,
+      "inlier_ratio": 0.5555555555555556
+    },
+    "matrix_error": {
+      "frobenius_norm": 218.70173388210202,
+      "max_element_error": 216.50379205592597,
+      "mean_element_error": 27.99367729551254
+    },
+    "performance": {
+      "computation_time": 0.14156794548034668,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 195.26321411132812,
+    "max_corner_error": 212.05677795410156,
+    "corner_errors": [
+      166.7315673828125,
+      211.29087829589844,
+      212.05677795410156,
+      190.97364807128906
+    ],
+    "num_keypoints_A": 38,
+    "num_keypoints_B": 54,
+    "num_matches": 27,
+    "num_inliers": 24,
+    "inlier_ratio": 0.8888888888888888,
+    "computation_time": 0.13631486892700195,
+    "H_estimated": [
+      [
+        1.0115019594952261,
+        0.0075857695818740325,
+        101.2817098870928
+      ],
+      [
+        0.008672223743946486,
+        1.0131642245208228,
+        24.76880657776746
+      ],
+      [
+        2.683204159615748e-05,
+        3.4535936763260055e-05,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.8200968,
+        -0.0379527,
+        -65.20517133
+      ],
+      [
+        -0.02364441,
+        0.76614959,
+        15.73918675
+      ],
+      [
+        -6.423e-05,
+        -0.00034777,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 38,
+      "good_matches": 27,
+      "ratio_test_passed": 27,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.3385012964229506,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.13631486892700195,
+      "final_subset_size": 27,
+      "inlier_count": 24,
+      "outlier_count": 3
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 195.26321411132812,
+      "corner_errors": [
+        166.7315673828125,
+        211.29087829589844,
+        212.05677795410156,
+        190.97364807128906
+      ],
+      "max_corner_error": 212.05677795410156,
+      "min_corner_error": 166.7315673828125,
+      "std_corner_error": 18.515974044799805
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 195.7272186279297,
+      "median_reprojection_error": 196.65609741210938,
+      "max_reprojection_error": 212.05677795410156,
+      "std_reprojection_error": 14.969305992126465
+    },
+    "rmse": 196.29881286621094,
+    "matching_metrics": {
+      "matching_precision": 0.8888888888888888,
+      "matching_recall": 0.7105263157894737,
+      "f1_score": 0.7897623400365631,
+      "inlier_ratio": 0.8888888888888888
+    },
+    "matrix_error": {
+      "frobenius_norm": 166.73186984516371,
+      "max_element_error": 166.48688121709282,
+      "mean_element_error": 19.55924992335339
+    },
+    "performance": {
+      "computation_time": 0.13631486892700195,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 664.7435913085938,
+    "max_corner_error": 1765.3001708984375,
+    "corner_errors": [
+      1765.3001708984375,
+      97.09503173828125,
+      334.1345520019531,
+      462.4445495605469
+    ],
+    "num_keypoints_A": 46,
+    "num_keypoints_B": 85,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.12836337089538574,
+    "H_estimated": [
+      [
+        -1.8880858369212066,
+        -6.731289244518858,
+        1424.2773976401472
+      ],
+      [
+        1.4665371902890931,
+        -3.1986667089400322,
+        566.1531962862683
+      ],
+      [
+        0.02667649320788197,
+        -0.011499176014565954,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.47211294,
+        -0.17268691,
+        -233.90194413
+      ],
+      [
+        0.25996522,
+        0.95117231,
+        -39.42571137
+      ],
+      [
+        0.00066232,
+        -0.00028279,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 46,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 41,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8738431815063156,
+      "median_distance_ratio": 0.9375
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.10880279541015625,
+      "final_subset_size": 4,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 664.7435913085938,
+      "corner_errors": [
+        1765.3001708984375,
+        97.09503173828125,
+        334.1345520019531,
+        462.4445495605469
+      ],
+      "max_corner_error": 1765.3001708984375,
+      "min_corner_error": 97.09503173828125,
+      "std_corner_error": 648.7828979492188
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 522.8262939453125,
+      "median_reprojection_error": 356.5218811035156,
+      "max_reprojection_error": 1765.3001708984375,
+      "std_reprojection_error": 510.7890319824219
+    },
+    "rmse": 730.9259643554688,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.08695652173913043,
+      "f1_score": 0.16,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 1765.3207999834447,
+      "max_element_error": 1658.1793417701474,
+      "mean_element_error": 253.23007689847861
+    },
+    "performance": {
+      "computation_time": 0.12836337089538574,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 120.73673248291016,
+    "max_corner_error": 200.2819061279297,
+    "corner_errors": [
+      116.22071838378906,
+      200.2819061279297,
+      128.9181365966797,
+      37.52614212036133
+    ],
+    "num_keypoints_A": 48,
+    "num_keypoints_B": 28,
+    "num_matches": 10,
+    "num_inliers": 5,
+    "inlier_ratio": 0.5,
+    "computation_time": 0.15178918838500977,
+    "H_estimated": [
+      [
+        0.11872478338012109,
+        -0.4942322247083149,
+        46.54869750964901
+      ],
+      [
+        0.40014609731306766,
+        -1.7862480303141801,
+        169.94301933349675
+      ],
+      [
+        0.002551189778677839,
+        -0.010640861834258693,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.29596387,
+        0.08364165,
+        40.11319931
+      ],
+      [
+        -0.22574916,
+        0.6006898,
+        53.90061833
+      ],
+      [
+        -0.00094007,
+        0.00011527,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 48,
+      "good_matches": 10,
+      "ratio_test_passed": 10,
+      "ratio_test_failed": 29,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7925299752047058,
+      "median_distance_ratio": 0.8735632183908046
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.14105534553527832,
+      "final_subset_size": 10,
+      "inlier_count": 5,
+      "outlier_count": 5
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 120.73673248291016,
+      "corner_errors": [
+        116.22071838378906,
+        200.2819061279297,
+        128.9181365966797,
+        37.52614212036133
+      ],
+      "max_corner_error": 200.2819061279297,
+      "min_corner_error": 37.52614212036133,
+      "std_corner_error": 57.746788024902344
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 107.90708923339844,
+      "median_reprojection_error": 116.22071838378906,
+      "max_reprojection_error": 200.2819061279297,
+      "std_reprojection_error": 50.42548370361328
+    },
+    "rmse": 119.10780334472656,
+    "matching_metrics": {
+      "matching_precision": 0.5,
+      "matching_recall": 0.35714285714285715,
+      "f1_score": 0.41666666666666663,
+      "inlier_ratio": 0.5
+    },
+    "matrix_error": {
+      "frobenius_norm": 116.24848026793772,
+      "max_element_error": 116.04240100349675,
+      "mean_element_error": 14.028899182634905
+    },
+    "performance": {
+      "computation_time": 0.15178918838500977,
+      "memory_usage_mb": 206.18359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 589.2835083007812,
+    "max_corner_error": 1013.0530395507812,
+    "corner_errors": [
+      1013.0530395507812,
+      605.929443359375,
+      320.8922424316406,
+      417.2593688964844
+    ],
+    "num_keypoints_A": 48,
+    "num_keypoints_B": 63,
+    "num_matches": 16,
+    "num_inliers": 12,
+    "inlier_ratio": 0.75,
+    "computation_time": 0.13997721672058105,
+    "H_estimated": [
+      [
+        0.8897582834485249,
+        0.027578722857318144,
+        155.45038299627072
+      ],
+      [
+        -0.0019696459216712423,
+        0.9854579738709827,
+        30.543511147363226
+      ],
+      [
+        -0.0002484338329719178,
+        5.783416639472159e-05,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.73340856,
+        0.93938395,
+        -746.31890814
+      ],
+      [
+        -0.04162596,
+        4.04349514,
+        -431.07163335
+      ],
+      [
+        0.00069474,
+        0.00380538,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 48,
+      "good_matches": 16,
+      "ratio_test_passed": 16,
+      "ratio_test_failed": 29,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6762258530864877,
+      "median_distance_ratio": 0.8288288288288288
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.13997721672058105,
+      "final_subset_size": 16,
+      "inlier_count": 12,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 589.2835083007812,
+      "corner_errors": [
+        1013.0530395507812,
+        605.929443359375,
+        320.8922424316406,
+        417.2593688964844
+      ],
+      "max_corner_error": 1013.0530395507812,
+      "min_corner_error": 320.8922424316406,
+      "std_corner_error": 265.2752685546875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 547.490234375,
+      "median_reprojection_error": 467.7843322753906,
+      "max_reprojection_error": 1013.0530395507812,
+      "std_reprojection_error": 213.58787536621094
+    },
+    "rmse": 587.677978515625,
+    "matching_metrics": {
+      "matching_precision": 0.75,
+      "matching_recall": 0.3333333333333333,
+      "f1_score": 0.46153846153846156,
+      "inlier_ratio": 0.75
+    },
+    "matrix_error": {
+      "frobenius_norm": 1013.0597118036599,
+      "max_element_error": 901.7692911362707,
+      "mean_element_error": 152.13803059302245
+    },
+    "performance": {
+      "computation_time": 0.13997721672058105,
+      "memory_usage_mb": 206.8984375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_seismic",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 201.1534423828125,
+    "max_corner_error": 279.2652893066406,
+    "corner_errors": [
+      103.2441177368164,
+      215.50198364257812,
+      279.2652893066406,
+      206.60244750976562
+    ],
+    "num_keypoints_A": 74,
+    "num_keypoints_B": 162,
+    "num_matches": 44,
+    "num_inliers": 43,
+    "inlier_ratio": 0.9772727272727273,
+    "computation_time": 0.1315898895263672,
+    "H_estimated": [
+      [
+        0.9758672055930004,
+        -0.0055582576267420546,
+        105.05218219868672
+      ],
+      [
+        -0.01668623937429423,
+        0.9881923413574017,
+        108.04615301800402
+      ],
+      [
+        -7.553629768193421e-05,
+        -1.3060197135992694e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.48030343,
+        -0.14436735,
+        24.12683676
+      ],
+      [
+        -0.20222164,
+        0.4764165,
+        43.93346915
+      ],
+      [
+        -0.00071207,
+        -0.00055368,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 74,
+      "good_matches": 44,
+      "ratio_test_passed": 44,
+      "ratio_test_failed": 30,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.3961694051979315,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11810994148254395,
+      "final_subset_size": 44,
+      "inlier_count": 43,
+      "outlier_count": 1
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 201.1534423828125,
+      "corner_errors": [
+        103.2441177368164,
+        215.50198364257812,
+        279.2652893066406,
+        206.60244750976562
+      ],
+      "max_corner_error": 279.2652893066406,
+      "min_corner_error": 103.2441177368164,
+      "std_corner_error": 63.093719482421875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 203.2645721435547,
+      "median_reprojection_error": 206.9973602294922,
+      "max_reprojection_error": 279.2652893066406,
+      "std_reprojection_error": 51.52629470825195
+    },
+    "rmse": 209.69371032714844,
+    "matching_metrics": {
+      "matching_precision": 0.9772727272727273,
+      "matching_recall": 0.5945945945945946,
+      "f1_score": 0.7393513091051193,
+      "inlier_ratio": 0.9772727272727273
+    },
+    "matrix_error": {
+      "frobenius_norm": 103.24683509504457,
+      "max_element_error": 80.92534543868672,
+      "mean_element_error": 16.2634322855717
+    },
+    "performance": {
+      "computation_time": 0.1315898895263672,
+      "memory_usage_mb": 206.8984375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 191.10720825195312,
+    "max_corner_error": 310.9859924316406,
+    "corner_errors": [
+      157.1197967529297,
+      62.073822021484375,
+      234.24925231933594,
+      310.9859924316406
+    ],
+    "num_keypoints_A": 49,
+    "num_keypoints_B": 22,
+    "num_matches": 11,
+    "num_inliers": 7,
+    "inlier_ratio": 0.6363636363636364,
+    "computation_time": 0.13936519622802734,
+    "H_estimated": [
+      [
+        -1.4406020407167204,
+        0.15302953211464246,
+        162.23426226904456
+      ],
+      [
+        -0.621153808861297,
+        0.06546990007693125,
+        70.03358616688811
+      ],
+      [
+        -0.008885907712800876,
+        0.0009488832484731129,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.83876017,
+        -0.25328919,
+        5.16704181
+      ],
+      [
+        0.12353366,
+        0.5999568,
+        74.09779953
+      ],
+      [
+        9.957e-05,
+        -0.00066775,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 49,
+      "good_matches": 11,
+      "ratio_test_passed": 11,
+      "ratio_test_failed": 25,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7203814819120969,
+      "median_distance_ratio": 0.854849068721901
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12365579605102539,
+      "final_subset_size": 11,
+      "inlier_count": 7,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 191.10720825195312,
+      "corner_errors": [
+        157.1197967529297,
+        62.073822021484375,
+        234.24925231933594,
+        310.9859924316406
+      ],
+      "max_corner_error": 310.9859924316406,
+      "min_corner_error": 62.073822021484375,
+      "std_corner_error": 92.2454833984375
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 171.144287109375,
+      "median_reprojection_error": 157.1197967529297,
+      "max_reprojection_error": 310.9859924316406,
+      "std_reprojection_error": 81.35651397705078
+    },
+    "rmse": 189.49737548828125,
+    "matching_metrics": {
+      "matching_precision": 0.6363636363636364,
+      "matching_recall": 0.5,
+      "f1_score": 0.56,
+      "inlier_ratio": 0.6363636363636364
+    },
+    "matrix_error": {
+      "frobenius_norm": 157.139525514771,
+      "max_element_error": 157.06722045904456,
+      "mean_element_error": 18.345210137192606
+    },
+    "performance": {
+      "computation_time": 0.13936519622802734,
+      "memory_usage_mb": 206.8984375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 185.59033203125,
+    "max_corner_error": 254.8245086669922,
+    "corner_errors": [
+      118.08060455322266,
+      179.51397705078125,
+      189.9422149658203,
+      254.8245086669922
+    ],
+    "num_keypoints_A": 125,
+    "num_keypoints_B": 135,
+    "num_matches": 36,
+    "num_inliers": 34,
+    "inlier_ratio": 0.9444444444444444,
+    "computation_time": 0.14067697525024414,
+    "H_estimated": [
+      [
+        0.990527861943073,
+        -0.005170380341647704,
+        24.8869659682043
+      ],
+      [
+        -0.0005209145933485581,
+        0.9917125913486037,
+        -78.223107542914
+      ],
+      [
+        -1.5034106825731445e-05,
+        -3.4259277916729606e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.61043405,
+        -0.30712955,
+        -1.02123185
+      ],
+      [
+        0.39339431,
+        1.32382721,
+        36.98017129
+      ],
+      [
+        0.00147913,
+        -0.00029919,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 125,
+      "good_matches": 36,
+      "ratio_test_passed": 36,
+      "ratio_test_failed": 71,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6355490516938379,
+      "median_distance_ratio": 0.8928571428571429
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12480568885803223,
+      "final_subset_size": 36,
+      "inlier_count": 34,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 185.59033203125,
+      "corner_errors": [
+        118.08060455322266,
+        179.51397705078125,
+        189.9422149658203,
+        254.8245086669922
+      ],
+      "max_corner_error": 254.8245086669922,
+      "min_corner_error": 118.08060455322266,
+      "std_corner_error": 48.49431610107422
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 181.96490478515625,
+      "median_reprojection_error": 179.51397705078125,
+      "max_reprojection_error": 254.8245086669922,
+      "std_reprojection_error": 35.10977554321289
+    },
+    "rmse": 185.32113647460938,
+    "matching_metrics": {
+      "matching_precision": 0.9444444444444444,
+      "matching_recall": 0.288,
+      "f1_score": 0.4413992066354128,
+      "inlier_ratio": 0.9444444444444444
+    },
+    "matrix_error": {
+      "frobenius_norm": 118.0837461409921,
+      "max_element_error": 115.203278832914,
+      "mean_element_error": 15.862347882989692
+    },
+    "performance": {
+      "computation_time": 0.14067697525024414,
+      "memory_usage_mb": 206.9140625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 263.35980224609375,
+    "max_corner_error": 312.7625427246094,
+    "corner_errors": [
+      272.85870361328125,
+      312.7625427246094,
+      223.3145294189453,
+      244.50344848632812
+    ],
+    "num_keypoints_A": 53,
+    "num_keypoints_B": 114,
+    "num_matches": 24,
+    "num_inliers": 24,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.14423227310180664,
+    "H_estimated": [
+      [
+        1.0218442686382494,
+        -0.0038778283821381387,
+        15.171657437027774
+      ],
+      [
+        0.04218115957107374,
+        0.9931744085931777,
+        111.29470575536574
+      ],
+      [
+        0.0001434509759237041,
+        -7.594359045799756e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.92405335,
+        0.40834073,
+        -69.74667312
+      ],
+      [
+        -0.01711024,
+        1.22144233,
+        -148.01348822
+      ],
+      [
+        -0.00076017,
+        0.00109494,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 53,
+      "good_matches": 24,
+      "ratio_test_passed": 24,
+      "ratio_test_failed": 29,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5304994682385304,
+      "median_distance_ratio": 0.7857142857142857
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12842345237731934,
+      "final_subset_size": 24,
+      "inlier_count": 24,
+      "outlier_count": 0
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 263.35980224609375,
+      "corner_errors": [
+        272.85870361328125,
+        312.7625427246094,
+        223.3145294189453,
+        244.50344848632812
+      ],
+      "max_corner_error": 312.7625427246094,
+      "min_corner_error": 223.3145294189453,
+      "std_corner_error": 33.503902435302734
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 255.58387756347656,
+      "median_reprojection_error": 241.38897705078125,
+      "max_reprojection_error": 312.7625427246094,
+      "std_reprojection_error": 28.975509643554688
+    },
+    "rmse": 257.22113037109375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.4528301886792453,
+      "f1_score": 0.6233766233766235,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 272.8591164657389,
+      "max_element_error": 259.3081939753657,
+      "mean_element_error": 38.33624087055091
+    },
+    "performance": {
+      "computation_time": 0.14423227310180664,
+      "memory_usage_mb": 206.921875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 26,
+    "num_keypoints_B": 138,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 26,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 24,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8716667355052594,
+      "median_distance_ratio": 0.9164367816091954
+    },
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 432.04803466796875,
+    "max_corner_error": 705.0562744140625,
+    "corner_errors": [
+      705.0562744140625,
+      298.0351867675781,
+      352.35791015625,
+      372.7427673339844
+    ],
+    "num_keypoints_A": 109,
+    "num_keypoints_B": 40,
+    "num_matches": 19,
+    "num_inliers": 13,
+    "inlier_ratio": 0.6842105263157895,
+    "computation_time": 0.15246868133544922,
+    "H_estimated": [
+      [
+        2.577449320317975,
+        -0.13381082567404512,
+        -205.0934760960871
+      ],
+      [
+        1.0953943538080617,
+        2.611406135596669,
+        -477.99421913473395
+      ],
+      [
+        0.011250831470892762,
+        0.0001420547862155393,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.90049036,
+        -0.17898321,
+        116.82499088
+      ],
+      [
+        -0.01743121,
+        0.67247938,
+        149.27988751
+      ],
+      [
+        4.522e-05,
+        -0.00062308,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 109,
+      "good_matches": 19,
+      "ratio_test_passed": 19,
+      "ratio_test_failed": 76,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7881113697166063,
+      "median_distance_ratio": 0.8953488372093024
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12826895713806152,
+      "final_subset_size": 19,
+      "inlier_count": 13,
+      "outlier_count": 6
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 432.04803466796875,
+      "corner_errors": [
+        705.0562744140625,
+        298.0351867675781,
+        352.35791015625,
+        372.7427673339844
+      ],
+      "max_corner_error": 705.0562744140625,
+      "min_corner_error": 298.0351867675781,
+      "std_corner_error": 159.9691925048828
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 389.9268798828125,
+      "median_reprojection_error": 336.5579528808594,
+      "max_reprojection_error": 705.0562744140625,
+      "std_reprojection_error": 127.04252624511719
+    },
+    "rmse": 410.1009216308594,
+    "matching_metrics": {
+      "matching_precision": 0.6842105263157895,
+      "matching_recall": 0.475,
+      "f1_score": 0.5607264472190693,
+      "inlier_ratio": 0.6842105263157895
+    },
+    "matrix_error": {
+      "frobenius_norm": 705.0617819900127,
+      "max_element_error": 627.2741066447339,
+      "mean_element_error": 105.99760311456964
+    },
+    "performance": {
+      "computation_time": 0.15246868133544922,
+      "memory_usage_mb": 206.921875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 324.51190185546875,
+    "max_corner_error": 477.74981689453125,
+    "corner_errors": [
+      181.95565795898438,
+      394.49908447265625,
+      477.74981689453125,
+      243.84303283691406
+    ],
+    "num_keypoints_A": 102,
+    "num_keypoints_B": 28,
+    "num_matches": 6,
+    "num_inliers": 4,
+    "inlier_ratio": 0.6666666666666666,
+    "computation_time": 0.12615633010864258,
+    "H_estimated": [
+      [
+        -0.36282407132988476,
+        -0.011425157428860277,
+        28.55295838412791
+      ],
+      [
+        -0.4423469674944765,
+        -0.06432928769578088,
+        42.88082315829144
+      ],
+      [
+        -0.00797023815234466,
+        -0.0026152097249575994,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.5692171,
+        0.11318356,
+        206.87818985
+      ],
+      [
+        -0.23277292,
+        0.8213915,
+        79.04671056
+      ],
+      [
+        -0.00087266,
+        0.00020584,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 102,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 88,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8843069970793201,
+      "median_distance_ratio": 0.9017406567688144
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.10791826248168945,
+      "final_subset_size": 6,
+      "inlier_count": 4,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 324.51190185546875,
+      "corner_errors": [
+        181.95565795898438,
+        394.49908447265625,
+        477.74981689453125,
+        243.84303283691406
+      ],
+      "max_corner_error": 477.74981689453125,
+      "min_corner_error": 181.95565795898438,
+      "std_corner_error": 117.48384094238281
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 383.0382385253906,
+      "median_reprojection_error": 377.57806396484375,
+      "max_reprojection_error": 846.650390625,
+      "std_reprojection_error": 189.19512939453125
+    },
+    "rmse": 427.2154846191406,
+    "matching_metrics": {
+      "matching_precision": 0.6666666666666666,
+      "matching_recall": 0.21428571428571427,
+      "f1_score": 0.3243243243243243,
+      "inlier_ratio": 0.6666666666666666
+    },
+    "matrix_error": {
+      "frobenius_norm": 181.96035913878745,
+      "max_element_error": 178.3252314658721,
+      "mean_element_error": 24.07255357993411
+    },
+    "performance": {
+      "computation_time": 0.12615633010864258,
+      "memory_usage_mb": 207.03125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 246.4020233154297,
+    "max_corner_error": 262.694580078125,
+    "corner_errors": [
+      249.98846435546875,
+      226.4948272705078,
+      246.43023681640625,
+      262.694580078125
+    ],
+    "num_keypoints_A": 20,
+    "num_keypoints_B": 85,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.13003039360046387,
+    "H_estimated": [
+      [
+        1.0000030324209568,
+        4.078425119676805e-06,
+        -76.00058582082929
+      ],
+      [
+        -2.473536835091743e-06,
+        1.000014866031178,
+        93.99960820841417
+      ],
+      [
+        -1.1264829767348136e-08,
+        5.370336932341216e-08,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.8160767,
+        -0.09128877,
+        116.64257854
+      ],
+      [
+        -0.00876557,
+        0.8209264,
+        -65.32033648
+      ],
+      [
+        -0.00012602,
+        -0.00024567,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 20,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 14,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7139713173616254,
+      "median_distance_ratio": 0.9083857442348009
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11037898063659668,
+      "final_subset_size": 4,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 246.4020233154297,
+      "corner_errors": [
+        249.98846435546875,
+        226.4948272705078,
+        246.43023681640625,
+        262.694580078125
+      ],
+      "max_corner_error": 262.694580078125,
+      "min_corner_error": 226.4948272705078,
+      "std_corner_error": 12.986600875854492
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 246.65798950195312,
+      "median_reprojection_error": 247.1854705810547,
+      "max_reprojection_error": 262.694580078125,
+      "std_reprojection_error": 10.610645294189453
+    },
+    "rmse": 246.8861083984375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.2,
+      "f1_score": 0.33333333333333337,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 249.98861546738397,
+      "max_element_error": 192.6431643608293,
+      "mean_element_error": 39.15850572500249
+    },
+    "performance": {
+      "computation_time": 0.13003039360046387,
+      "memory_usage_mb": 207.03125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 324.2769470214844,
+    "max_corner_error": 435.428466796875,
+    "corner_errors": [
+      350.3262023925781,
+      216.99363708496094,
+      294.3595275878906,
+      435.428466796875
+    ],
+    "num_keypoints_A": 86,
+    "num_keypoints_B": 27,
+    "num_matches": 11,
+    "num_inliers": 7,
+    "inlier_ratio": 0.6363636363636364,
+    "computation_time": 0.1421966552734375,
+    "H_estimated": [
+      [
+        -1.4291417781935365,
+        0.7007531288176685,
+        84.49240875244142
+      ],
+      [
+        -2.7378365662720294,
+        1.342447312982223,
+        161.86386108398435
+      ],
+      [
+        -0.016914439998755998,
+        0.008293681517245426,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.46872896,
+        -0.25753566,
+        -195.34957414
+      ],
+      [
+        0.81431706,
+        1.39557314,
+        -48.88938293
+      ],
+      [
+        0.00188327,
+        -0.00054795,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 86,
+      "good_matches": 11,
+      "ratio_test_passed": 11,
+      "ratio_test_failed": 51,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8190819523464292,
+      "median_distance_ratio": 0.8843418259023355
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12491035461425781,
+      "final_subset_size": 11,
+      "inlier_count": 7,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 324.2769470214844,
+      "corner_errors": [
+        350.3262023925781,
+        216.99363708496094,
+        294.3595275878906,
+        435.428466796875
+      ],
+      "max_corner_error": 435.428466796875,
+      "min_corner_error": 216.99363708496094,
+      "std_corner_error": 79.74645233154297
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 246.29505920410156,
+      "median_reprojection_error": 216.99363708496094,
+      "max_reprojection_error": 435.428466796875,
+      "std_reprojection_error": 114.56902313232422
+    },
+    "rmse": 271.63824462890625,
+    "matching_metrics": {
+      "matching_precision": 0.6363636363636364,
+      "matching_recall": 0.4074074074074074,
+      "f1_score": 0.4967741935483871,
+      "inlier_ratio": 0.6363636363636364
+    },
+    "matrix_error": {
+      "frobenius_norm": 350.36723307774145,
+      "max_element_error": 279.8419828924414,
+      "mean_element_error": 55.45381169202696
+    },
+    "performance": {
+      "computation_time": 0.1421966552734375,
+      "memory_usage_mb": 207.03125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 279.254150390625,
+    "max_corner_error": 293.84539794921875,
+    "corner_errors": [
+      284.8820495605469,
+      246.74488830566406,
+      293.84539794921875,
+      291.5442810058594
+    ],
+    "num_keypoints_A": 31,
+    "num_keypoints_B": 128,
+    "num_matches": 14,
+    "num_inliers": 12,
+    "inlier_ratio": 0.8571428571428571,
+    "computation_time": 0.13685059547424316,
+    "H_estimated": [
+      [
+        1.8967925492615016,
+        -0.14517611902355212,
+        191.73880008343215
+      ],
+      [
+        0.4709989474136508,
+        0.9976143384381608,
+        -20.54206085021525
+      ],
+      [
+        0.003364946917935395,
+        -0.0006194034277416399,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.67305331,
+        -0.12386695,
+        -70.03791106
+      ],
+      [
+        -0.1227418,
+        0.58267054,
+        91.84451248
+      ],
+      [
+        -0.00051026,
+        -0.00017892,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 31,
+      "good_matches": 14,
+      "ratio_test_passed": 14,
+      "ratio_test_failed": 17,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6284588681056804,
+      "median_distance_ratio": 0.8015873015873016
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.13009262084960938,
+      "final_subset_size": 14,
+      "inlier_count": 12,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 279.254150390625,
+      "corner_errors": [
+        284.8820495605469,
+        246.74488830566406,
+        293.84539794921875,
+        291.5442810058594
+      ],
+      "max_corner_error": 293.84539794921875,
+      "min_corner_error": 246.74488830566406,
+      "std_corner_error": 19.05569076538086
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 288.8855285644531,
+      "median_reprojection_error": 291.4602355957031,
+      "max_reprojection_error": 330.6007995605469,
+      "std_reprojection_error": 22.275318145751953
+    },
+    "rmse": 289.7430114746094,
+    "matching_metrics": {
+      "matching_precision": 0.8571428571428571,
+      "matching_recall": 0.45161290322580644,
+      "f1_score": 0.5915492957746479,
+      "inlier_ratio": 0.8571428571428571
+    },
+    "matrix_error": {
+      "frobenius_norm": 284.8856105096016,
+      "max_element_error": 261.7767111434322,
+      "mean_element_error": 41.82459256868111
+    },
+    "performance": {
+      "computation_time": 0.13685059547424316,
+      "memory_usage_mb": 207.03125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_seismic",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 342.7361755371094,
+    "max_corner_error": 378.9538269042969,
+    "corner_errors": [
+      378.9538269042969,
+      348.82354736328125,
+      310.46966552734375,
+      332.6976013183594
+    ],
+    "num_keypoints_A": 111,
+    "num_keypoints_B": 151,
+    "num_matches": 43,
+    "num_inliers": 39,
+    "inlier_ratio": 0.9069767441860465,
+    "computation_time": 0.12959051132202148,
+    "H_estimated": [
+      [
+        0.9999467593641481,
+        -4.73782932408353e-05,
+        161.0028048821877
+      ],
+      [
+        -1.2667959738456828e-05,
+        0.9999147556304013,
+        -2.9910039322540407
+      ],
+      [
+        -6.097369238938471e-08,
+        -2.0314527487301452e-07,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.12933108,
+        0.16579953,
+        -217.33644065
+      ],
+      [
+        0.0992726,
+        1.08569372,
+        -24.56467323
+      ],
+      [
+        0.00020504,
+        7.329e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 111,
+      "good_matches": 43,
+      "ratio_test_passed": 43,
+      "ratio_test_failed": 63,
+      "matching_time": 0.0010035037994384766,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5704622252123285,
+      "median_distance_ratio": 0.8367074856804266
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11571621894836426,
+      "final_subset_size": 43,
+      "inlier_count": 39,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 342.7361755371094,
+      "corner_errors": [
+        378.9538269042969,
+        348.82354736328125,
+        310.46966552734375,
+        332.6976013183594
+      ],
+      "max_corner_error": 378.9538269042969,
+      "min_corner_error": 310.46966552734375,
+      "std_corner_error": 24.953330993652344
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 341.4189147949219,
+      "median_reprojection_error": 338.79327392578125,
+      "max_reprojection_error": 378.9538269042969,
+      "std_reprojection_error": 20.378009796142578
+    },
+    "rmse": 342.0265197753906,
+    "matching_metrics": {
+      "matching_precision": 0.9069767441860465,
+      "matching_recall": 0.38738738738738737,
+      "f1_score": 0.5428941404985432,
+      "inlier_ratio": 0.9069767441860465
+    },
+    "matrix_error": {
+      "frobenius_norm": 378.95391458325844,
+      "max_element_error": 378.33924553218765,
+      "mean_element_error": 44.48816543170122
+    },
+    "performance": {
+      "computation_time": 0.12959051132202148,
+      "memory_usage_mb": 207.03125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 239.16302490234375,
+    "max_corner_error": 331.484619140625,
+    "corner_errors": [
+      126.41513061523438,
+      254.09237670898438,
+      331.484619140625,
+      244.6599578857422
+    ],
+    "num_keypoints_A": 133,
+    "num_keypoints_B": 111,
+    "num_matches": 24,
+    "num_inliers": 21,
+    "inlier_ratio": 0.875,
+    "computation_time": 0.14548254013061523,
+    "H_estimated": [
+      [
+        0.9999992301172508,
+        2.802043694715725e-07,
+        112.99999681508548
+      ],
+      [
+        -7.858896948580288e-07,
+        0.9999998353346875,
+        147.00003368943467
+      ],
+      [
+        -3.3331641329622786e-09,
+        8.658645909431134e-10,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.34080328,
+        -0.15129633,
+        60.37712059
+      ],
+      [
+        -0.18376128,
+        0.44949046,
+        32.0582276
+      ],
+      [
+        -0.00062277,
+        -0.00061195,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 133,
+      "good_matches": 24,
+      "ratio_test_passed": 24,
+      "ratio_test_failed": 103,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7585880109507769,
+      "median_distance_ratio": 0.9030303030303031
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12974286079406738,
+      "final_subset_size": 24,
+      "inlier_count": 21,
+      "outlier_count": 3
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 239.16302490234375,
+      "corner_errors": [
+        126.41513061523438,
+        254.09237670898438,
+        331.484619140625,
+        244.6599578857422
+      ],
+      "max_corner_error": 331.484619140625,
+      "min_corner_error": 126.41513061523438,
+      "std_corner_error": 73.29472351074219
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 240.10247802734375,
+      "median_reprojection_error": 244.6599578857422,
+      "max_reprojection_error": 331.484619140625,
+      "std_reprojection_error": 59.73959732055664
+    },
+    "rmse": 247.4227752685547,
+    "matching_metrics": {
+      "matching_precision": 0.875,
+      "matching_recall": 0.21621621621621623,
+      "f1_score": 0.34674922600619196,
+      "inlier_ratio": 0.875
+    },
+    "matrix_error": {
+      "frobenius_norm": 126.41827458291236,
+      "max_element_error": 114.94180608943466,
+      "mean_element_error": 18.790075495757716
+    },
+    "performance": {
+      "computation_time": 0.14548254013061523,
+      "memory_usage_mb": 207.3046875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 328.8297424316406,
+    "max_corner_error": 346.813720703125,
+    "corner_errors": [
+      346.813720703125,
+      333.87615966796875,
+      303.22735595703125,
+      331.4017028808594
+    ],
+    "num_keypoints_A": 104,
+    "num_keypoints_B": 88,
+    "num_matches": 23,
+    "num_inliers": 19,
+    "inlier_ratio": 0.8260869565217391,
+    "computation_time": 0.14118742942810059,
+    "H_estimated": [
+      [
+        1.0224701390351492,
+        -0.01781582780765453,
+        -4.011522061477736
+      ],
+      [
+        0.022596986013367914,
+        0.9830884159041055,
+        146.35898863348714
+      ],
+      [
+        0.00010722686341367494,
+        -0.0001289040048308111,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.98279277,
+        0.28766519,
+        -6.94598375
+      ],
+      [
+        0.06970538,
+        1.17950275,
+        -200.44231177
+      ],
+      [
+        -6.715e-05,
+        0.00066029,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 104,
+      "good_matches": 23,
+      "ratio_test_passed": 23,
+      "ratio_test_failed": 79,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7343137193870373,
+      "median_distance_ratio": 0.8938893699935051
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12546348571777344,
+      "final_subset_size": 23,
+      "inlier_count": 19,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 328.8297424316406,
+      "corner_errors": [
+        346.813720703125,
+        333.87615966796875,
+        303.22735595703125,
+        331.4017028808594
+      ],
+      "max_corner_error": 346.813720703125,
+      "min_corner_error": 303.22735595703125,
+      "std_corner_error": 15.89801025390625
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 323.9114990234375,
+      "median_reprojection_error": 324.1540222167969,
+      "max_reprojection_error": 346.813720703125,
+      "std_reprojection_error": 14.52784538269043
+    },
+    "rmse": 324.23712158203125,
+    "matching_metrics": {
+      "matching_precision": 0.8260869565217391,
+      "matching_recall": 0.26136363636363635,
+      "f1_score": 0.39709223080417994,
+      "inlier_ratio": 0.8260869565217391
+    },
+    "matrix_error": {
+      "frobenius_norm": 346.8139107912796,
+      "max_element_error": 346.8013004034872,
+      "mean_element_error": 38.92504519753366
+    },
+    "performance": {
+      "computation_time": 0.14118742942810059,
+      "memory_usage_mb": 207.3046875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 428.741943359375,
+    "max_corner_error": 675.6293334960938,
+    "corner_errors": [
+      675.6293334960938,
+      470.902587890625,
+      491.4785461425781,
+      76.95722198486328
+    ],
+    "num_keypoints_A": 101,
+    "num_keypoints_B": 130,
+    "num_matches": 14,
+    "num_inliers": 7,
+    "inlier_ratio": 0.5,
+    "computation_time": 0.14681005477905273,
+    "H_estimated": [
+      [
+        -4.931539472236065,
+        1.6764898718143635,
+        604.9141532126539
+      ],
+      [
+        -8.13843890767175,
+        7.076449200020967,
+        392.60797554034303
+      ],
+      [
+        -0.03969022596746834,
+        0.046025060006326945,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.94392938,
+        -0.08955323,
+        171.32642226
+      ],
+      [
+        -0.01455304,
+        1.01853227,
+        -125.53944403
+      ],
+      [
+        -7.16e-05,
+        8.04e-06,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 101,
+      "good_matches": 14,
+      "ratio_test_passed": 14,
+      "ratio_test_failed": 82,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8397853414069291,
+      "median_distance_ratio": 0.9057142857142857
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12733054161071777,
+      "final_subset_size": 14,
+      "inlier_count": 7,
+      "outlier_count": 7
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 428.741943359375,
+      "corner_errors": [
+        675.6293334960938,
+        470.902587890625,
+        491.4785461425781,
+        76.95722198486328
+      ],
+      "max_corner_error": 675.6293334960938,
+      "min_corner_error": 76.95722198486328,
+      "std_corner_error": 218.18528747558594
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 346.58160400390625,
+      "median_reprojection_error": 362.8965759277344,
+      "max_reprojection_error": 675.6293334960938,
+      "std_reprojection_error": 175.4625244140625
+    },
+    "rmse": 388.466064453125,
+    "matching_metrics": {
+      "matching_precision": 0.5,
+      "matching_recall": 0.13861386138613863,
+      "f1_score": 0.2170542635658915,
+      "inlier_ratio": 0.5
+    },
+    "matrix_error": {
+      "frobenius_norm": 675.7332376381014,
+      "max_element_error": 518.147419570343,
+      "mean_element_error": 108.18267788007931
+    },
+    "performance": {
+      "computation_time": 0.14681005477905273,
+      "memory_usage_mb": 207.3046875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 250.74203491210938,
+    "max_corner_error": 367.6206359863281,
+    "corner_errors": [
+      367.6206359863281,
+      326.527099609375,
+      121.71759796142578,
+      187.1028289794922
+    ],
+    "num_keypoints_A": 115,
+    "num_keypoints_B": 47,
+    "num_matches": 17,
+    "num_inliers": 7,
+    "inlier_ratio": 0.4117647058823529,
+    "computation_time": 0.14168858528137207,
+    "H_estimated": [
+      [
+        -5.07742916182047,
+        -0.781633075639294,
+        204.01488452838993
+      ],
+      [
+        -5.08282471743949,
+        -0.6075833136855209,
+        191.97219319995907
+      ],
+      [
+        -0.0225668906401519,
+        -0.005539439841715271,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.92627506,
+        0.02774808,
+        -24.92402207
+      ],
+      [
+        -0.02148451,
+        0.70979353,
+        -95.65934775
+      ],
+      [
+        0.00037098,
+        -0.00053247,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 115,
+      "good_matches": 17,
+      "ratio_test_passed": 17,
+      "ratio_test_failed": 81,
+      "matching_time": 0.0021889209747314453,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8474377912594209,
+      "median_distance_ratio": 0.8944407308377897
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12665557861328125,
+      "final_subset_size": 17,
+      "inlier_count": 7,
+      "outlier_count": 10
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 250.74203491210938,
+      "corner_errors": [
+        367.6206359863281,
+        326.527099609375,
+        121.71759796142578,
+        187.1028289794922
+      ],
+      "max_corner_error": 367.6206359863281,
+      "min_corner_error": 121.71759796142578,
+      "std_corner_error": 100.12646484375
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 279.4609680175781,
+      "median_reprojection_error": 241.23123168945312,
+      "max_reprojection_error": 550.219482421875,
+      "std_reprojection_error": 129.95492553710938
+    },
+    "rmse": 308.1991271972656,
+    "matching_metrics": {
+      "matching_precision": 0.4117647058823529,
+      "matching_recall": 0.3617021276595745,
+      "f1_score": 0.3851132686084142,
+      "inlier_ratio": 0.4117647058823529
+    },
+    "matrix_error": {
+      "frobenius_norm": 367.7077359311494,
+      "max_element_error": 287.63154094995906,
+      "mean_element_error": 58.865577201935075
+    },
+    "performance": {
+      "computation_time": 0.14168858528137207,
+      "memory_usage_mb": 207.3046875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 240.68896484375,
+    "max_corner_error": 269.8312072753906,
+    "corner_errors": [
+      269.8312072753906,
+      241.7635040283203,
+      224.8632354736328,
+      226.2979278564453
+    ],
+    "num_keypoints_A": 86,
+    "num_keypoints_B": 188,
+    "num_matches": 53,
+    "num_inliers": 51,
+    "inlier_ratio": 0.9622641509433962,
+    "computation_time": 0.147843599319458,
+    "H_estimated": [
+      [
+        0.9887917963508588,
+        -0.006437613527667548,
+        33.388827418614916
+      ],
+      [
+        -0.0019971863691040656,
+        0.9887941226683571,
+        -107.23213487899419
+      ],
+      [
+        -1.668316517118845e-05,
+        -2.9744473181520962e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.90658509,
+        0.15982893,
+        -40.15512554
+      ],
+      [
+        -0.16964359,
+        0.90185602,
+        152.38326326
+      ],
+      [
+        -0.00043828,
+        0.00012745,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 86,
+      "good_matches": 53,
+      "ratio_test_passed": 53,
+      "ratio_test_failed": 31,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.3575978651893774,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.13227009773254395,
+      "final_subset_size": 53,
+      "inlier_count": 51,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 240.68896484375,
+      "corner_errors": [
+        269.8312072753906,
+        241.7635040283203,
+        224.8632354736328,
+        226.2979278564453
+      ],
+      "max_corner_error": 269.8312072753906,
+      "min_corner_error": 224.8632354736328,
+      "std_corner_error": 18.0830078125
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 241.9694061279297,
+      "median_reprojection_error": 241.7635040283203,
+      "max_reprojection_error": 269.8312072753906,
+      "std_reprojection_error": 14.676219940185547
+    },
+    "rmse": 242.41409301757812,
+    "matching_metrics": {
+      "matching_precision": 0.9622641509433962,
+      "matching_recall": 0.6162790697674418,
+      "f1_score": 0.75135510771369,
+      "inlier_ratio": 0.9622641509433962
+    },
+    "matrix_error": {
+      "frobenius_norm": 269.83131403509543,
+      "max_element_error": 259.6153981389942,
+      "mean_element_error": 37.07366529389943
+    },
+    "performance": {
+      "computation_time": 0.147843599319458,
+      "memory_usage_mb": 207.78515625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 251.81185913085938,
+    "max_corner_error": 363.8244934082031,
+    "corner_errors": [
+      160.05584716796875,
+      155.21728515625,
+      363.8244934082031,
+      328.1498107910156
+    ],
+    "num_keypoints_A": 58,
+    "num_keypoints_B": 130,
+    "num_matches": 9,
+    "num_inliers": 6,
+    "inlier_ratio": 0.6666666666666666,
+    "computation_time": 0.13652706146240234,
+    "H_estimated": [
+      [
+        -0.23399240524547488,
+        -0.9398221111856127,
+        208.36837976763155
+      ],
+      [
+        -0.0007696330093004191,
+        -0.41887261695945066,
+        82.87724129480472
+      ],
+      [
+        -1.9196823274370264e-05,
+        -0.005604138438226074,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.65042976,
+        0.12910315,
+        75.82572431
+      ],
+      [
+        -0.05197509,
+        0.93688656,
+        172.60077952
+      ],
+      [
+        -0.00042093,
+        0.00029954,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 58,
+      "good_matches": 9,
+      "ratio_test_passed": 9,
+      "ratio_test_failed": 47,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8334731351700493,
+      "median_distance_ratio": 0.9115347018572825
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12601161003112793,
+      "final_subset_size": 9,
+      "inlier_count": 6,
+      "outlier_count": 3
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 251.81185913085938,
+      "corner_errors": [
+        160.05584716796875,
+        155.21728515625,
+        363.8244934082031,
+        328.1498107910156
+      ],
+      "max_corner_error": 363.8244934082031,
+      "min_corner_error": 155.21728515625,
+      "std_corner_error": 95.03156280517578
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 242.37001037597656,
+      "median_reprojection_error": 263.48590087890625,
+      "max_reprojection_error": 363.8244934082031,
+      "std_reprojection_error": 90.83019256591797
+    },
+    "rmse": 258.83074951171875,
+    "matching_metrics": {
+      "matching_precision": 0.6666666666666666,
+      "matching_recall": 0.15517241379310345,
+      "f1_score": 0.2517482517482518,
+      "inlier_ratio": 0.6666666666666666
+    },
+    "matrix_error": {
+      "frobenius_norm": 160.06759313224032,
+      "max_element_error": 132.54265545763155,
+      "mean_element_error": 25.07031235053589
+    },
+    "performance": {
+      "computation_time": 0.13652706146240234,
+      "memory_usage_mb": 207.79296875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 218.97100830078125,
+    "max_corner_error": 251.9430389404297,
+    "corner_errors": [
+      193.52896118164062,
+      251.9430389404297,
+      245.1697235107422,
+      185.24227905273438
+    ],
+    "num_keypoints_A": 137,
+    "num_keypoints_B": 80,
+    "num_matches": 52,
+    "num_inliers": 48,
+    "inlier_ratio": 0.9230769230769231,
+    "computation_time": 0.13109421730041504,
+    "H_estimated": [
+      [
+        0.9967938664156755,
+        0.000625514642254896,
+        -6.773754335962169
+      ],
+      [
+        -0.0018266670014679708,
+        0.9992691201143629,
+        146.0188157539398
+      ],
+      [
+        -1.0600299202332849e-05,
+        3.0084344602635076e-06,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.99407119,
+        0.10801748,
+        -8.0911913
+      ],
+      [
+        -0.2341561,
+        1.05917793,
+        -47.50567835
+      ],
+      [
+        5.643e-05,
+        9.986e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 137,
+      "good_matches": 52,
+      "ratio_test_passed": 52,
+      "ratio_test_failed": 70,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5533787241067847,
+      "median_distance_ratio": 0.8051554079246179
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12484359741210938,
+      "final_subset_size": 52,
+      "inlier_count": 48,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 218.97100830078125,
+      "corner_errors": [
+        193.52896118164062,
+        251.9430389404297,
+        245.1697235107422,
+        185.24227905273438
+      ],
+      "max_corner_error": 251.9430389404297,
+      "min_corner_error": 185.24227905273438,
+      "std_corner_error": 29.82638168334961
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 218.37506103515625,
+      "median_reprojection_error": 217.2015380859375,
+      "max_reprojection_error": 251.9430389404297,
+      "std_reprojection_error": 24.41291046142578
+    },
+    "rmse": 219.73544311523438,
+    "matching_metrics": {
+      "matching_precision": 0.9230769230769231,
+      "matching_recall": 0.65,
+      "f1_score": 0.762836185819071,
+      "inlier_ratio": 0.9230769230769231
+    },
+    "matrix_error": {
+      "frobenius_norm": 193.52915688555058,
+      "max_element_error": 193.5244941039398,
+      "mean_element_error": 21.69382753716666
+    },
+    "performance": {
+      "computation_time": 0.13109421730041504,
+      "memory_usage_mb": 207.796875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 260.6972351074219,
+    "max_corner_error": 338.94012451171875,
+    "corner_errors": [
+      243.48085021972656,
+      338.94012451171875,
+      278.21148681640625,
+      182.15647888183594
+    ],
+    "num_keypoints_A": 45,
+    "num_keypoints_B": 67,
+    "num_matches": 7,
+    "num_inliers": 7,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.14864659309387207,
+    "H_estimated": [
+      [
+        0.9999989580568709,
+        9.251431368913036e-08,
+        172.00001543019505
+      ],
+      [
+        -6.288252263386222e-07,
+        0.9999998417938399,
+        -12.999956528570456
+      ],
+      [
+        -4.0058583887389476e-09,
+        5.510936710871994e-10,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.5381951,
+        0.20284158,
+        -61.67183843
+      ],
+      [
+        -0.08609124,
+        0.70170029,
+        55.41341776
+      ],
+      [
+        -0.00072264,
+        0.0001537,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 45,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 37,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7728402316726272,
+      "median_distance_ratio": 0.9163752913752914
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11954283714294434,
+      "final_subset_size": 7,
+      "inlier_count": 7,
+      "outlier_count": 0
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 260.6972351074219,
+      "corner_errors": [
+        243.48085021972656,
+        338.94012451171875,
+        278.21148681640625,
+        182.15647888183594
+      ],
+      "max_corner_error": 338.94012451171875,
+      "min_corner_error": 182.15647888183594,
+      "std_corner_error": 56.77532958984375
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 262.34521484375,
+      "median_reprojection_error": 265.8829650878906,
+      "max_reprojection_error": 338.94012451171875,
+      "std_reprojection_error": 46.82891845703125
+    },
+    "rmse": 266.491943359375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.15555555555555556,
+      "f1_score": 0.2692307692307693,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 243.48157193151704,
+      "max_element_error": 233.67185386019506,
+      "mean_element_error": 33.681682221413304
+    },
+    "performance": {
+      "computation_time": 0.14864659309387207,
+      "memory_usage_mb": 207.90625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 227.02813720703125,
+    "max_corner_error": 300.1425476074219,
+    "corner_errors": [
+      172.9195556640625,
+      300.1425476074219,
+      292.15777587890625,
+      142.89273071289062
+    ],
+    "num_keypoints_A": 100,
+    "num_keypoints_B": 126,
+    "num_matches": 15,
+    "num_inliers": 8,
+    "inlier_ratio": 0.5333333333333333,
+    "computation_time": 0.15261149406433105,
+    "H_estimated": [
+      [
+        1.0000110964469286,
+        6.78297021203856e-07,
+        153.99991447636432
+      ],
+      [
+        9.054386818787288e-06,
+        1.0000029917861057,
+        28.999621869336732
+      ],
+      [
+        4.565623117599119e-08,
+        3.529446919294055e-09,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.30702419,
+        0.0166829,
+        7.50877115
+      ],
+      [
+        -0.27176026,
+        0.57780311,
+        120.87737068
+      ],
+      [
+        -0.00090993,
+        -2.369e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 100,
+      "good_matches": 15,
+      "ratio_test_passed": 15,
+      "ratio_test_failed": 82,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8343689316348527,
+      "median_distance_ratio": 0.9333333333333333
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.1349780559539795,
+      "final_subset_size": 15,
+      "inlier_count": 8,
+      "outlier_count": 7
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 227.02813720703125,
+      "corner_errors": [
+        172.9195556640625,
+        300.1425476074219,
+        292.15777587890625,
+        142.89273071289062
+      ],
+      "max_corner_error": 300.1425476074219,
+      "min_corner_error": 142.89273071289062,
+      "std_corner_error": 69.98944854736328
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 227.04229736328125,
+      "median_reprojection_error": 227.764892578125,
+      "max_reprojection_error": 300.1425476074219,
+      "std_reprojection_error": 58.06290054321289
+    },
+    "rmse": 234.34910583496094,
+    "matching_metrics": {
+      "matching_precision": 0.5333333333333333,
+      "matching_recall": 0.15,
+      "f1_score": 0.23414634146341465,
+      "inlier_ratio": 0.5333333333333333
+    },
+    "matrix_error": {
+      "frobenius_norm": 172.9216829112498,
+      "max_element_error": 146.49114332636432,
+      "mean_element_error": 26.64149601450401
+    },
+    "performance": {
+      "computation_time": 0.15261149406433105,
+      "memory_usage_mb": 207.91015625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_seismic",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 78,
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 37,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 13,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 33,
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 314.3136291503906,
+    "max_corner_error": 422.84307861328125,
+    "corner_errors": [
+      404.227783203125,
+      422.84307861328125,
+      121.8015365600586,
+      308.3821716308594
+    ],
+    "num_keypoints_A": 9,
+    "num_keypoints_B": 65,
+    "num_matches": 6,
+    "num_inliers": 5,
+    "inlier_ratio": 0.8333333333333334,
+    "computation_time": 0.12102937698364258,
+    "H_estimated": [
+      [
+        -0.6387547777987046,
+        -0.6797503605849723,
+        185.72801340003073
+      ],
+      [
+        -0.7740736705992237,
+        -0.8975419709414548,
+        232.05312570468396
+      ],
+      [
+        -0.0033708503688246365,
+        -0.003782145401788471,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.85527502,
+        0.45810543,
+        -19.23331599
+      ],
+      [
+        -0.15271953,
+        1.31648677,
+        -116.35892038
+      ],
+      [
+        -0.00036618,
+        0.00092977,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 9,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5391851751155927,
+      "median_distance_ratio": 0.7243589743589743
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.10547637939453125,
+      "final_subset_size": 6,
+      "inlier_count": 5,
+      "outlier_count": 1
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 314.3136291503906,
+      "corner_errors": [
+        404.227783203125,
+        422.84307861328125,
+        121.8015365600586,
+        308.3821716308594
+      ],
+      "max_corner_error": 422.84307861328125,
+      "min_corner_error": 121.8015365600586,
+      "std_corner_error": 119.33071899414062
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 264.4526672363281,
+      "median_reprojection_error": 238.6785430908203,
+      "max_reprojection_error": 422.84307861328125,
+      "std_reprojection_error": 117.92924499511719
+    },
+    "rmse": 289.55572509765625,
+    "matching_metrics": {
+      "matching_precision": 0.8333333333333334,
+      "matching_recall": 0.6666666666666666,
+      "f1_score": 0.7407407407407408,
+      "inlier_ratio": 0.8333333333333334
+    },
+    "matrix_error": {
+      "frobenius_norm": 404.23868602416746,
+      "max_element_error": 348.412046084684,
+      "mean_element_error": 62.09426228115664
+    },
+    "performance": {
+      "computation_time": 0.12102937698364258,
+      "memory_usage_mb": 205.65625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 339.6361083984375,
+    "max_corner_error": 373.67694091796875,
+    "corner_errors": [
+      373.67694091796875,
+      345.341064453125,
+      321.1782531738281,
+      318.34814453125
+    ],
+    "num_keypoints_A": 14,
+    "num_keypoints_B": 97,
+    "num_matches": 9,
+    "num_inliers": 9,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.13181352615356445,
+    "H_estimated": [
+      [
+        0.9045777274718078,
+        0.04223869820309359,
+        -9.67855397693076
+      ],
+      [
+        -0.0793440148777251,
+        1.0335213185275423,
+        166.3395901723417
+      ],
+      [
+        -0.0003022582475175429,
+        0.00025148913142364213,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.84998079,
+        -0.04135733,
+        75.25822112
+      ],
+      [
+        0.03417058,
+        1.11149888,
+        -197.55630387
+      ],
+      [
+        9.962e-05,
+        -0.00029303,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 14,
+      "good_matches": 9,
+      "ratio_test_passed": 9,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.423051416904112,
+      "median_distance_ratio": 0.27235772357723576
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11892151832580566,
+      "final_subset_size": 9,
+      "inlier_count": 9,
+      "outlier_count": 0
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 339.6361083984375,
+      "corner_errors": [
+        373.67694091796875,
+        345.341064453125,
+        321.1782531738281,
+        318.34814453125
+      ],
+      "max_corner_error": 373.67694091796875,
+      "min_corner_error": 318.34814453125,
+      "std_corner_error": 22.277761459350586
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 343.0433044433594,
+      "median_reprojection_error": 345.341064453125,
+      "max_reprojection_error": 373.67694091796875,
+      "std_reprojection_error": 18.323200225830078
+    },
+    "rmse": 343.5323181152344,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.6428571428571429,
+      "f1_score": 0.782608695652174,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 373.6770081238404,
+      "max_element_error": 363.89589404234175,
+      "mean_element_error": 49.907033406519616
+    },
+    "performance": {
+      "computation_time": 0.13181352615356445,
+      "memory_usage_mb": 205.8984375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120131_487_IR_seismic",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 122.45064544677734,
+    "max_corner_error": 176.93072509765625,
+    "corner_errors": [
+      131.7215118408203,
+      176.93072509765625,
+      133.604248046875,
+      47.546104431152344
+    ],
+    "num_keypoints_A": 126,
+    "num_keypoints_B": 96,
+    "num_matches": 50,
+    "num_inliers": 46,
+    "inlier_ratio": 0.92,
+    "computation_time": 0.1453230381011963,
+    "H_estimated": [
+      [
+        0.9998065951743836,
+        6.674635993584225e-05,
+        91.0011179099724
+      ],
+      [
+        -0.00013926575219123976,
+        1.0000272980830704,
+        14.004916189557381
+      ],
+      [
+        -1.0450416393783477e-06,
+        3.474395189080883e-07,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.38978202,
+        0.25347397,
+        48.37140464
+      ],
+      [
+        -0.30515427,
+        0.90298076,
+        138.63742387
+      ],
+      [
+        -0.00070019,
+        0.00064865,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 126,
+      "good_matches": 50,
+      "ratio_test_passed": 50,
+      "ratio_test_failed": 69,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5665300849746057,
+      "median_distance_ratio": 0.85
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12959003448486328,
+      "final_subset_size": 50,
+      "inlier_count": 46,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 122.45064544677734,
+      "corner_errors": [
+        131.7215118408203,
+        176.93072509765625,
+        133.604248046875,
+        47.546104431152344
+      ],
+      "max_corner_error": 176.93072509765625,
+      "min_corner_error": 47.546104431152344,
+      "std_corner_error": 46.87515640258789
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 119.86032104492188,
+      "median_reprojection_error": 131.7215118408203,
+      "max_reprojection_error": 176.93072509765625,
+      "std_reprojection_error": 38.5498046875
+    },
+    "rmse": 125.90705108642578,
+    "matching_metrics": {
+      "matching_precision": 0.92,
+      "matching_recall": 0.5208333333333334,
+      "f1_score": 0.6651243493348757,
+      "inlier_ratio": 0.92
+    },
+    "matrix_error": {
+      "frobenius_norm": 131.72354847365534,
+      "max_element_error": 124.63250768044261,
+      "mean_element_error": 18.72545130434213
+    },
+    "performance": {
+      "computation_time": 0.1453230381011963,
+      "memory_usage_mb": 206.80859375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 442.7030029296875,
+    "max_corner_error": 527.5564575195312,
+    "corner_errors": [
+      527.5564575195312,
+      415.41583251953125,
+      373.5065612792969,
+      454.3331298828125
+    ],
+    "num_keypoints_A": 162,
+    "num_keypoints_B": 171,
+    "num_matches": 43,
+    "num_inliers": 41,
+    "inlier_ratio": 0.9534883720930233,
+    "computation_time": 0.1394350528717041,
+    "H_estimated": [
+      [
+        1.0003369207351795,
+        3.136452097495096e-06,
+        180.9534409175246
+      ],
+      [
+        -0.00024891825569087124,
+        0.9995859918087797,
+        9.039087361202432
+      ],
+      [
+        -1.2884869106474004e-06,
+        -4.905573326365166e-07,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.44586933,
+        0.18762744,
+        -343.92783585
+      ],
+      [
+        0.01558538,
+        1.405618,
+        -44.02159102
+      ],
+      [
+        0.00030103,
+        0.00033363,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 162,
+      "good_matches": 43,
+      "ratio_test_passed": 43,
+      "ratio_test_failed": 115,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6833310204526434,
+      "median_distance_ratio": 0.8818324372759856
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12338590621948242,
+      "final_subset_size": 43,
+      "inlier_count": 41,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 442.7030029296875,
+      "corner_errors": [
+        527.5564575195312,
+        415.41583251953125,
+        373.5065612792969,
+        454.3331298828125
+      ],
+      "max_corner_error": 527.5564575195312,
+      "min_corner_error": 373.5065612792969,
+      "std_corner_error": 56.71883773803711
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 439.7532958984375,
+      "median_reprojection_error": 433.8796691894531,
+      "max_reprojection_error": 527.5564575195312,
+      "std_reprojection_error": 46.067989349365234
+    },
+    "rmse": 442.15972900390625,
+    "matching_metrics": {
+      "matching_precision": 0.9534883720930233,
+      "matching_recall": 0.2654320987654321,
+      "f1_score": 0.41526321987987286,
+      "inlier_ratio": 0.9534883720930233
+    },
+    "matrix_error": {
+      "frobenius_norm": 527.5568112595143,
+      "max_element_error": 524.8812767675246,
+      "mean_element_error": 64.3330682896701
+    },
+    "performance": {
+      "computation_time": 0.1394350528717041,
+      "memory_usage_mb": 207.12109375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 285.54547119140625,
+    "max_corner_error": 309.21063232421875,
+    "corner_errors": [
+      277.23541259765625,
+      268.94036865234375,
+      286.79547119140625,
+      309.21063232421875
+    ],
+    "num_keypoints_A": 131,
+    "num_keypoints_B": 106,
+    "num_matches": 44,
+    "num_inliers": 39,
+    "inlier_ratio": 0.8863636363636364,
+    "computation_time": 0.13965463638305664,
+    "H_estimated": [
+      [
+        1.0024107747892934,
+        -0.010055839502382063,
+        -3.3625342453829115
+      ],
+      [
+        0.005918127551933367,
+        0.9900156370043882,
+        144.05568310195463
+      ],
+      [
+        2.736507095159839e-05,
+        -4.263488434628734e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.69278635,
+        -0.06412834,
+        63.55136433
+      ],
+      [
+        0.03234755,
+        0.85083394,
+        -124.98335221
+      ],
+      [
+        -0.00023973,
+        -0.00019542,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 131,
+      "good_matches": 44,
+      "ratio_test_passed": 44,
+      "ratio_test_failed": 81,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6277737543964939,
+      "median_distance_ratio": 0.8592964824120602
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.11935567855834961,
+      "final_subset_size": 44,
+      "inlier_count": 39,
+      "outlier_count": 5
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 285.54547119140625,
+      "corner_errors": [
+        277.23541259765625,
+        268.94036865234375,
+        286.79547119140625,
+        309.21063232421875
+      ],
+      "max_corner_error": 309.21063232421875,
+      "min_corner_error": 268.94036865234375,
+      "std_corner_error": 15.053146362304688
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 285.73931884765625,
+      "median_reprojection_error": 286.141357421875,
+      "max_reprojection_error": 309.21063232421875,
+      "std_reprojection_error": 12.316447257995605
+    },
+    "rmse": 286.004638671875,
+    "matching_metrics": {
+      "matching_precision": 0.8863636363636364,
+      "matching_recall": 0.41509433962264153,
+      "f1_score": 0.5654036243822076,
+      "inlier_ratio": 0.8863636363636364
+    },
+    "matrix_error": {
+      "frobenius_norm": 277.23562398331387,
+      "max_element_error": 269.03903531195465,
+      "mean_element_error": 37.38696242358483
+    },
+    "performance": {
+      "computation_time": 0.13965463638305664,
+      "memory_usage_mb": 207.125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 197.7379913330078,
+    "max_corner_error": 232.36395263671875,
+    "corner_errors": [
+      166.63272094726562,
+      161.33900451660156,
+      232.36395263671875,
+      230.61627197265625
+    ],
+    "num_keypoints_A": 127,
+    "num_keypoints_B": 120,
+    "num_matches": 39,
+    "num_inliers": 36,
+    "inlier_ratio": 0.9230769230769231,
+    "computation_time": 0.1562354564666748,
+    "H_estimated": [
+      [
+        1.0000047194580315,
+        1.2137454916595512e-05,
+        7.999281785748319
+      ],
+      [
+        1.4025327221190833e-06,
+        1.0000276596057913,
+        110.99932551211968
+      ],
+      [
+        -7.29820480660571e-09,
+        9.238427143985076e-08,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.90097405,
+        -0.13605315,
+        22.96671358
+      ],
+      [
+        0.01507673,
+        0.66132982,
+        -54.95982682
+      ],
+      [
+        0.0001694,
+        -0.00065696,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 127,
+      "good_matches": 39,
+      "ratio_test_passed": 39,
+      "ratio_test_failed": 84,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6504382472896406,
+      "median_distance_ratio": 0.9053254437869822
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.1378345489501953,
+      "final_subset_size": 39,
+      "inlier_count": 36,
+      "outlier_count": 3
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 197.7379913330078,
+      "corner_errors": [
+        166.63272094726562,
+        161.33900451660156,
+        232.36395263671875,
+        230.61627197265625
+      ],
+      "max_corner_error": 232.36395263671875,
+      "min_corner_error": 161.33900451660156,
+      "std_corner_error": 33.80962371826172
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 200.21002197265625,
+      "median_reprojection_error": 205.39752197265625,
+      "max_reprojection_error": 232.36395263671875,
+      "std_reprojection_error": 27.968679428100586
+    },
+    "rmse": 202.15414428710938,
+    "matching_metrics": {
+      "matching_precision": 0.9230769230769231,
+      "matching_recall": 0.325,
+      "f1_score": 0.4807395993836672,
+      "inlier_ratio": 0.9230769230769231
+    },
+    "matrix_error": {
+      "frobenius_norm": 166.63315253004038,
+      "max_element_error": 165.9591523321197,
+      "mean_element_error": 20.16847552333776
+    },
+    "performance": {
+      "computation_time": 0.1562354564666748,
+      "memory_usage_mb": 207.125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 413.32745361328125,
+    "max_corner_error": 492.6823425292969,
+    "corner_errors": [
+      410.81396484375,
+      367.3422546386719,
+      382.4712219238281,
+      492.6823425292969
+    ],
+    "num_keypoints_A": 143,
+    "num_keypoints_B": 250,
+    "num_matches": 24,
+    "num_inliers": 22,
+    "inlier_ratio": 0.9166666666666666,
+    "computation_time": 0.14491033554077148,
+    "H_estimated": [
+      [
+        0.9999747775034326,
+        -4.17515789560893e-05,
+        151.00231169796263
+      ],
+      [
+        6.922148547605226e-07,
+        0.9999563991934274,
+        -105.99481774466355
+      ],
+      [
+        3.092312146875195e-08,
+        -1.876527259274294e-07,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.38034759,
+        -0.08564651,
+        -231.19574135
+      ],
+      [
+        0.29655286,
+        1.01281355,
+        44.6463166
+      ],
+      [
+        0.00059429,
+        -0.00057182,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 143,
+      "good_matches": 24,
+      "ratio_test_passed": 24,
+      "ratio_test_failed": 119,
+      "matching_time": 0.0010025501251220703,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7796647597147652,
+      "median_distance_ratio": 0.9210526315789473
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.1308751106262207,
+      "final_subset_size": 24,
+      "inlier_count": 22,
+      "outlier_count": 2
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 413.32745361328125,
+      "corner_errors": [
+        410.81396484375,
+        367.3422546386719,
+        382.4712219238281,
+        492.6823425292969
+      ],
+      "max_corner_error": 492.6823425292969,
+      "min_corner_error": 367.3422546386719,
+      "std_corner_error": 48.400054931640625
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 406.5434875488281,
+      "median_reprojection_error": 393.0578918457031,
+      "max_reprojection_error": 492.6823425292969,
+      "std_reprojection_error": 38.967247009277344
+    },
+    "rmse": 408.40673828125,
+    "matching_metrics": {
+      "matching_precision": 0.9166666666666666,
+      "matching_recall": 0.16783216783216784,
+      "f1_score": 0.2837184309511016,
+      "inlier_ratio": 0.9166666666666666
+    },
+    "matrix_error": {
+      "frobenius_norm": 410.81424419209935,
+      "max_element_error": 382.1980530479626,
+      "mean_element_error": 59.290637797062196
+    },
+    "performance": {
+      "computation_time": 0.14491033554077148,
+      "memory_usage_mb": 207.125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 233.8896484375,
+    "max_corner_error": 283.5517272949219,
+    "corner_errors": [
+      186.46482849121094,
+      212.7084503173828,
+      252.83363342285156,
+      283.5517272949219
+    ],
+    "num_keypoints_A": 149,
+    "num_keypoints_B": 171,
+    "num_matches": 80,
+    "num_inliers": 72,
+    "inlier_ratio": 0.9,
+    "computation_time": 0.14389729499816895,
+    "H_estimated": [
+      [
+        1.0040731663948765,
+        0.0017018290966912524,
+        134.04061044595588
+      ],
+      [
+        0.0021578107271912964,
+        1.0039730618542706,
+        3.7329100875727117
+      ],
+      [
+        1.7876864449786977e-05,
+        1.1833165343271857e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.9321382,
+        -0.26397611,
+        -52.39196156
+      ],
+      [
+        0.10156622,
+        0.6989109,
+        0.26399216
+      ],
+      [
+        0.00018968,
+        -0.00070682,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 149,
+      "good_matches": 80,
+      "ratio_test_passed": 80,
+      "ratio_test_failed": 65,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.4586071152322563,
+      "median_distance_ratio": 0.6146788990825688
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.14289450645446777,
+      "final_subset_size": 80,
+      "inlier_count": 72,
+      "outlier_count": 8
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 233.8896484375,
+      "corner_errors": [
+        186.46482849121094,
+        212.7084503173828,
+        252.83363342285156,
+        283.5517272949219
+      ],
+      "max_corner_error": 283.5517272949219,
+      "min_corner_error": 186.46482849121094,
+      "std_corner_error": 37.158287048339844
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 231.70901489257812,
+      "median_reprojection_error": 230.0891571044922,
+      "max_reprojection_error": 283.5517272949219,
+      "std_reprojection_error": 29.518884658813477
+    },
+    "rmse": 233.58175659179688,
+    "matching_metrics": {
+      "matching_precision": 0.9,
+      "matching_recall": 0.5369127516778524,
+      "f1_score": 0.6725829051844933,
+      "inlier_ratio": 0.9
+    },
+    "matrix_error": {
+      "frobenius_norm": 186.46532117595294,
+      "max_element_error": 186.43257200595588,
+      "mean_element_error": 21.182718207383125
+    },
+    "performance": {
+      "computation_time": 0.14389729499816895,
+      "memory_usage_mb": 207.140625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 231.63821411132812,
+    "max_corner_error": 307.5526123046875,
+    "corner_errors": [
+      307.5526123046875,
+      236.27381896972656,
+      162.9912109375,
+      219.73521423339844
+    ],
+    "num_keypoints_A": 104,
+    "num_keypoints_B": 103,
+    "num_matches": 8,
+    "num_inliers": 5,
+    "inlier_ratio": 0.625,
+    "computation_time": 0.13504290580749512,
+    "H_estimated": [
+      [
+        0.2819900982546397,
+        -2.924727117950485,
+        102.40650786002668
+      ],
+      [
+        0.04895843437801759,
+        -4.25961850209188,
+        204.69806792765343
+      ],
+      [
+        0.00024495680239852003,
+        -0.02126903724668385,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.91213048,
+        -0.14584686,
+        38.52984925
+      ],
+      [
+        0.25752203,
+        0.46379561,
+        -96.14803864
+      ],
+      [
+        0.00087792,
+        -0.00123404,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 104,
+      "good_matches": 8,
+      "ratio_test_passed": 8,
+      "ratio_test_failed": 90,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8700612535697292,
+      "median_distance_ratio": 0.9133333333333333
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.12531065940856934,
+      "final_subset_size": 8,
+      "inlier_count": 5,
+      "outlier_count": 3
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 231.63821411132812,
+      "corner_errors": [
+        307.5526123046875,
+        236.27381896972656,
+        162.9912109375,
+        219.73521423339844
+      ],
+      "max_corner_error": 307.5526123046875,
+      "min_corner_error": 162.9912109375,
+      "std_corner_error": 51.57174301147461
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 222.49981689453125,
+      "median_reprojection_error": 219.73521423339844,
+      "max_reprojection_error": 307.5526123046875,
+      "std_reprojection_error": 52.31316375732422
+    },
+    "rmse": 228.56689453125,
+    "matching_metrics": {
+      "matching_precision": 0.625,
+      "matching_recall": 0.07766990291262135,
+      "f1_score": 0.13816925734024177,
+      "inlier_ratio": 0.625
+    },
+    "matrix_error": {
+      "frobenius_norm": 307.60214749890156,
+      "max_element_error": 300.8461065676534,
+      "mean_element_error": 41.453825720614894
+    },
+    "performance": {
+      "computation_time": 0.13504290580749512,
+      "memory_usage_mb": 207.140625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 244.89022827148438,
+    "max_corner_error": 275.0116271972656,
+    "corner_errors": [
+      238.2753143310547,
+      208.0469512939453,
+      258.22698974609375,
+      275.0116271972656
+    ],
+    "num_keypoints_A": 147,
+    "num_keypoints_B": 122,
+    "num_matches": 42,
+    "num_inliers": 38,
+    "inlier_ratio": 0.9047619047619048,
+    "computation_time": 0.13837480545043945,
+    "H_estimated": [
+      [
+        1.0000036424137546,
+        -8.983173909565746e-07,
+        -69.99919341164853
+      ],
+      [
+        1.913793783291932e-05,
+        0.9999980217841027,
+        111.99842133509726
+      ],
+      [
+        7.38717757702826e-08,
+        -4.653140159266859e-08,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.71415497,
+        -0.08207992,
+        97.65531844
+      ],
+      [
+        -0.02628457,
+        0.71265053,
+        -57.3151861
+      ],
+      [
+        -0.00015945,
+        -0.00047252,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 147,
+      "good_matches": 42,
+      "ratio_test_passed": 42,
+      "ratio_test_failed": 104,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6731542836546762,
+      "median_distance_ratio": 0.8950944573159865
+    },
+    "ransac_stats": {
+      "method": "PROSAC",
+      "iterations": 2000,
+      "estimation_time": 0.1338348388671875,
+      "final_subset_size": 42,
+      "inlier_count": 38,
+      "outlier_count": 4
+    },
+    "ransac_method": "PROSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 244.89022827148438,
+      "corner_errors": [
+        238.2753143310547,
+        208.0469512939453,
+        258.22698974609375,
+        275.0116271972656
+      ],
+      "max_corner_error": 275.0116271972656,
+      "min_corner_error": 208.0469512939453,
+      "std_corner_error": 24.931665420532227
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 245.78330993652344,
+      "median_reprojection_error": 247.640380859375,
+      "max_reprojection_error": 275.0116271972656,
+      "std_reprojection_error": 20.510793685913086
+    },
+    "rmse": 246.6376495361328,
+    "matching_metrics": {
+      "matching_precision": 0.9047619047619048,
+      "matching_recall": 0.3442622950819672,
+      "f1_score": 0.49874999999999997,
+      "inlier_ratio": 0.9047619047619048
+    },
+    "matrix_error": {
+      "frobenius_norm": 238.2756905646165,
+      "max_element_error": 169.31360743509725,
+      "mean_element_error": 37.516703353100496
+    },
+    "performance": {
+      "computation_time": 0.13837480545043945,
+      "memory_usage_mb": 207.140625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_seismic",
+    "pair_name": "pair_0008"
+  }
+]

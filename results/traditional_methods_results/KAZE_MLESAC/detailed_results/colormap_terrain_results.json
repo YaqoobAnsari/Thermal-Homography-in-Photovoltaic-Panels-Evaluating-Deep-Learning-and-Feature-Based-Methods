@@ -1,0 +1,1605 @@
+[
+  {
+    "success": true,
+    "mean_corner_error": 153.66836547851562,
+    "max_corner_error": 233.33102416992188,
+    "corner_errors": [
+      65.6696548461914,
+      223.4921875,
+      233.33102416992188,
+      92.18062591552734
+    ],
+    "num_keypoints_A": 29,
+    "num_keypoints_B": 52,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.21439790725708008,
+    "H_estimated": [
+      [
+        0.5110989418993631,
+        0.005361308139286188,
+        -34.616328539436466
+      ],
+      [
+        -0.0560481093827634,
+        0.6863520275818603,
+        9.327315094722064
+      ],
+      [
+        -0.0013944490279612517,
+        6.316073976925746e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.61521732,
+        -0.01898567,
+        22.47803763
+      ],
+      [
+        0.18927584,
+        1.05661201,
+        -23.11859082
+      ],
+      [
+        0.00068166,
+        -0.00017217,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 29,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 25,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8552657104491707,
+      "median_distance_ratio": 0.9434728381616106
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.13061261177062988,
+      "best_log_likelihood": 123.38019813967034,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 153.66836547851562,
+      "corner_errors": [
+        65.6696548461914,
+        223.4921875,
+        233.33102416992188,
+        92.18062591552734
+      ],
+      "max_corner_error": 233.33102416992188,
+      "min_corner_error": 65.6696548461914,
+      "std_corner_error": 75.40892028808594
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 159.1057891845703,
+      "median_reprojection_error": 176.03659057617188,
+      "max_reprojection_error": 233.33102416992188,
+      "std_reprojection_error": 65.84839630126953
+    },
+    "rmse": 172.19366455078125,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.13793103448275862,
+      "f1_score": 0.2424242424242424,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 65.6804416074163,
+      "max_element_error": 57.09436616943647,
+      "mean_element_error": 10.142959201329676
+    },
+    "performance": {
+      "computation_time": 0.21439790725708008,
+      "memory_usage_mb": 248.95703125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_terrain",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 307.14324951171875,
+    "max_corner_error": 341.5578918457031,
+    "corner_errors": [
+      341.5578918457031,
+      304.1748046875,
+      286.93426513671875,
+      295.90606689453125
+    ],
+    "num_keypoints_A": 58,
+    "num_keypoints_B": 46,
+    "num_matches": 22,
+    "num_inliers": 22,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.28066468238830566,
+    "H_estimated": [
+      [
+        1.0078281439017056,
+        0.003773260251727837,
+        110.68347176786814
+      ],
+      [
+        0.0014190273021743825,
+        1.0063421252115425,
+        -94.73793108762219
+      ],
+      [
+        2.300230788567848e-05,
+        1.94389417401081e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.17454174,
+        0.28945574,
+        -184.86569484
+      ],
+      [
+        0.00232023,
+        1.34303053,
+        76.4709737
+      ],
+      [
+        5.736e-05,
+        0.00051252,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 58,
+      "good_matches": 22,
+      "ratio_test_passed": 22,
+      "ratio_test_failed": 36,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.652718660319908,
+      "median_distance_ratio": 0.8797823538639993
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.21331238746643066,
+      "best_log_likelihood": 18.663212752228812,
+      "inlier_count": 22,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 307.14324951171875,
+      "corner_errors": [
+        341.5578918457031,
+        304.1748046875,
+        286.93426513671875,
+        295.90606689453125
+      ],
+      "max_corner_error": 341.5578918457031,
+      "min_corner_error": 286.93426513671875,
+      "std_corner_error": 20.78374671936035
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 307.5077209472656,
+      "median_reprojection_error": 304.1748046875,
+      "max_reprojection_error": 341.5578918457031,
+      "std_reprojection_error": 16.4482364654541
+    },
+    "rmse": 307.94732666015625,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.4782608695652174,
+      "f1_score": 0.6470588235294118,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 341.5582259721221,
+      "max_element_error": 295.54916660786813,
+      "mean_element_error": 51.949842724174836
+    },
+    "performance": {
+      "computation_time": 0.28066468238830566,
+      "memory_usage_mb": 249.0234375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_terrain",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 375.5440368652344,
+    "max_corner_error": 543.9210205078125,
+    "corner_errors": [
+      543.9210205078125,
+      344.5679931640625,
+      147.39581298828125,
+      466.2913818359375
+    ],
+    "num_keypoints_A": 46,
+    "num_keypoints_B": 70,
+    "num_matches": 14,
+    "num_inliers": 2,
+    "inlier_ratio": 0.14285714285714285,
+    "computation_time": 0.25426697731018066,
+    "H_estimated": [
+      [
+        -1.1871403736677413,
+        -1.0060433480304227,
+        262.46261596679693
+      ],
+      [
+        -0.9187362568796792,
+        -0.7785839992725765,
+        203.12165832519543
+      ],
+      [
+        -0.004523083675344916,
+        -0.0038330919789266032,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.19561908,
+        -0.10583111,
+        -146.84970718
+      ],
+      [
+        0.09096297,
+        1.00450679,
+        -155.08706176
+      ],
+      [
+        0.00033433,
+        -0.00042816,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 46,
+      "good_matches": 14,
+      "ratio_test_passed": 14,
+      "ratio_test_failed": 32,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7383638416201415,
+      "median_distance_ratio": 0.9017347843021581
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.18857860565185547,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 2,
+      "outlier_count": 12
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 375.5440368652344,
+      "corner_errors": [
+        543.9210205078125,
+        344.5679931640625,
+        147.39581298828125,
+        466.2913818359375
+      ],
+      "max_corner_error": 543.9210205078125,
+      "min_corner_error": 147.39581298828125,
+      "std_corner_error": 149.66380310058594
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 366.801513671875,
+      "median_reprojection_error": 347.0571594238281,
+      "max_reprojection_error": 543.9210205078125,
+      "std_reprojection_error": 120.3330078125
+    },
+    "rmse": 386.03546142578125,
+    "matching_metrics": {
+      "matching_precision": 0.14285714285714285,
+      "matching_recall": 0.30434782608695654,
+      "f1_score": 0.19444444444444445,
+      "inlier_ratio": 0.14285714285714285
+    },
+    "matrix_error": {
+      "frobenius_norm": 543.9308337372215,
+      "max_element_error": 409.3123231467969,
+      "mean_element_error": 85.95611858727744
+    },
+    "performance": {
+      "computation_time": 0.25426697731018066,
+      "memory_usage_mb": 198.2890625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_terrain",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 409.8866271972656,
+    "max_corner_error": 501.7431640625,
+    "corner_errors": [
+      501.7431640625,
+      433.90850830078125,
+      341.93243408203125,
+      361.96240234375
+    ],
+    "num_keypoints_A": 38,
+    "num_keypoints_B": 65,
+    "num_matches": 13,
+    "num_inliers": 8,
+    "inlier_ratio": 0.6153846153846154,
+    "computation_time": 0.23871827125549316,
+    "H_estimated": [
+      [
+        0.9682347710898973,
+        0.018784339370984206,
+        139.7801165083122
+      ],
+      [
+        -0.01991628275437414,
+        1.0060452841433067,
+        104.89254072500935
+      ],
+      [
+        -9.86911916844849e-05,
+        7.501188278474181e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.30780028,
+        0.42004503,
+        -293.64799008
+      ],
+      [
+        0.01247203,
+        1.27345498,
+        -147.86477763
+      ],
+      [
+        -1.069e-05,
+        0.00079442,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 38,
+      "good_matches": 13,
+      "ratio_test_passed": 13,
+      "ratio_test_failed": 25,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7729688538907658,
+      "median_distance_ratio": 0.8947256704260613
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.16603827476501465,
+      "best_log_likelihood": -34.74398860089349,
+      "inlier_count": 8,
+      "outlier_count": 5
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 409.8866271972656,
+      "corner_errors": [
+        501.7431640625,
+        433.90850830078125,
+        341.93243408203125,
+        361.96240234375
+      ],
+      "max_corner_error": 501.7431640625,
+      "min_corner_error": 341.93243408203125,
+      "std_corner_error": 63.10542297363281
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 405.61761474609375,
+      "median_reprojection_error": 397.0873107910156,
+      "max_reprojection_error": 501.7431640625,
+      "std_reprojection_error": 51.375938415527344
+    },
+    "rmse": 408.8583679199219,
+    "matching_metrics": {
+      "matching_precision": 0.6153846153846154,
+      "matching_recall": 0.34210526315789475,
+      "f1_score": 0.43974630021141653,
+      "inlier_ratio": 0.6153846153846154
+    },
+    "matrix_error": {
+      "frobenius_norm": 501.7434946614605,
+      "max_element_error": 433.4281065883122,
+      "mean_element_error": 76.35853961786451
+    },
+    "performance": {
+      "computation_time": 0.23871827125549316,
+      "memory_usage_mb": 235.80859375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_terrain",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 23,
+    "num_keypoints_B": 51,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 23,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 22,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9500452885786138,
+      "median_distance_ratio": 0.973443507238541
+    },
+    "image_name": "20241221_100711_257_IR_terrain",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 52,
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 26,
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 21,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9005865062892288,
+      "median_distance_ratio": 0.9204458471474597
+    },
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 47,
+    "num_keypoints_B": 33,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 47,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 46,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.929016890649592,
+      "median_distance_ratio": 0.9522995489984654
+    },
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 264.1686706542969,
+    "max_corner_error": 273.5865478515625,
+    "corner_errors": [
+      273.5865478515625,
+      267.0110778808594,
+      264.3846130371094,
+      251.69239807128906
+    ],
+    "num_keypoints_A": 51,
+    "num_keypoints_B": 66,
+    "num_matches": 20,
+    "num_inliers": 20,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.27953267097473145,
+    "H_estimated": [
+      [
+        1.0087122847764554,
+        0.001012572115392372,
+        -86.9313238676753
+      ],
+      [
+        0.007171312726932468,
+        1.011230379886186,
+        98.32014566892309
+      ],
+      [
+        3.663023082921282e-05,
+        2.1453181837693414e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.40364313,
+        0.02962845,
+        52.28770528
+      ],
+      [
+        0.16619364,
+        1.14081241,
+        -137.19558734
+      ],
+      [
+        0.00050889,
+        0.00016534,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 51,
+      "good_matches": 20,
+      "ratio_test_passed": 20,
+      "ratio_test_failed": 31,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6251670803630793,
+      "median_distance_ratio": 0.8488018217388885
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.20689058303833008,
+      "best_log_likelihood": 29.694769768731366,
+      "inlier_count": 20,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 264.1686706542969,
+      "corner_errors": [
+        273.5865478515625,
+        267.0110778808594,
+        264.3846130371094,
+        251.69239807128906
+      ],
+      "max_corner_error": 273.5865478515625,
+      "min_corner_error": 251.69239807128906,
+      "std_corner_error": 7.944805145263672
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 264.4865417480469,
+      "median_reprojection_error": 264.3846130371094,
+      "max_reprojection_error": 273.5865478515625,
+      "std_reprojection_error": 6.098504066467285
+    },
+    "rmse": 264.5568542480469,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.39215686274509803,
+      "f1_score": 0.5633802816901409,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 273.58691021435845,
+      "max_element_error": 235.5157330089231,
+      "mean_element_error": 41.71639215374231
+    },
+    "performance": {
+      "computation_time": 0.27953267097473145,
+      "memory_usage_mb": 249.43359375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 56,
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 56,
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 352.205810546875,
+    "max_corner_error": 371.3165588378906,
+    "corner_errors": [
+      371.3165588378906,
+      364.4588928222656,
+      342.5777587890625,
+      330.469970703125
+    ],
+    "num_keypoints_A": 46,
+    "num_keypoints_B": 26,
+    "num_matches": 13,
+    "num_inliers": 13,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.2479541301727295,
+    "H_estimated": [
+      [
+        0.9150817387237761,
+        -0.003853684691878538,
+        -139.0364024785716
+      ],
+      [
+        -0.02104047275824073,
+        0.927062074486957,
+        11.950674916236583
+      ],
+      [
+        -0.00033398646829607714,
+        -2.719425190767753e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.96562698,
+        -0.23123187,
+        232.16812179
+      ],
+      [
+        0.10195209,
+        0.77331499,
+        21.07141236
+      ],
+      [
+        0.00010756,
+        -0.00033636,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 46,
+      "good_matches": 13,
+      "ratio_test_passed": 13,
+      "ratio_test_failed": 33,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7598672005758513,
+      "median_distance_ratio": 0.9200099161302155
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.17488765716552734,
+      "best_log_likelihood": 4.23286226673078,
+      "inlier_count": 13,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 352.205810546875,
+      "corner_errors": [
+        371.3165588378906,
+        364.4588928222656,
+        342.5777587890625,
+        330.469970703125
+      ],
+      "max_corner_error": 371.3165588378906,
+      "min_corner_error": 330.469970703125,
+      "std_corner_error": 16.435516357421875
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 354.6258239746094,
+      "median_reprojection_error": 353.04833984375,
+      "max_reprojection_error": 374.58984375,
+      "std_reprojection_error": 13.547516822814941
+    },
+    "rmse": 354.8844909667969,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.5,
+      "f1_score": 0.6666666666666666,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 371.3166838566,
+      "max_element_error": 371.2045242685716,
+      "mean_element_error": 42.32007505537566
+    },
+    "performance": {
+      "computation_time": 0.2479541301727295,
+      "memory_usage_mb": 252.26953125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 54,
+    "image_name": "20241222_081954_680_IR_terrain",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 261.09808349609375,
+    "max_corner_error": 376.5435791015625,
+    "corner_errors": [
+      134.86207580566406,
+      368.76220703125,
+      376.5435791015625,
+      164.22454833984375
+    ],
+    "num_keypoints_A": 22,
+    "num_keypoints_B": 15,
+    "num_matches": 13,
+    "num_inliers": 3,
+    "inlier_ratio": 0.23076923076923078,
+    "computation_time": 0.2548508644104004,
+    "H_estimated": [
+      [
+        -0.006543675700975532,
+        -0.47483514859353254,
+        45.09110641479492
+      ],
+      [
+        -0.015315598310863132,
+        -1.1113607599247903,
+        105.5365982055664
+      ],
+      [
+        -0.00014512120507268093,
+        -0.010530572131575232,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.80429292,
+        -0.12703507,
+        160.73032292
+      ],
+      [
+        -0.0872123,
+        0.73659835,
+        36.14383605
+      ],
+      [
+        -0.0003491,
+        -0.00026718,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 22,
+      "good_matches": 13,
+      "ratio_test_passed": 13,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5055849872030863,
+      "median_distance_ratio": 0.5119712160551302
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.17555975914001465,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 3,
+      "outlier_count": 10
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 261.09808349609375,
+      "corner_errors": [
+        134.86207580566406,
+        368.76220703125,
+        376.5435791015625,
+        164.22454833984375
+      ],
+      "max_corner_error": 376.5435791015625,
+      "min_corner_error": 134.86207580566406,
+      "std_corner_error": 112.070556640625
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 247.94845581054688,
+      "median_reprojection_error": 244.18740844726562,
+      "max_reprojection_error": 376.5435791015625,
+      "std_reprojection_error": 95.70382690429688
+    },
+    "rmse": 265.7774963378906,
+    "matching_metrics": {
+      "matching_precision": 0.23076923076923078,
+      "matching_recall": 0.8666666666666667,
+      "f1_score": 0.3644859813084112,
+      "inlier_ratio": 0.23076923076923078
+    },
+    "matrix_error": {
+      "frobenius_norm": 134.87765745957628,
+      "max_element_error": 115.63921650520507,
+      "mean_element_error": 20.902326501956267
+    },
+    "performance": {
+      "computation_time": 0.2548508644104004,
+      "memory_usage_mb": 234.3984375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 37,
+    "num_keypoints_B": 5,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 37,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 35,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8782924061627124,
+      "median_distance_ratio": 0.9304777748758878
+    },
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 22,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8958734490588748,
+      "median_distance_ratio": 0.9397900891653367
+    },
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 10,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7693058459517783,
+      "median_distance_ratio": 0.9422429124476775
+    },
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 399.35101318359375,
+    "max_corner_error": 607.3475952148438,
+    "corner_errors": [
+      607.3475952148438,
+      516.0879516601562,
+      275.7008361816406,
+      198.26768493652344
+    ],
+    "num_keypoints_A": 15,
+    "num_keypoints_B": 5,
+    "num_matches": 5,
+    "num_inliers": 2,
+    "inlier_ratio": 0.4,
+    "computation_time": 0.20337867736816406,
+    "H_estimated": [
+      [
+        0.007344076998827749,
+        -0.8099992861678491,
+        42.055271148681705
+      ],
+      [
+        0.03900053721703148,
+        -4.301480950022642,
+        223.33346557617182
+      ],
+      [
+        0.00017462916771749843,
+        -0.01926035105811558,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.86812091,
+        0.00443307,
+        -68.39366912
+      ],
+      [
+        0.29469062,
+        1.6921989,
+        -373.8868414
+      ],
+      [
+        0.0013605,
+        0.00036035,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 15,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 10,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7449793158583101,
+      "median_distance_ratio": 0.940842492387371
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.13570117950439453,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 2,
+      "outlier_count": 3
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 399.35101318359375,
+      "corner_errors": [
+        607.3475952148438,
+        516.0879516601562,
+        275.7008361816406,
+        198.26768493652344
+      ],
+      "max_corner_error": 607.3475952148438,
+      "min_corner_error": 198.26768493652344,
+      "std_corner_error": 167.79000854492188
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 377.1730041503906,
+      "median_reprojection_error": 378.3922119140625,
+      "max_reprojection_error": 607.3475952148438,
+      "std_reprojection_error": 140.6610870361328
+    },
+    "rmse": 402.5481262207031,
+    "matching_metrics": {
+      "matching_precision": 0.4,
+      "matching_recall": 1.0,
+      "f1_score": 0.5714285714285715,
+      "inlier_ratio": 0.4
+    },
+    "matrix_error": {
+      "frobenius_norm": 607.3805884481441,
+      "max_element_error": 597.2203069761717,
+      "mean_element_error": 79.62384810430206
+    },
+    "performance": {
+      "computation_time": 0.20337867736816406,
+      "memory_usage_mb": 252.7734375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 196.8914794921875,
+    "max_corner_error": 284.9602966308594,
+    "corner_errors": [
+      284.9602966308594,
+      261.3825988769531,
+      56.88918685913086,
+      184.33384704589844
+    ],
+    "num_keypoints_A": 29,
+    "num_keypoints_B": 12,
+    "num_matches": 6,
+    "num_inliers": 2,
+    "inlier_ratio": 0.3333333333333333,
+    "computation_time": 0.2216629981994629,
+    "H_estimated": [
+      [
+        -0.0098713306744963,
+        -1.916849525690825,
+        224.0177307128907
+      ],
+      [
+        -0.00957278752802299,
+        -1.858877373041482,
+        217.24266052246094
+      ],
+      [
+        -4.406495255122029e-05,
+        -0.008556686649716715,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.43195132,
+        0.03121634,
+        34.48339116
+      ],
+      [
+        -0.14538217,
+        0.68587187,
+        4.45377668
+      ],
+      [
+        -0.00065545,
+        -4.935e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 29,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 23,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7764082442647805,
+      "median_distance_ratio": 0.9421209419596099
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.14168262481689453,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 2,
+      "outlier_count": 4
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 196.8914794921875,
+      "corner_errors": [
+        284.9602966308594,
+        261.3825988769531,
+        56.88918685913086,
+        184.33384704589844
+      ],
+      "max_corner_error": 284.9602966308594,
+      "min_corner_error": 56.88918685913086,
+      "std_corner_error": 88.9853286743164
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 192.93907165527344,
+      "median_reprojection_error": 184.33384704589844,
+      "max_reprojection_error": 284.9602966308594,
+      "std_reprojection_error": 70.10804748535156
+    },
+    "rmse": 205.2818145751953,
+    "matching_metrics": {
+      "matching_precision": 0.3333333333333333,
+      "matching_recall": 0.5,
+      "f1_score": 0.4,
+      "inlier_ratio": 0.3333333333333333
+    },
+    "matrix_error": {
+      "frobenius_norm": 284.9786998885872,
+      "max_element_error": 212.78888384246093,
+      "mean_element_error": 45.26697658432529
+    },
+    "performance": {
+      "computation_time": 0.2216629981994629,
+      "memory_usage_mb": 252.796875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 27,
+    "num_keypoints_B": 11,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 27,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 25,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8872460127009946,
+      "median_distance_ratio": 0.9525421373584569
+    },
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 7,
+    "num_keypoints_B": 15,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 7,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7723261399281102,
+      "median_distance_ratio": 0.9121028076760386
+    },
+    "image_name": "20241222_141317_881_IR_terrain",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 1,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 1,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 1,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_terrain",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 13,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 14,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 261.85791015625,
+    "max_corner_error": 395.5874328613281,
+    "corner_errors": [
+      282.7922058105469,
+      395.5874328613281,
+      253.16860961914062,
+      115.88341522216797
+    ],
+    "num_keypoints_A": 29,
+    "num_keypoints_B": 4,
+    "num_matches": 5,
+    "num_inliers": 5,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.17530441284179688,
+    "H_estimated": [
+      [
+        3.1350701026642676,
+        -3.1478567725759623,
+        80.13298027345326
+      ],
+      [
+        9.77767544452161,
+        -9.817554592293446,
+        249.91922010765717
+      ],
+      [
+        0.03912334332446319,
+        -0.03928291146784955,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.48112554,
+        -0.1814706,
+        172.06656414
+      ],
+      [
+        -0.13048917,
+        0.60609525,
+        -17.51236157
+      ],
+      [
+        -0.00040994,
+        -0.00026736,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 29,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 24,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8616873889865262,
+      "median_distance_ratio": 0.9035362487252547
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.10875892639160156,
+      "best_log_likelihood": 61.17322224552291,
+      "inlier_count": 5,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 261.85791015625,
+      "corner_errors": [
+        282.7922058105469,
+        395.5874328613281,
+        253.16860961914062,
+        115.88341522216797
+      ],
+      "max_corner_error": 395.5874328613281,
+      "min_corner_error": 115.88341522216797,
+      "std_corner_error": 99.63167572021484
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 258.66827392578125,
+      "median_reprojection_error": 253.16860961914062,
+      "max_reprojection_error": 395.5874328613281,
+      "std_reprojection_error": 81.24978637695312
+    },
+    "rmse": 271.12872314453125,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 1.25,
+      "f1_score": 1.1111111111111112,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 283.1856367773343,
+      "max_element_error": 267.43158167765716,
+      "mean_element_error": 42.82176217456127
+    },
+    "performance": {
+      "computation_time": 0.17530441284179688,
+      "memory_usage_mb": 251.5859375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 19,
+    "num_keypoints_B": 8,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 19,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 18,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9174065361012136,
+      "median_distance_ratio": 0.9672568871724926
+    },
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 6,
+    "num_keypoints_B": 22,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 6,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.758188785445232,
+      "median_distance_ratio": 0.8231393395215955
+    },
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 16,
+    "num_keypoints_B": 7,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 16,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 16,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.933050950316378,
+      "median_distance_ratio": 0.9320376769017181
+    },
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 9,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 10,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9283833130966055,
+      "median_distance_ratio": 0.9196335969886229
+    },
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 7,
+    "num_keypoints_B": 30,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 7,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 7,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9285295207512544,
+      "median_distance_ratio": 0.9414528992205545
+    },
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 12,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9319600458968126,
+      "median_distance_ratio": 0.9397859166280371
+    },
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 287.1078186035156,
+    "max_corner_error": 374.12939453125,
+    "corner_errors": [
+      374.12939453125,
+      273.5184326171875,
+      258.10595703125,
+      242.677490234375
+    ],
+    "num_keypoints_A": 16,
+    "num_keypoints_B": 7,
+    "num_matches": 5,
+    "num_inliers": 5,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.20357179641723633,
+    "H_estimated": [
+      [
+        10.512739375352394,
+        0.489892912373381,
+        -404.01824651288285
+      ],
+      [
+        3.194820977934119,
+        3.8656732622081384,
+        -346.0263568358058
+      ],
+      [
+        0.01976449766343926,
+        0.0016421518049498252,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.17536526,
+        -0.0616012,
+        -170.85980603
+      ],
+      [
+        0.13472923,
+        0.97080659,
+        -53.43460855
+      ],
+      [
+        0.00028636,
+        -0.00028564,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 16,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 11,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7851132985298807,
+      "median_distance_ratio": 0.9342749871378269
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.13567328453063965,
+      "best_log_likelihood": -2.810677285925526,
+      "inlier_count": 5,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 287.1078186035156,
+      "corner_errors": [
+        374.12939453125,
+        273.5184326171875,
+        258.10595703125,
+        242.677490234375
+      ],
+      "max_corner_error": 374.12939453125,
+      "min_corner_error": 242.677490234375,
+      "std_corner_error": 51.41154479980469
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 269.395263671875,
+      "median_reprojection_error": 273.5184326171875,
+      "max_reprojection_error": 374.12939453125,
+      "std_reprojection_error": 67.60964965820312
+    },
+    "rmse": 277.7496643066406,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.7142857142857143,
+      "f1_score": 0.8333333333333333,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 374.2699894890724,
+      "max_element_error": 292.59174828580586,
+      "mean_element_error": 60.179491260669465
+    },
+    "performance": {
+      "computation_time": 0.20357179641723633,
+      "memory_usage_mb": 249.5859375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_terrain",
+    "pair_name": "pair_0010"
+  }
+]

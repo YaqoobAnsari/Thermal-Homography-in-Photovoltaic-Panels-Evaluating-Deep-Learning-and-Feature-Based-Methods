@@ -1,0 +1,227 @@
+{
+  "variants_compared": [
+    "MLESAC",
+    "PROSAC",
+    "RANSAC"
+  ],
+  "base_methods": [
+    "SIFT",
+    "ORB",
+    "KAZE",
+    "AKAZE",
+    "BRISK"
+  ],
+  "variants": {
+    "MLESAC": {
+      "variant": "MLESAC",
+      "methods_tested": [
+        "AKAZE",
+        "BRISK",
+        "KAZE",
+        "ORB",
+        "SIFT"
+      ],
+      "overall_statistics": {
+        "avg_success_rate": 0.2925700365408039,
+        "avg_mace": 401.00981616889965,
+        "avg_computation_time": 0.43305807369658816,
+        "avg_precision": 0.6587981495553403,
+        "avg_f1_score": 0.40071344952748156
+      },
+      "per_method_performance": {
+        "AKAZE": {
+          "success_rate": 0.14799025578562727,
+          "mean_mace": 441.0633792955689,
+          "mean_time": 0.33470846301734203,
+          "mean_precision": 0.5778504875635485,
+          "mean_f1_score": 0.35183558608336474
+        },
+        "BRISK": {
+          "success_rate": 0.1735688185140073,
+          "mean_mace": 371.0761983235677,
+          "mean_time": 0.3228020207923755,
+          "mean_precision": 0.7348484601218842,
+          "mean_f1_score": 0.4558474232362866
+        },
+        "KAZE": {
+          "success_rate": 0.1967113276492083,
+          "mean_mace": 454.8996879884702,
+          "mean_time": 0.4763145793702211,
+          "mean_precision": 0.7364901217035283,
+          "mean_f1_score": 0.46632865045978755
+        },
+        "ORB": {
+          "success_rate": 0.5066991473812423,
+          "mean_mace": 367.9537240450199,
+          "mean_time": 0.26343055069446564,
+          "mean_precision": 0.47454778622914584,
+          "mean_f1_score": 0.22121726196806454
+        },
+        "SIFT": {
+          "success_rate": 0.43788063337393424,
+          "mean_mace": 370.0560911918714,
+          "mean_time": 0.7680347546085363,
+          "mean_precision": 0.7702538921585954,
+          "mean_f1_score": 0.5083383258899042
+        }
+      }
+    },
+    "PROSAC": {
+      "variant": "PROSAC",
+      "methods_tested": [
+        "AKAZE",
+        "BRISK",
+        "KAZE",
+        "ORB",
+        "SIFT"
+      ],
+      "overall_statistics": {
+        "avg_success_rate": 0.2928136419001218,
+        "avg_mace": 414.28365862951676,
+        "avg_computation_time": 0.15697637004435583,
+        "avg_precision": 0.8950931331648654,
+        "avg_f1_score": 0.5069153415187654
+      },
+      "per_method_performance": {
+        "AKAZE": {
+          "success_rate": 0.14859926918392205,
+          "mean_mace": 452.12027409037603,
+          "mean_time": 0.14278901111884196,
+          "mean_precision": 0.8513233993075603,
+          "mean_f1_score": 0.4925435921635901
+        },
+        "BRISK": {
+          "success_rate": 0.17113276492082827,
+          "mean_mace": 379.7829268920464,
+          "mean_time": 0.135199163307923,
+          "mean_precision": 0.9065464676324377,
+          "mean_f1_score": 0.5433377883699685
+        },
+        "KAZE": {
+          "success_rate": 0.19732034104750304,
+          "mean_mace": 473.0104555671598,
+          "mean_time": 0.20251702232125365,
+          "mean_precision": 0.9346968172194913,
+          "mean_f1_score": 0.5575130256210218
+        },
+        "ORB": {
+          "success_rate": 0.510353227771011,
+          "mean_mace": 383.6104145459742,
+          "mean_time": 0.12835002087750128,
+          "mean_precision": 0.8153043401947668,
+          "mean_f1_score": 0.3220309207595552
+        },
+        "SIFT": {
+          "success_rate": 0.4366626065773447,
+          "mean_mace": 382.8942220520275,
+          "mean_time": 0.17602663259625934,
+          "mean_precision": 0.9675946414700706,
+          "mean_f1_score": 0.6191513806796913
+        }
+      }
+    },
+    "RANSAC": {
+      "variant": "RANSAC",
+      "methods_tested": [
+        "AKAZE",
+        "BRISK",
+        "KAZE",
+        "ORB",
+        "SIFT"
+      ],
+      "overall_statistics": {
+        "avg_success_rate": 0.2852618757612667,
+        "avg_mace": 423.1317139703334,
+        "avg_computation_time": 0.03008184919972514,
+        "avg_precision": 0.8906625891500729,
+        "avg_f1_score": 0.5005938881660608
+      },
+      "per_method_performance": {
+        "AKAZE": {
+          "success_rate": 0.14494518879415347,
+          "mean_mace": 460.7724872557055,
+          "mean_time": 0.013487480267757127,
+          "mean_precision": 0.8391918873979725,
+          "mean_f1_score": 0.48159999835362916
+        },
+        "BRISK": {
+          "success_rate": 0.1668696711327649,
+          "mean_mace": 391.90376961144216,
+          "mean_time": 0.011350680441751967,
+          "mean_precision": 0.9106883017629521,
+          "mean_f1_score": 0.5425952194779801
+        },
+        "KAZE": {
+          "success_rate": 0.19062119366626065,
+          "mean_mace": 467.2558200823994,
+          "mean_time": 0.08337619967353992,
+          "mean_precision": 0.9293493967523484,
+          "mean_f1_score": 0.547473126521538
+        },
+        "ORB": {
+          "success_rate": 0.4981729598051157,
+          "mean_mace": 411.7433403406866,
+          "mean_time": 0.007346000822948652,
+          "mean_precision": 0.8059784244452011,
+          "mean_f1_score": 0.31775862134756877
+        },
+        "SIFT": {
+          "success_rate": 0.42570036540803896,
+          "mean_mace": 383.9831525614333,
+          "mean_time": 0.034848884792628036,
+          "mean_precision": 0.9681049353918907,
+          "mean_f1_score": 0.6135424751295883
+        }
+      }
+    }
+  },
+  "rankings": {
+    "by_success_rate": [
+      {
+        "variant": "PROSAC",
+        "avg_success_rate": 0.2928136419001218
+      },
+      {
+        "variant": "MLESAC",
+        "avg_success_rate": 0.2925700365408039
+      },
+      {
+        "variant": "RANSAC",
+        "avg_success_rate": 0.2852618757612667
+      }
+    ],
+    "by_accuracy": [
+      {
+        "variant": "MLESAC",
+        "avg_mace": 401.00981616889965
+      },
+      {
+        "variant": "PROSAC",
+        "avg_mace": 414.28365862951676
+      },
+      {
+        "variant": "RANSAC",
+        "avg_mace": 423.1317139703334
+      }
+    ],
+    "by_speed": [
+      {
+        "variant": "RANSAC",
+        "avg_time": 0.03008184919972514
+      },
+      {
+        "variant": "PROSAC",
+        "avg_time": 0.15697637004435583
+      },
+      {
+        "variant": "MLESAC",
+        "avg_time": 0.43305807369658816
+      }
+    ]
+  },
+  "best_variant": {
+    "by_success_rate": "PROSAC",
+    "by_accuracy": "MLESAC",
+    "by_speed": "RANSAC"
+  }
+}

@@ -1,0 +1,907 @@
+[
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 13,
+    "num_keypoints_B": 3,
+    "num_matches": 8,
+    "matching_stats": {
+      "total_matches": 13,
+      "good_matches": 8,
+      "ratio_test_passed": 8,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7032800023179473,
+      "median_distance_ratio": 0.6974370542916846
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0020034313201904297,
+      "inlier_count": 0,
+      "outlier_count": 8
+    },
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 25,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 212.46630859375,
+    "max_corner_error": 225.26588439941406,
+    "corner_errors": [
+      225.26588439941406,
+      215.1918182373047,
+      201.25027465820312,
+      208.15719604492188
+    ],
+    "num_keypoints_A": 21,
+    "num_keypoints_B": 19,
+    "num_matches": 16,
+    "num_inliers": 15,
+    "inlier_ratio": 0.9375,
+    "computation_time": 0.06426477432250977,
+    "H_estimated": [
+      [
+        1.1220926083615237,
+        -0.005408941851699146,
+        73.02239603436057
+      ],
+      [
+        0.04197307346964915,
+        1.042393850585031,
+        -80.91069717915516
+      ],
+      [
+        0.0005365970792792082,
+        -3.575088070187612e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.82901188,
+        -0.24861912,
+        14.62489184
+      ],
+      [
+        -0.00804416,
+        0.56897369,
+        136.65411569
+      ],
+      [
+        0.00012412,
+        -0.00073744,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 21,
+      "good_matches": 16,
+      "ratio_test_passed": 16,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.42388525450205644,
+      "median_distance_ratio": 0.26300623214399815
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 15,
+      "outlier_count": 1
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 212.46630859375,
+      "corner_errors": [
+        225.26588439941406,
+        215.1918182373047,
+        201.25027465820312,
+        208.15719604492188
+      ],
+      "max_corner_error": 225.26588439941406,
+      "min_corner_error": 201.25027465820312,
+      "std_corner_error": 8.882925033569336
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 208.9089813232422,
+      "median_reprojection_error": 208.15719604492188,
+      "max_reprojection_error": 225.26588439941406,
+      "std_reprojection_error": 9.018129348754883
+    },
+    "rmse": 209.10353088378906,
+    "matching_metrics": {
+      "matching_precision": 0.9375,
+      "matching_recall": 0.8421052631578947,
+      "f1_score": 0.8872458410351202,
+      "inlier_ratio": 0.9375
+    },
+    "matrix_error": {
+      "frobenius_norm": 225.26670408975122,
+      "max_element_error": 217.56481286915516,
+      "mean_element_error": 30.780351058919866
+    },
+    "performance": {
+      "computation_time": 0.06426477432250977,
+      "memory_usage_mb": 251.19921875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 282.1846008300781,
+    "max_corner_error": 392.0191345214844,
+    "corner_errors": [
+      392.0191345214844,
+      389.6900329589844,
+      156.46043395996094,
+      190.56874084472656
+    ],
+    "num_keypoints_A": 17,
+    "num_keypoints_B": 11,
+    "num_matches": 7,
+    "num_inliers": 6,
+    "inlier_ratio": 0.8571428571428571,
+    "computation_time": 0.07132339477539062,
+    "H_estimated": [
+      [
+        -1.2745895451941118,
+        -0.007657512291753896,
+        149.17546901087132
+      ],
+      [
+        -2.262327225382178,
+        0.007989774182811377,
+        264.3743432943143
+      ],
+      [
+        -0.008542260620955432,
+        -9.926599061577355e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.89260515,
+        0.10908964,
+        -17.38262384
+      ],
+      [
+        -0.07242846,
+        0.94271186,
+        -90.50225924
+      ],
+      [
+        -0.00025929,
+        0.00015517,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 17,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 10,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7105795270425479,
+      "median_distance_ratio": 0.867542431016116
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 6,
+      "outlier_count": 1
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 282.1846008300781,
+      "corner_errors": [
+        392.0191345214844,
+        389.6900329589844,
+        156.46043395996094,
+        190.56874084472656
+      ],
+      "max_corner_error": 392.0191345214844,
+      "min_corner_error": 156.46043395996094,
+      "std_corner_error": 109.34014892578125
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 257.4885559082031,
+      "median_reprojection_error": 264.3152160644531,
+      "max_reprojection_error": 392.0191345214844,
+      "std_reprojection_error": 109.76765441894531
+    },
+    "rmse": 279.9094543457031,
+    "matching_metrics": {
+      "matching_precision": 0.8571428571428571,
+      "matching_recall": 0.6363636363636364,
+      "f1_score": 0.7304347826086957,
+      "inlier_ratio": 0.8571428571428571
+    },
+    "matrix_error": {
+      "frobenius_norm": 392.0323725329508,
+      "max_element_error": 354.8766025343143,
+      "mean_element_error": 58.539088387831384
+    },
+    "performance": {
+      "computation_time": 0.07132339477539062,
+      "memory_usage_mb": 251.23828125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 310.2209167480469,
+    "max_corner_error": 388.3132629394531,
+    "corner_errors": [
+      388.3132629394531,
+      317.9518737792969,
+      237.97921752929688,
+      296.6392822265625
+    ],
+    "num_keypoints_A": 19,
+    "num_keypoints_B": 14,
+    "num_matches": 10,
+    "num_inliers": 8,
+    "inlier_ratio": 0.8,
+    "computation_time": 0.07375049591064453,
+    "H_estimated": [
+      [
+        1.4502730504216064,
+        -0.06513441298763042,
+        -18.245185798748047
+      ],
+      [
+        0.3254423097319351,
+        1.1194251869989276,
+        98.49277044051573
+      ],
+      [
+        0.0013343414651270044,
+        -0.00034364508595496104,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.8354877,
+        0.28348162,
+        -226.1334239
+      ],
+      [
+        0.07821999,
+        1.52729875,
+        -229.48539477
+      ],
+      [
+        0.00070792,
+        0.00054659,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 19,
+      "good_matches": 10,
+      "ratio_test_passed": 10,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5903081232627464,
+      "median_distance_ratio": 0.7426449122341462
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 8,
+      "outlier_count": 2
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 310.2209167480469,
+      "corner_errors": [
+        388.3132629394531,
+        317.9518737792969,
+        237.97921752929688,
+        296.6392822265625
+      ],
+      "max_corner_error": 388.3132629394531,
+      "min_corner_error": 237.97921752929688,
+      "std_corner_error": 53.76222229003906
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 303.4885559082031,
+      "median_reprojection_error": 296.6392822265625,
+      "max_reprojection_error": 388.3132629394531,
+      "std_reprojection_error": 43.703006744384766
+    },
+    "rmse": 306.6190490722656,
+    "matching_metrics": {
+      "matching_precision": 0.8,
+      "matching_recall": 0.7142857142857143,
+      "f1_score": 0.7547169811320756,
+      "inlier_ratio": 0.8
+    },
+    "matrix_error": {
+      "frobenius_norm": 388.313911417126,
+      "max_element_error": 327.9781652105157,
+      "mean_element_error": 59.69520517040198
+    },
+    "performance": {
+      "computation_time": 0.07375049591064453,
+      "memory_usage_mb": 238.19140625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 21,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 8,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 8,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9557180906371792,
+      "median_distance_ratio": 0.9742135438339256
+    },
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 27,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 8,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 8,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9237078551368055,
+      "median_distance_ratio": 0.9504472917405078
+    },
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 12,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 18,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 18,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9315086239983231,
+      "median_distance_ratio": 0.9404123516399834
+    },
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 312.77984619140625,
+    "max_corner_error": 432.6905212402344,
+    "corner_errors": [
+      432.6905212402344,
+      405.8824768066406,
+      225.8788604736328,
+      186.66744995117188
+    ],
+    "num_keypoints_A": 21,
+    "num_keypoints_B": 12,
+    "num_matches": 7,
+    "num_inliers": 6,
+    "inlier_ratio": 0.8571428571428571,
+    "computation_time": 0.07343626022338867,
+    "H_estimated": [
+      [
+        -0.20892260389090306,
+        -0.3312879203041681,
+        66.42169885840626
+      ],
+      [
+        -0.7999681909958215,
+        -1.1263545443433518,
+        233.23246380269484
+      ],
+      [
+        -0.0034118357160116057,
+        -0.004840161894296142,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.37932829,
+        0.0345685,
+        -82.37618019
+      ],
+      [
+        0.00261772,
+        1.14454032,
+        -173.0682476
+      ],
+      [
+        0.00042383,
+        -1.544e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 21,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 14,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7019121871431325,
+      "median_distance_ratio": 0.8452485449022593
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 6,
+      "outlier_count": 1
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 312.77984619140625,
+      "corner_errors": [
+        432.6905212402344,
+        405.8824768066406,
+        225.8788604736328,
+        186.66744995117188
+      ],
+      "max_corner_error": 432.6905212402344,
+      "min_corner_error": 186.66744995117188,
+      "std_corner_error": 107.82252502441406
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 294.7329406738281,
+      "median_reprojection_error": 296.5001525878906,
+      "max_reprojection_error": 432.6905212402344,
+      "std_reprojection_error": 99.59039306640625
+    },
+    "rmse": 311.10406494140625,
+    "matching_metrics": {
+      "matching_precision": 0.8571428571428571,
+      "matching_recall": 0.5833333333333334,
+      "f1_score": 0.6942148760330579,
+      "inlier_ratio": 0.8571428571428571
+    },
+    "matrix_error": {
+      "frobenius_norm": 432.7002824508923,
+      "max_element_error": 406.30071140269484,
+      "mean_element_error": 62.237204325360636
+    },
+    "performance": {
+      "computation_time": 0.07343626022338867,
+      "memory_usage_mb": 245.6484375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 3,
+    "num_matches": 10,
+    "matching_stats": {
+      "total_matches": 18,
+      "good_matches": 10,
+      "ratio_test_passed": 10,
+      "ratio_test_failed": 8,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7041235335888917,
+      "median_distance_ratio": 0.7084539856920591
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0013391971588134766,
+      "inlier_count": 0,
+      "outlier_count": 10
+    },
+    "image_name": "20241221_100711_257_IR_coolwarm",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 13,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 8,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 8,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9613293574283095,
+      "median_distance_ratio": 0.9834738511559953
+    },
+    "image_name": "20241222_081954_680_IR_coolwarm",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 19,
+    "num_matches": 6,
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6550512162784614,
+      "median_distance_ratio": 0.6866535058945138
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 0,
+      "outlier_count": 6
+    },
+    "image_name": "20241222_081954_680_IR_coolwarm",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 12,
+    "image_name": "20241222_081954_680_IR_coolwarm",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 12,
+    "image_name": "20241222_081954_680_IR_coolwarm",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 9,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_081954_680_IR_coolwarm",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 6,
+    "num_keypoints_B": 12,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 6,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9814979965980214,
+      "median_distance_ratio": 0.989751005938609
+    },
+    "image_name": "20241222_081954_680_IR_coolwarm",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 14,
+    "image_name": "20241222_081954_680_IR_coolwarm",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 2,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 9,
+    "num_keypoints_B": 2,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 9,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.957950991926167,
+      "median_distance_ratio": 0.9537367613643157
+    },
+    "image_name": "20241222_141317_881_IR_coolwarm",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_coolwarm",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 1,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 2,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 3,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_coolwarm",
+    "pair_name": "pair_0010"
+  }
+]

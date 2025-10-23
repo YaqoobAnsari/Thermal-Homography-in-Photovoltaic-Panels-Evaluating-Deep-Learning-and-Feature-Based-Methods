@@ -1,0 +1,1923 @@
+[
+  {
+    "success": true,
+    "mean_corner_error": 330.2952575683594,
+    "max_corner_error": 535.8877563476562,
+    "corner_errors": [
+      535.8877563476562,
+      334.28741455078125,
+      164.96534729003906,
+      286.04052734375
+    ],
+    "num_keypoints_A": 87,
+    "num_keypoints_B": 15,
+    "num_matches": 20,
+    "num_inliers": 4,
+    "inlier_ratio": 0.2,
+    "computation_time": 0.22241997718811035,
+    "H_estimated": [
+      [
+        0.14926307850420797,
+        -1.6433340784691246,
+        33.501785278320334
+      ],
+      [
+        0.34907965304986405,
+        -3.8432443957723135,
+        78.35019683837892
+      ],
+      [
+        0.004455376848254091,
+        -0.049052134530053235,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.49348013,
+        0.37502964,
+        -379.39356205
+      ],
+      [
+        0.02724487,
+        2.2921845,
+        -263.2535623
+      ],
+      [
+        2.676e-05,
+        0.00147184,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 87,
+      "good_matches": 20,
+      "ratio_test_passed": 20,
+      "ratio_test_failed": 47,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7681759620122818,
+      "median_distance_ratio": 0.8481675392670157
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.2109227180480957,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 4,
+      "outlier_count": 16
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 330.2952575683594,
+      "corner_errors": [
+        535.8877563476562,
+        334.28741455078125,
+        164.96534729003906,
+        286.04052734375
+      ],
+      "max_corner_error": 535.8877563476562,
+      "min_corner_error": 164.96534729003906,
+      "std_corner_error": 133.7690887451172
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 270.7017517089844,
+      "median_reprojection_error": 286.04052734375,
+      "max_reprojection_error": 535.8877563476562,
+      "std_reprojection_error": 139.1704559326172
+    },
+    "rmse": 304.3810729980469,
+    "matching_metrics": {
+      "matching_precision": 0.2,
+      "matching_recall": 1.3333333333333333,
+      "f1_score": 0.3478260869565218,
+      "inlier_ratio": 0.2
+    },
+    "matrix_error": {
+      "frobenius_norm": 535.9284713952737,
+      "max_element_error": 412.8953473283203,
+      "mean_element_error": 84.93043372298494
+    },
+    "performance": {
+      "computation_time": 0.22241997718811035,
+      "memory_usage_mb": 209.0390625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 159,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0003151893615722656,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.3877551020408163,
+      "median_distance_ratio": 0.3877551020408163
+    },
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 243.41949462890625,
+    "max_corner_error": 381.5066833496094,
+    "corner_errors": [
+      381.5066833496094,
+      282.6914367675781,
+      46.61103820800781,
+      262.86883544921875
+    ],
+    "num_keypoints_A": 125,
+    "num_keypoints_B": 17,
+    "num_matches": 8,
+    "num_inliers": 2,
+    "inlier_ratio": 0.25,
+    "computation_time": 0.17345619201660156,
+    "H_estimated": [
+      [
+        -0.6735804171186468,
+        -0.6818135143965106,
+        195.30729675292974
+      ],
+      [
+        -0.6275471260448746,
+        -0.6352175636108479,
+        181.95976257324222
+      ],
+      [
+        -0.003448823614464075,
+        -0.0034909781955511244,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.86491153,
+        0.01615147,
+        -67.28878741
+      ],
+      [
+        -0.00290501,
+        0.91298209,
+        -94.79040841
+      ],
+      [
+        -0.00011173,
+        -8.064e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 125,
+      "good_matches": 8,
+      "ratio_test_passed": 8,
+      "ratio_test_failed": 73,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8526118341338673,
+      "median_distance_ratio": 0.8865979381443299
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.16226816177368164,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 2,
+      "outlier_count": 6
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 243.41949462890625,
+      "corner_errors": [
+        381.5066833496094,
+        282.6914367675781,
+        46.61103820800781,
+        262.86883544921875
+      ],
+      "max_corner_error": 381.5066833496094,
+      "min_corner_error": 46.61103820800781,
+      "std_corner_error": 122.19063568115234
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 236.55905151367188,
+      "median_reprojection_error": 262.86883544921875,
+      "max_reprojection_error": 381.5066833496094,
+      "std_reprojection_error": 96.76225280761719
+    },
+    "rmse": 255.58389282226562,
+    "matching_metrics": {
+      "matching_precision": 0.25,
+      "matching_recall": 0.47058823529411764,
+      "f1_score": 0.32653061224489793,
+      "inlier_ratio": 0.25
+    },
+    "matrix_error": {
+      "frobenius_norm": 381.5140912106082,
+      "max_element_error": 276.75017098324224,
+      "mean_element_error": 60.41803347546142
+    },
+    "performance": {
+      "computation_time": 0.17345619201660156,
+      "memory_usage_mb": 209.09375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 139,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.3999215070643642,
+      "median_distance_ratio": 0.3877551020408163
+    },
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 487.675048828125,
+    "max_corner_error": 804.9354858398438,
+    "corner_errors": [
+      804.9354858398438,
+      538.251953125,
+      273.802734375,
+      333.71002197265625
+    ],
+    "num_keypoints_A": 12,
+    "num_keypoints_B": 75,
+    "num_matches": 11,
+    "num_inliers": 11,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.17467093467712402,
+    "H_estimated": [
+      [
+        1.0009579013820373,
+        0.0011832834096588934,
+        30.938484335205754
+      ],
+      [
+        0.0002889486322795112,
+        1.003133842823558,
+        151.96048281147358
+      ],
+      [
+        1.4273124637927533e-06,
+        1.1252950946531225e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.38267551,
+        0.77913503,
+        -352.8173448
+      ],
+      [
+        0.32958964,
+        2.7719015,
+        -555.6076883
+      ],
+      [
+        0.00093316,
+        0.00205189,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 12,
+      "good_matches": 11,
+      "ratio_test_passed": 11,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.07966963479158602,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.16385698318481445,
+      "best_log_likelihood": 33.86989293683946,
+      "inlier_count": 11,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 487.675048828125,
+      "corner_errors": [
+        804.9354858398438,
+        538.251953125,
+        273.802734375,
+        333.71002197265625
+      ],
+      "max_corner_error": 804.9354858398438,
+      "min_corner_error": 273.802734375,
+      "std_corner_error": 207.76116943359375
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 462.1936340332031,
+      "median_reprojection_error": 412.9599609375,
+      "max_reprojection_error": 804.9354858398438,
+      "std_reprojection_error": 166.49835205078125
+    },
+    "rmse": 491.2684020996094,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.9166666666666666,
+      "f1_score": 0.9565217391304348,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 804.9391309290146,
+      "max_element_error": 707.5681711114735,
+      "mean_element_error": 121.73163448001868
+    },
+    "performance": {
+      "computation_time": 0.17467093467712402,
+      "memory_usage_mb": 209.171875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 445.50909423828125,
+    "max_corner_error": 828.7061157226562,
+    "corner_errors": [
+      828.7061157226562,
+      305.61431884765625,
+      177.84971618652344,
+      469.8662414550781
+    ],
+    "num_keypoints_A": 86,
+    "num_keypoints_B": 10,
+    "num_matches": 6,
+    "num_inliers": 3,
+    "inlier_ratio": 0.5,
+    "computation_time": 0.16358733177185059,
+    "H_estimated": [
+      [
+        -0.2711643014137661,
+        -0.002831596909743123,
+        61.50178527832031
+      ],
+      [
+        -0.2837230836885703,
+        -0.002962740312079053,
+        64.3501968383789
+      ],
+      [
+        -0.00440904764287148,
+        -4.6040889657576754e-05,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.15890603,
+        0.56144047,
+        -665.4164526
+      ],
+      [
+        0.36893456,
+        2.36954539,
+        -333.57414585
+      ],
+      [
+        0.00079039,
+        0.00135266,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 86,
+      "good_matches": 6,
+      "ratio_test_passed": 6,
+      "ratio_test_failed": 32,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8775064719474518,
+      "median_distance_ratio": 0.9105745584618824
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.14352655410766602,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 3,
+      "outlier_count": 3
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 445.50909423828125,
+      "corner_errors": [
+        828.7061157226562,
+        305.61431884765625,
+        177.84971618652344,
+        469.8662414550781
+      ],
+      "max_corner_error": 828.7061157226562,
+      "min_corner_error": 177.84971618652344,
+      "std_corner_error": 244.25668334960938
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 396.664794921875,
+      "median_reprojection_error": 314.5994567871094,
+      "max_reprojection_error": 828.7061157226562,
+      "std_reprojection_error": 213.3091583251953
+    },
+    "rmse": 450.3818054199219,
+    "matching_metrics": {
+      "matching_precision": 0.5,
+      "matching_recall": 0.6,
+      "f1_score": 0.5454545454545454,
+      "inlier_ratio": 0.5
+    },
+    "matrix_error": {
+      "frobenius_norm": 828.7135726502256,
+      "max_element_error": 726.9182378783203,
+      "mean_element_error": 125.65207631972842
+    },
+    "performance": {
+      "computation_time": 0.16358733177185059,
+      "memory_usage_mb": 209.17578125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 235.91217041015625,
+    "max_corner_error": 313.41473388671875,
+    "corner_errors": [
+      296.6261901855469,
+      140.76473999023438,
+      192.84300231933594,
+      313.41473388671875
+    ],
+    "num_keypoints_A": 96,
+    "num_keypoints_B": 14,
+    "num_matches": 20,
+    "num_inliers": 2,
+    "inlier_ratio": 0.1,
+    "computation_time": 0.2224714756011963,
+    "H_estimated": [
+      [
+        -1.1090851278087603,
+        -0.8085760187002268,
+        245.71961975097662
+      ],
+      [
+        -0.4116296809989288,
+        -0.3000976934011764,
+        91.19722747802734
+      ],
+      [
+        -0.0045136205604288234,
+        -0.0032906449209048685,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.57722803,
+        0.0722368,
+        -49.52942043
+      ],
+      [
+        -0.05479518,
+        0.65105545,
+        62.6471149
+      ],
+      [
+        -0.00041307,
+        -0.00011788,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 96,
+      "good_matches": 20,
+      "ratio_test_passed": 20,
+      "ratio_test_failed": 42,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7200005836938393,
+      "median_distance_ratio": 0.8586757121594961
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.21210050582885742,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 2,
+      "outlier_count": 18
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 235.91217041015625,
+      "corner_errors": [
+        296.6261901855469,
+        140.76473999023438,
+        192.84300231933594,
+        313.41473388671875
+      ],
+      "max_corner_error": 313.41473388671875,
+      "min_corner_error": 140.76473999023438,
+      "std_corner_error": 71.76493835449219
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 229.16845703125,
+      "median_reprojection_error": 222.3856658935547,
+      "max_reprojection_error": 313.41473388671875,
+      "std_reprojection_error": 61.3804817199707
+    },
+    "rmse": 237.24615478515625,
+    "matching_metrics": {
+      "matching_precision": 0.1,
+      "matching_recall": 1.4285714285714286,
+      "f1_score": 0.1869158878504673,
+      "inlier_ratio": 0.1
+    },
+    "matrix_error": {
+      "frobenius_norm": 296.63404421835673,
+      "max_element_error": 295.24904018097664,
+      "mean_element_error": 36.409059966154935
+    },
+    "performance": {
+      "computation_time": 0.2224714756011963,
+      "memory_usage_mb": 209.17578125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 522.802734375,
+    "max_corner_error": 762.3159790039062,
+    "corner_errors": [
+      762.3159790039062,
+      485.8276672363281,
+      353.5066833496094,
+      489.5606384277344
+    ],
+    "num_keypoints_A": 66,
+    "num_keypoints_B": 116,
+    "num_matches": 49,
+    "num_inliers": 47,
+    "inlier_ratio": 0.9591836734693877,
+    "computation_time": 0.32704830169677734,
+    "H_estimated": [
+      [
+        0.9999366205331958,
+        -0.00010819385082523209,
+        -8.992376989876966
+      ],
+      [
+        -0.00015406291578024865,
+        0.9998787516810708,
+        161.01876183778893
+      ],
+      [
+        -2.3801534124739879e-07,
+        -2.808399362245392e-07,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.03486935,
+        0.15219874,
+        -200.19721727
+      ],
+      [
+        0.57781929,
+        2.02780277,
+        -576.92863112
+      ],
+      [
+        0.00125293,
+        0.00037874,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 66,
+      "good_matches": 49,
+      "ratio_test_passed": 49,
+      "ratio_test_failed": 15,
+      "matching_time": 0.0006487369537353516,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.23442406741086602,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.31412768363952637,
+      "best_log_likelihood": -28.868367120989678,
+      "inlier_count": 47,
+      "outlier_count": 2
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 522.802734375,
+      "corner_errors": [
+        762.3159790039062,
+        485.8276672363281,
+        353.5066833496094,
+        489.5606384277344
+      ],
+      "max_corner_error": 762.3159790039062,
+      "min_corner_error": 353.5066833496094,
+      "std_corner_error": 148.7447052001953
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 512.8216552734375,
+      "median_reprojection_error": 489.5606384277344,
+      "max_reprojection_error": 762.3159790039062,
+      "std_reprojection_error": 119.33916473388672
+    },
+    "rmse": 526.5243530273438,
+    "matching_metrics": {
+      "matching_precision": 0.9591836734693877,
+      "matching_recall": 0.7424242424242424,
+      "f1_score": 0.8369980010903143,
+      "inlier_ratio": 0.9591836734693877
+    },
+    "matrix_error": {
+      "frobenius_norm": 762.3176048640091,
+      "max_element_error": 737.9473929577889,
+      "mean_element_error": 103.54966694014662
+    },
+    "performance": {
+      "computation_time": 0.32704830169677734,
+      "memory_usage_mb": 209.17578125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 286.99957275390625,
+    "max_corner_error": 332.6811218261719,
+    "corner_errors": [
+      332.6811218261719,
+      272.27752685546875,
+      249.22320556640625,
+      293.8164367675781
+    ],
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 130,
+    "num_matches": 14,
+    "num_inliers": 14,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.19830107688903809,
+    "H_estimated": [
+      [
+        0.9999993488916643,
+        -5.2625931939880635e-08,
+        -112.99991779489066
+      ],
+      [
+        -2.468189288270583e-07,
+        0.9999992214169231,
+        12.000061410138908
+      ],
+      [
+        -2.2367269963471566e-09,
+        -1.3436764071482216e-09,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.66298804,
+        -0.23428001,
+        219.560326
+      ],
+      [
+        0.01980669,
+        0.68542096,
+        20.96752345
+      ],
+      [
+        -0.00024047,
+        -0.00037185,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 18,
+      "good_matches": 14,
+      "ratio_test_passed": 14,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.20310250824595089,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.1833477020263672,
+      "best_log_likelihood": 155.26507520439006,
+      "inlier_count": 14,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 286.99957275390625,
+      "corner_errors": [
+        332.6811218261719,
+        272.27752685546875,
+        249.22320556640625,
+        293.8164367675781
+      ],
+      "max_corner_error": 332.6811218261719,
+      "min_corner_error": 249.22320556640625,
+      "std_corner_error": 30.728919982910156
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 285.80426025390625,
+      "median_reprojection_error": 283.431640625,
+      "max_reprojection_error": 332.6811218261719,
+      "std_reprojection_error": 25.118913650512695
+    },
+    "rmse": 286.9059753417969,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.7777777777777778,
+      "f1_score": 0.8750000000000001,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 332.68152780710204,
+      "max_element_error": 332.56024379489065,
+      "mean_element_error": 38.04822162396366
+    },
+    "performance": {
+      "computation_time": 0.19830107688903809,
+      "memory_usage_mb": 209.17578125
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 207.0651397705078,
+    "max_corner_error": 280.9276428222656,
+    "corner_errors": [
+      280.9276428222656,
+      276.2691345214844,
+      109.9736557006836,
+      161.0901641845703
+    ],
+    "num_keypoints_A": 69,
+    "num_keypoints_B": 12,
+    "num_matches": 7,
+    "num_inliers": 3,
+    "inlier_ratio": 0.42857142857142855,
+    "computation_time": 0.17362713813781738,
+    "H_estimated": [
+      [
+        0.037836942413888686,
+        -0.23619823445504753,
+        41.18016815185547
+      ],
+      [
+        0.20962524696063112,
+        -1.3085918171635829,
+        228.1474761962891
+      ],
+      [
+        0.0009188146652136448,
+        -0.0057357277800334835,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.95342242,
+        -0.14872919,
+        -68.21319687
+      ],
+      [
+        0.05514661,
+        0.9490805,
+        -30.60612868
+      ],
+      [
+        0.00012287,
+        -0.00043343,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 69,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 35,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8468575465822358,
+      "median_distance_ratio": 0.8564072093483859
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.15837764739990234,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 3,
+      "outlier_count": 4
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 207.0651397705078,
+      "corner_errors": [
+        280.9276428222656,
+        276.2691345214844,
+        109.9736557006836,
+        161.0901641845703
+      ],
+      "max_corner_error": 280.9276428222656,
+      "min_corner_error": 109.9736557006836,
+      "std_corner_error": 73.79924774169922
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 176.82130432128906,
+      "median_reprojection_error": 169.76039123535156,
+      "max_reprojection_error": 280.9276428222656,
+      "std_reprojection_error": 78.86534118652344
+    },
+    "rmse": 193.6117706298828,
+    "matching_metrics": {
+      "matching_precision": 0.42857142857142855,
+      "matching_recall": 0.5833333333333334,
+      "f1_score": 0.49411764705882355,
+      "inlier_ratio": 0.42857142857142855
+    },
+    "matrix_error": {
+      "frobenius_norm": 280.9382552654035,
+      "max_element_error": 258.7536048762891,
+      "mean_element_error": 41.28536373519503
+    },
+    "performance": {
+      "computation_time": 0.17362713813781738,
+      "memory_usage_mb": 203.015625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_nipy_spectral",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 6,
+    "num_keypoints_B": 43,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 6,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8953968450932769,
+      "median_distance_ratio": 0.9368663356093524
+    },
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 16,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.0,
+      "median_distance_ratio": 0.0
+    },
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 3,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 19,
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 302.38665771484375,
+    "max_corner_error": 388.6288757324219,
+    "corner_errors": [
+      313.94439697265625,
+      368.4783020019531,
+      388.6288757324219,
+      138.4949493408203
+    ],
+    "num_keypoints_A": 50,
+    "num_keypoints_B": 19,
+    "num_matches": 20,
+    "num_inliers": 3,
+    "inlier_ratio": 0.15,
+    "computation_time": 0.21759414672851562,
+    "H_estimated": [
+      [
+        -0.010806530276050932,
+        -0.2507761431309519,
+        30.599794387817397
+      ],
+      [
+        -0.045112258177066926,
+        -1.0468742347989521,
+        127.73996734619139
+      ],
+      [
+        -0.0003531569571707107,
+        -0.008195353862599567,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.07277545,
+        0.83565279,
+        -78.63782993
+      ],
+      [
+        0.3265886,
+        1.97041313,
+        -166.58679312
+      ],
+      [
+        0.00120257,
+        0.00141528,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 50,
+      "good_matches": 20,
+      "ratio_test_passed": 20,
+      "ratio_test_failed": 23,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5478370984900806,
+      "median_distance_ratio": 0.772020725388601
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.20546603202819824,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 3,
+      "outlier_count": 17
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 302.38665771484375,
+      "corner_errors": [
+        313.94439697265625,
+        368.4783020019531,
+        388.6288757324219,
+        138.4949493408203
+      ],
+      "max_corner_error": 388.6288757324219,
+      "min_corner_error": 138.4949493408203,
+      "std_corner_error": 98.48844909667969
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 259.5649108886719,
+      "median_reprojection_error": 269.89892578125,
+      "max_reprojection_error": 388.6288757324219,
+      "std_reprojection_error": 105.25694274902344
+    },
+    "rmse": 280.0945739746094,
+    "matching_metrics": {
+      "matching_precision": 0.15,
+      "matching_recall": 1.0526315789473684,
+      "f1_score": 0.262582056892779,
+      "inlier_ratio": 0.15
+    },
+    "matrix_error": {
+      "frobenius_norm": 313.96793532807294,
+      "max_element_error": 294.3267604661914,
+      "mean_element_error": 45.57050558680128
+    },
+    "performance": {
+      "computation_time": 0.21759414672851562,
+      "memory_usage_mb": 208.5390625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 21,
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 37,
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 25,
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 33,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8628571428571429,
+      "median_distance_ratio": 0.8628571428571429
+    },
+    "image_name": "20241222_081954_680_IR_nipy_spectral",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 82,
+    "num_keypoints_B": 2,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 82,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9117160278745645,
+      "median_distance_ratio": 0.9
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 58,
+    "num_keypoints_B": 7,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 58,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8715732579839213,
+      "median_distance_ratio": 0.9235294117647059
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 14,
+    "num_keypoints_B": 2,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 14,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.0,
+      "median_distance_ratio": 0.0
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 37,
+    "num_keypoints_B": 11,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 37,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 10,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8043735202396729,
+      "median_distance_ratio": 0.8722466960352423
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 122,
+    "num_keypoints_B": 3,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 122,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.879611357086751,
+      "median_distance_ratio": 0.9026627218934911
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 489.98809814453125,
+    "max_corner_error": 751.0260009765625,
+    "corner_errors": [
+      751.0260009765625,
+      394.18841552734375,
+      164.32887268066406,
+      650.4091796875
+    ],
+    "num_keypoints_A": 180,
+    "num_keypoints_B": 14,
+    "num_matches": 13,
+    "num_inliers": 4,
+    "inlier_ratio": 0.3076923076923077,
+    "computation_time": 0.19658446311950684,
+    "H_estimated": [
+      [
+        -1.1141230291416537,
+        -0.16267864366422563,
+        256.1822204589843
+      ],
+      [
+        -0.9003087131234282,
+        -0.13145855215185753,
+        207.0176086425781
+      ],
+      [
+        -0.004348947507541917,
+        -0.0006350114515080918,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.97642447,
+        -0.18858627,
+        -321.13827651
+      ],
+      [
+        0.21638281,
+        1.47334399,
+        -273.33755957
+      ],
+      [
+        0.00106574,
+        -0.00017512,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 180,
+      "good_matches": 13,
+      "ratio_test_passed": 13,
+      "ratio_test_failed": 80,
+      "matching_time": 0.0004639625549316406,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.821651564381688,
+      "median_distance_ratio": 0.8826530612244898
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.18232440948486328,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 4,
+      "outlier_count": 9
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 489.98809814453125,
+      "corner_errors": [
+        751.0260009765625,
+        394.18841552734375,
+        164.32887268066406,
+        650.4091796875
+      ],
+      "max_corner_error": 751.0260009765625,
+      "min_corner_error": 164.32887268066406,
+      "std_corner_error": 228.64122009277344
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 469.7043762207031,
+      "median_reprojection_error": 426.1766662597656,
+      "max_reprojection_error": 751.0260009765625,
+      "std_reprojection_error": 185.7998809814453
+    },
+    "rmse": 505.1175842285156,
+    "matching_metrics": {
+      "matching_precision": 0.3076923076923077,
+      "matching_recall": 0.9285714285714286,
+      "f1_score": 0.46222222222222226,
+      "inlier_ratio": 0.3076923076923077
+    },
+    "matrix_error": {
+      "frobenius_norm": 751.0348982735665,
+      "max_element_error": 577.3204969689843,
+      "mean_element_error": 118.16883210569712
+    },
+    "performance": {
+      "computation_time": 0.19658446311950684,
+      "memory_usage_mb": 209.0390625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 8,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.0,
+      "median_distance_ratio": 0.0
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 6,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 36,
+    "num_keypoints_B": 6,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 36,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9038082375774857,
+      "median_distance_ratio": 0.9166666666666666
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 35,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9039609068476783,
+      "median_distance_ratio": 0.922943722943723
+    },
+    "image_name": "20241222_141317_881_IR_nipy_spectral",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 22,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 74,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 3,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.0,
+      "median_distance_ratio": 0.0
+    },
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 70,
+    "num_keypoints_B": 3,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 70,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.918552036199095,
+      "median_distance_ratio": 0.918552036199095
+    },
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 75,
+    "num_keypoints_B": 25,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 75,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 47,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.903172597073132,
+      "median_distance_ratio": 0.9308510638297872
+    },
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 9,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8958057395143487,
+      "median_distance_ratio": 0.9006622516556292
+    },
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 410.154296875,
+    "max_corner_error": 681.4108276367188,
+    "corner_errors": [
+      681.4108276367188,
+      143.78709411621094,
+      285.9869384765625,
+      529.4323120117188
+    ],
+    "num_keypoints_A": 30,
+    "num_keypoints_B": 32,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.1399552822113037,
+    "H_estimated": [
+      [
+        -0.2701148412773332,
+        0.04826114282454684,
+        31.858552267710653
+      ],
+      [
+        0.17160123203977354,
+        -0.060297795432124816,
+        -33.261435285622234
+      ],
+      [
+        -0.007260418383642607,
+        0.0011561120448375863,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.23860023,
+        0.45947722,
+        -637.32789154
+      ],
+      [
+        0.07665133,
+        2.46349419,
+        -161.75345683
+      ],
+      [
+        0.00077699,
+        0.00180313,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 30,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 18,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8642800813912914,
+      "median_distance_ratio": 0.8821702594081111
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.1303415298461914,
+      "best_log_likelihood": 117.1531675212499,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 410.154296875,
+      "corner_errors": [
+        681.4108276367188,
+        143.78709411621094,
+        285.9869384765625,
+        529.4323120117188
+      ],
+      "max_corner_error": 681.4108276367188,
+      "min_corner_error": 143.78709411621094,
+      "std_corner_error": 208.67221069335938
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 368.6363525390625,
+      "median_reprojection_error": 315.2533874511719,
+      "max_reprojection_error": 681.4108276367188,
+      "std_reprojection_error": 174.63172912597656
+    },
+    "rmse": 407.9080505371094,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.13333333333333333,
+      "f1_score": 0.23529411764705882,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 681.4202356351258,
+      "max_element_error": 669.1864438077107,
+      "mean_element_error": 89.2473136460391
+    },
+    "performance": {
+      "computation_time": 0.1399552822113037,
+      "memory_usage_mb": 209.5
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 42,
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 97,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 16,
+    "image_name": "20241223_120131_487_IR_nipy_spectral",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 323.69549560546875,
+    "max_corner_error": 345.7490234375,
+    "corner_errors": [
+      345.1597595214844,
+      305.2642517089844,
+      298.6090087890625,
+      345.7490234375
+    ],
+    "num_keypoints_A": 25,
+    "num_keypoints_B": 63,
+    "num_matches": 16,
+    "num_inliers": 16,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.20400595664978027,
+    "H_estimated": [
+      [
+        1.0005497586111662,
+        3.512182536034532e-05,
+        -91.07908189035966
+      ],
+      [
+        0.00034342862769988096,
+        1.0003946752733526,
+        107.95808510573534
+      ],
+      [
+        1.4773347455449943e-06,
+        2.5063361284293483e-07,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.76630061,
+        -0.11197951,
+        178.689624
+      ],
+      [
+        0.08398986,
+        0.87483975,
+        -107.35586909
+      ],
+      [
+        -0.00021428,
+        -5.016e-05,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 25,
+      "good_matches": 16,
+      "ratio_test_passed": 16,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.31574136386265417,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.19190406799316406,
+      "best_log_likelihood": 81.0726091197639,
+      "inlier_count": 16,
+      "outlier_count": 0
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 323.69549560546875,
+      "corner_errors": [
+        345.1597595214844,
+        305.2642517089844,
+        298.6090087890625,
+        345.7490234375
+      ],
+      "max_corner_error": 345.7490234375,
+      "min_corner_error": 298.6090087890625,
+      "std_corner_error": 21.886728286743164
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 323.0348815917969,
+      "median_reprojection_error": 321.7124328613281,
+      "max_reprojection_error": 345.7490234375,
+      "std_reprojection_error": 17.832721710205078
+    },
+    "rmse": 323.5267333984375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.64,
+      "f1_score": 0.7804878048780487,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 345.15988140268826,
+      "max_element_error": 269.7687058903597,
+      "mean_element_error": 53.95982126568284
+    },
+    "performance": {
+      "computation_time": 0.20400595664978027,
+      "memory_usage_mb": 209.52734375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 48,
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 23,
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 47,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 46,
+    "num_keypoints_B": 5,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 46,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8079995313987635,
+      "median_distance_ratio": 0.8053275838085965
+    },
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 46,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 253.96673583984375,
+    "max_corner_error": 381.2238464355469,
+    "corner_errors": [
+      381.2238464355469,
+      376.08984375,
+      99.36868286132812,
+      159.18458557128906
+    ],
+    "num_keypoints_A": 28,
+    "num_keypoints_B": 45,
+    "num_matches": 16,
+    "num_inliers": 2,
+    "inlier_ratio": 0.125,
+    "computation_time": 0.20660853385925293,
+    "H_estimated": [
+      [
+        -0.8349349928878396,
+        -0.7161030764903129,
+        240.57406616211034
+      ],
+      [
+        -0.7560719112567134,
+        -0.6484641634508403,
+        217.85084533691395
+      ],
+      [
+        -0.003470594342140018,
+        -0.0029766428606139562,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.92997073,
+        0.20851984,
+        43.54676466
+      ],
+      [
+        -0.11351833,
+        1.20571953,
+        -108.51072171
+      ],
+      [
+        -0.00036336,
+        0.00047757,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 28,
+      "good_matches": 16,
+      "ratio_test_passed": 16,
+      "ratio_test_failed": 12,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.4883597840988805,
+      "median_distance_ratio": 0.6867393509127789
+    },
+    "ransac_stats": {
+      "method": "MLESAC",
+      "iterations": 2000,
+      "estimation_time": 0.19607090950012207,
+      "best_log_likelihood": 0.0,
+      "inlier_count": 2,
+      "outlier_count": 14
+    },
+    "ransac_method": "MLESAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 253.96673583984375,
+      "corner_errors": [
+        381.2238464355469,
+        376.08984375,
+        99.36868286132812,
+        159.18458557128906
+      ],
+      "max_corner_error": 381.2238464355469,
+      "min_corner_error": 99.36868286132812,
+      "std_corner_error": 126.48383331298828
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 231.85389709472656,
+      "median_reprojection_error": 215.13406372070312,
+      "max_reprojection_error": 381.2238464355469,
+      "std_reprojection_error": 111.63307189941406
+    },
+    "rmse": 257.3288879394531,
+    "matching_metrics": {
+      "matching_precision": 0.125,
+      "matching_recall": 0.5714285714285714,
+      "f1_score": 0.20512820512820512,
+      "inlier_ratio": 0.125
+    },
+    "matrix_error": {
+      "frobenius_norm": 381.2341153361403,
+      "max_element_error": 326.36156704691393,
+      "mean_element_error": 58.7312995455903
+    },
+    "performance": {
+      "computation_time": 0.20660853385925293,
+      "memory_usage_mb": 210.0
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 7,
+    "num_keypoints_B": 51,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 7,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9255616826413251,
+      "median_distance_ratio": 0.9490445859872612
+    },
+    "image_name": "20241223_120707_069_IR_nipy_spectral",
+    "pair_name": "pair_0010"
+  }
+]

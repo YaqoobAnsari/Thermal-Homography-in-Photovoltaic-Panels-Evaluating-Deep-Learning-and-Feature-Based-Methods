@@ -1,0 +1,1510 @@
+[
+  {
+    "success": true,
+    "mean_corner_error": 337.7496032714844,
+    "max_corner_error": 447.0441589355469,
+    "corner_errors": [
+      447.0441589355469,
+      354.81964111328125,
+      263.9847106933594,
+      285.1498718261719
+    ],
+    "num_keypoints_A": 28,
+    "num_keypoints_B": 30,
+    "num_matches": 15,
+    "num_inliers": 13,
+    "inlier_ratio": 0.8666666666666667,
+    "computation_time": 0.029021739959716797,
+    "H_estimated": [
+      [
+        0.9741162930745646,
+        -0.012695478940299853,
+        95.8862017985431
+      ],
+      [
+        -0.004891172357889427,
+        0.9726820051278432,
+        94.94603806173507
+      ],
+      [
+        -8.744261284050607e-05,
+        -5.1085193953471654e-05,
+        0.9999999999999999
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.44416212,
+        0.30960494,
+        -236.30937205
+      ],
+      [
+        0.06409305,
+        1.60961297,
+        -204.21042429
+      ],
+      [
+        0.00026773,
+        0.00089573,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 28,
+      "good_matches": 15,
+      "ratio_test_passed": 15,
+      "ratio_test_failed": 13,
+      "matching_time": 0.0011179447174072266,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.4972472675388892,
+      "median_distance_ratio": 0.7190480635355996
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 13,
+      "outlier_count": 2
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 337.7496032714844,
+      "corner_errors": [
+        447.0441589355469,
+        354.81964111328125,
+        263.9847106933594,
+        285.1498718261719
+      ],
+      "max_corner_error": 447.0441589355469,
+      "min_corner_error": 263.9847106933594,
+      "std_corner_error": 71.49244689941406
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 330.6511535644531,
+      "median_reprojection_error": 316.5384521484375,
+      "max_reprojection_error": 447.0441589355469,
+      "std_reprojection_error": 57.91457748413086
+    },
+    "rmse": 335.684814453125,
+    "matching_metrics": {
+      "matching_precision": 0.8666666666666667,
+      "matching_recall": 0.5357142857142857,
+      "f1_score": 0.6621392190152802,
+      "inlier_ratio": 0.8666666666666667
+    },
+    "matrix_error": {
+      "frobenius_norm": 447.04499047960144,
+      "max_element_error": 332.1955738485431,
+      "mean_element_error": 70.31684440235341
+    },
+    "performance": {
+      "computation_time": 0.029021739959716797,
+      "memory_usage_mb": 63.65234375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 31,
+    "num_keypoints_B": 21,
+    "num_matches": 11,
+    "matching_stats": {
+      "total_matches": 31,
+      "good_matches": 11,
+      "ratio_test_passed": 11,
+      "ratio_test_failed": 20,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.845113940639018,
+      "median_distance_ratio": 0.894696605633694
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 0,
+      "outlier_count": 11
+    },
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 570.2107543945312,
+    "max_corner_error": 881.6790161132812,
+    "corner_errors": [
+      881.6790161132812,
+      341.7886047363281,
+      177.18466186523438,
+      880.1907348632812
+    ],
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 34,
+    "num_matches": 4,
+    "num_inliers": 4,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.017204761505126953,
+    "H_estimated": [
+      [
+        -0.5199331521147295,
+        -0.9726747386583958,
+        207.87990214621493
+      ],
+      [
+        -0.30053082177238577,
+        -0.24794008108417637,
+        134.18813158843344
+      ],
+      [
+        -0.0024801854487844616,
+        -0.004452329601351737,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.7139745,
+        0.15035706,
+        -469.86064433
+      ],
+      [
+        0.53755951,
+        2.38654094,
+        -429.74948707
+      ],
+      [
+        0.00249723,
+        0.00147838,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 4,
+      "ratio_test_passed": 4,
+      "ratio_test_failed": 6,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6175498159104393,
+      "median_distance_ratio": 0.7993701484185614
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 4,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 570.2107543945312,
+      "corner_errors": [
+        881.6790161132812,
+        341.7886047363281,
+        177.18466186523438,
+        880.1907348632812
+      ],
+      "max_corner_error": 881.6790161132812,
+      "min_corner_error": 177.18466186523438,
+      "std_corner_error": 316.1274719238281
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 514.6649169921875,
+      "median_reprojection_error": 510.9955139160156,
+      "max_reprojection_error": 881.6790161132812,
+      "std_reprojection_error": 256.94049072265625
+    },
+    "rmse": 575.2376708984375,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.4,
+      "f1_score": 0.5714285714285715,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 881.6899956224688,
+      "max_element_error": 677.740546476215,
+      "mean_element_error": 138.83539822925866
+    },
+    "performance": {
+      "computation_time": 0.017204761505126953,
+      "memory_usage_mb": 63.69140625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 299.18719482421875,
+    "max_corner_error": 317.0621032714844,
+    "corner_errors": [
+      266.7440490722656,
+      304.9026184082031,
+      308.0400085449219,
+      317.0621032714844
+    ],
+    "num_keypoints_A": 41,
+    "num_keypoints_B": 30,
+    "num_matches": 19,
+    "num_inliers": 15,
+    "inlier_ratio": 0.7894736842105263,
+    "computation_time": 0.015784025192260742,
+    "H_estimated": [
+      [
+        0.9997716896458055,
+        -0.0004170105326141357,
+        130.01649640264873
+      ],
+      [
+        -3.6915337769934323e-06,
+        0.999556207801967,
+        -100.95001033426036
+      ],
+      [
+        1.954783037275571e-07,
+        -2.1917267649983463e-06,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.87501417,
+        -0.28954224,
+        -49.75377029
+      ],
+      [
+        0.0861649,
+        0.53594638,
+        96.11607375
+      ],
+      [
+        2.468e-05,
+        -0.00079483,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 41,
+      "good_matches": 19,
+      "ratio_test_passed": 19,
+      "ratio_test_failed": 22,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5919749116998662,
+      "median_distance_ratio": 0.8143425808016943
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 15,
+      "outlier_count": 4
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 299.18719482421875,
+      "corner_errors": [
+        266.7440490722656,
+        304.9026184082031,
+        308.0400085449219,
+        317.0621032714844
+      ],
+      "max_corner_error": 317.0621032714844,
+      "min_corner_error": 266.7440490722656,
+      "std_corner_error": 19.255573272705078
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 294.3704833984375,
+      "median_reprojection_error": 295.1695556640625,
+      "max_reprojection_error": 317.0621032714844,
+      "std_reprojection_error": 16.34457015991211
+    },
+    "rmse": 294.8238830566406,
+    "matching_metrics": {
+      "matching_precision": 0.7894736842105263,
+      "matching_recall": 0.6333333333333333,
+      "f1_score": 0.7028360049321825,
+      "inlier_ratio": 0.7894736842105263
+    },
+    "matrix_error": {
+      "frobenius_norm": 266.7446565549446,
+      "max_element_error": 197.06608408426035,
+      "mean_element_error": 41.97786989646144
+    },
+    "performance": {
+      "computation_time": 0.015784025192260742,
+      "memory_usage_mb": 63.69921875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 350.0836181640625,
+    "max_corner_error": 390.11865234375,
+    "corner_errors": [
+      390.11865234375,
+      363.5555114746094,
+      318.9730224609375,
+      327.68719482421875
+    ],
+    "num_keypoints_A": 29,
+    "num_keypoints_B": 34,
+    "num_matches": 13,
+    "num_inliers": 12,
+    "inlier_ratio": 0.9230769230769231,
+    "computation_time": 0.015676021575927734,
+    "H_estimated": [
+      [
+        0.9999989558789536,
+        -2.3093096532076694e-06,
+        28.000115857602736
+      ],
+      [
+        -2.5330344794656433e-07,
+        0.9999962352188833,
+        159.00003873046236
+      ],
+      [
+        -1.400847718652491e-09,
+        -1.3527586578275308e-08,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.14932977,
+        0.32659096,
+        -95.37356666
+      ],
+      [
+        0.05077901,
+        1.22374581,
+        -211.09655075
+      ],
+      [
+        9.835e-05,
+        0.0005505,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 29,
+      "good_matches": 13,
+      "ratio_test_passed": 13,
+      "ratio_test_failed": 16,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5351979186648047,
+      "median_distance_ratio": 0.8645746017176175
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 12,
+      "outlier_count": 1
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 350.0836181640625,
+      "corner_errors": [
+        390.11865234375,
+        363.5555114746094,
+        318.9730224609375,
+        327.68719482421875
+      ],
+      "max_corner_error": 390.11865234375,
+      "min_corner_error": 318.9730224609375,
+      "std_corner_error": 28.520891189575195
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 346.2067565917969,
+      "median_reprojection_error": 338.5181884765625,
+      "max_reprojection_error": 390.11865234375,
+      "std_reprojection_error": 23.618253707885742
+    },
+    "rmse": 347.0114440917969,
+    "matching_metrics": {
+      "matching_precision": 0.9230769230769231,
+      "matching_recall": 0.4482758620689655,
+      "f1_score": 0.6034816247582205,
+      "inlier_ratio": 0.9230769230769231
+    },
+    "matrix_error": {
+      "frobenius_norm": 390.11886994683846,
+      "max_element_error": 370.0965894804624,
+      "mean_element_error": 54.913485976056535
+    },
+    "performance": {
+      "computation_time": 0.015676021575927734,
+      "memory_usage_mb": 67.734375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 254.62417602539062,
+    "max_corner_error": 300.1502380371094,
+    "corner_errors": [
+      211.7187957763672,
+      216.42190551757812,
+      290.20574951171875,
+      300.1502380371094
+    ],
+    "num_keypoints_A": 11,
+    "num_keypoints_B": 36,
+    "num_matches": 7,
+    "num_inliers": 7,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.016004562377929688,
+    "H_estimated": [
+      [
+        1.0070562975402935,
+        -0.0020006884275919853,
+        22.954670591890494
+      ],
+      [
+        0.005285396733139441,
+        1.0036109421473156,
+        147.92845067833062
+      ],
+      [
+        3.154605475621768e-05,
+        -3.501951456937641e-06,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.68159109,
+        -0.11079139,
+        39.42623688
+      ],
+      [
+        0.01772817,
+        0.58487916,
+        -63.14864272
+      ],
+      [
+        -0.0001498,
+        -0.00069142,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 11,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.4836609221543103,
+      "median_distance_ratio": 0.6665093856873049
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 7,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 254.62417602539062,
+      "corner_errors": [
+        211.7187957763672,
+        216.42190551757812,
+        290.20574951171875,
+        300.1502380371094
+      ],
+      "max_corner_error": 300.1502380371094,
+      "min_corner_error": 211.7187957763672,
+      "std_corner_error": 40.73989486694336
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 256.8808288574219,
+      "median_reprojection_error": 261.77374267578125,
+      "max_reprojection_error": 300.1502380371094,
+      "std_reprojection_error": 33.82502365112305
+    },
+    "rmse": 259.09820556640625,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.6363636363636364,
+      "f1_score": 0.7777777777777778,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 211.71949628724167,
+      "max_element_error": 211.07709339833062,
+      "mean_element_error": 25.379439935007813
+    },
+    "performance": {
+      "computation_time": 0.016004562377929688,
+      "memory_usage_mb": 68.609375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 447.61322021484375,
+    "max_corner_error": 572.9539794921875,
+    "corner_errors": [
+      572.9539794921875,
+      370.3650207519531,
+      345.78240966796875,
+      501.3515319824219
+    ],
+    "num_keypoints_A": 22,
+    "num_keypoints_B": 42,
+    "num_matches": 7,
+    "num_inliers": 6,
+    "inlier_ratio": 0.8571428571428571,
+    "computation_time": 0.033541202545166016,
+    "H_estimated": [
+      [
+        1.000134981904978,
+        9.774711516076502e-06,
+        7.9937457888150165
+      ],
+      [
+        8.040569316726351e-05,
+        1.0000994606591378,
+        163.99848788941665
+      ],
+      [
+        4.5160722507870153e-07,
+        -4.480429986540935e-08,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        2.16269879,
+        -0.03774104,
+        -290.62479452
+      ],
+      [
+        0.2582222,
+        1.39839904,
+        -324.98340105
+      ],
+      [
+        0.0011096,
+        -0.00015022,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 22,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 15,
+      "matching_time": 0.002007722854614258,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6778467500955221,
+      "median_distance_ratio": 0.872459142996848
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 6,
+      "outlier_count": 1
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 447.61322021484375,
+      "corner_errors": [
+        572.9539794921875,
+        370.3650207519531,
+        345.78240966796875,
+        501.3515319824219
+      ],
+      "max_corner_error": 572.9539794921875,
+      "min_corner_error": 345.78240966796875,
+      "std_corner_error": 93.45441436767578
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 438.7017822265625,
+      "median_reprojection_error": 421.20458984375,
+      "max_reprojection_error": 572.9539794921875,
+      "std_reprojection_error": 77.32793426513672
+    },
+    "rmse": 445.46478271484375,
+    "matching_metrics": {
+      "matching_precision": 0.8571428571428571,
+      "matching_recall": 0.3181818181818182,
+      "f1_score": 0.46408839779005523,
+      "inlier_ratio": 0.8571428571428571
+    },
+    "matrix_error": {
+      "frobenius_norm": 572.9554071545647,
+      "max_element_error": 488.98188893941665,
+      "mean_element_error": 87.7176049520305
+    },
+    "performance": {
+      "computation_time": 0.033541202545166016,
+      "memory_usage_mb": 68.87109375
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 38,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 18,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 18,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9246306381611605,
+      "median_distance_ratio": 0.9349689330992942
+    },
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 431.0118713378906,
+    "max_corner_error": 481.6010437011719,
+    "corner_errors": [
+      481.6010437011719,
+      402.48443603515625,
+      385.6962585449219,
+      454.2657775878906
+    ],
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 35,
+    "num_matches": 8,
+    "num_inliers": 6,
+    "inlier_ratio": 0.75,
+    "computation_time": 0.02318716049194336,
+    "H_estimated": [
+      [
+        1.0001586616152403,
+        -2.3059013594776625e-05,
+        109.99272213716606
+      ],
+      [
+        0.00011024633836288045,
+        1.0000256379408774,
+        158.99512669865172
+      ],
+      [
+        4.223383506484366e-07,
+        -8.689025278239197e-08,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.30695774,
+        0.03454106,
+        -189.4034516
+      ],
+      [
+        0.10954615,
+        1.15020154,
+        -218.23354868
+      ],
+      [
+        0.00065676,
+        -0.00042897,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 18,
+      "good_matches": 8,
+      "ratio_test_passed": 8,
+      "ratio_test_failed": 10,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5891472510695444,
+      "median_distance_ratio": 0.834397169345971
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.00464177131652832,
+      "inlier_count": 6,
+      "outlier_count": 2
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 431.0118713378906,
+      "corner_errors": [
+        481.6010437011719,
+        402.48443603515625,
+        385.6962585449219,
+        454.2657775878906
+      ],
+      "max_corner_error": 481.6010437011719,
+      "min_corner_error": 385.6962585449219,
+      "std_corner_error": 38.62424087524414
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 429.60540771484375,
+      "median_reprojection_error": 427.0132751464844,
+      "max_reprojection_error": 481.6010437011719,
+      "std_reprojection_error": 32.121944427490234
+    },
+    "rmse": 430.8046569824219,
+    "matching_metrics": {
+      "matching_precision": 0.75,
+      "matching_recall": 0.4444444444444444,
+      "f1_score": 0.5581395348837209,
+      "inlier_ratio": 0.75
+    },
+    "matrix_error": {
+      "frobenius_norm": 481.60115471868795,
+      "max_element_error": 377.2286753786517,
+      "mean_element_error": 75.2474343710787
+    },
+    "performance": {
+      "computation_time": 0.02318716049194336,
+      "memory_usage_mb": 63.921875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 23,
+    "num_keypoints_B": 20,
+    "num_matches": 10,
+    "matching_stats": {
+      "total_matches": 23,
+      "good_matches": 10,
+      "ratio_test_passed": 10,
+      "ratio_test_failed": 13,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8232054547293753,
+      "median_distance_ratio": 0.8670411722979204
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 0,
+      "outlier_count": 10
+    },
+    "image_name": "20241221_100711_257_IR_Oranges",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 7,
+    "num_keypoints_B": 23,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 7,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.6502399752580182,
+      "median_distance_ratio": 0.8737734178148742
+    },
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 11,
+    "num_keypoints_B": 14,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 11,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 9,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8634985274538544,
+      "median_distance_ratio": 0.9144516839151949
+    },
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 4,
+    "num_keypoints_B": 18,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 4,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8868699758393295,
+      "median_distance_ratio": 0.9200730686769034
+    },
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 323.90447998046875,
+    "max_corner_error": 400.64886474609375,
+    "corner_errors": [
+      271.0309753417969,
+      252.62783813476562,
+      371.3101501464844,
+      400.64886474609375
+    ],
+    "num_keypoints_A": 18,
+    "num_keypoints_B": 43,
+    "num_matches": 14,
+    "num_inliers": 14,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.03106093406677246,
+    "H_estimated": [
+      [
+        0.9991233766091201,
+        -0.000311282267544054,
+        12.062085107114793
+      ],
+      [
+        -0.000855130507620216,
+        0.9992217518741103,
+        181.05190865668618
+      ],
+      [
+        -2.9128998148639012e-06,
+        -1.1649360667434694e-06,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        0.4606899,
+        -0.21483732,
+        89.11194437
+      ],
+      [
+        0.0618987,
+        0.41174047,
+        -78.79632426
+      ],
+      [
+        -0.00025379,
+        -0.00117267,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 18,
+      "good_matches": 14,
+      "ratio_test_passed": 14,
+      "ratio_test_failed": 4,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.2900107515419861,
+      "median_distance_ratio": 0.10313970090401878
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 14,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 323.90447998046875,
+      "corner_errors": [
+        271.0309753417969,
+        252.62783813476562,
+        371.3101501464844,
+        400.64886474609375
+      ],
+      "max_corner_error": 400.64886474609375,
+      "min_corner_error": 252.62783813476562,
+      "std_corner_error": 63.27117156982422
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 326.2574157714844,
+      "median_reprojection_error": 331.31903076171875,
+      "max_reprojection_error": 400.64886474609375,
+      "std_reprojection_error": 52.74318313598633
+    },
+    "rmse": 330.4931640625,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.7777777777777778,
+      "f1_score": 0.8750000000000001,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 271.03223049689046,
+      "max_element_error": 259.8482329166862,
+      "mean_element_error": 37.589189909828754
+    },
+    "performance": {
+      "computation_time": 0.03106093406677246,
+      "memory_usage_mb": 65.1015625
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 16,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 3,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 3,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9545556500895002,
+      "median_distance_ratio": 0.9716235035307111
+    },
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 9,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 8,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 7,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.919060970811086,
+      "median_distance_ratio": 0.946190768303746
+    },
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": true,
+    "mean_corner_error": 405.882080078125,
+    "max_corner_error": 450.1041564941406,
+    "corner_errors": [
+      450.1041564941406,
+      368.4550476074219,
+      369.8234558105469,
+      435.1455993652344
+    ],
+    "num_keypoints_A": 12,
+    "num_keypoints_B": 62,
+    "num_matches": 7,
+    "num_inliers": 7,
+    "inlier_ratio": 1.0,
+    "computation_time": 0.027657270431518555,
+    "H_estimated": [
+      [
+        1.0002257874661196,
+        0.001020708062197736,
+        121.95318469032283
+      ],
+      [
+        -0.00014208908298409965,
+        1.0009802467132727,
+        151.99919529499667
+      ],
+      [
+        -5.230134567496224e-07,
+        4.005692371452337e-06,
+        1.0
+      ]
+    ],
+    "H_ground_truth": [
+      [
+        1.27019016,
+        -0.01517949,
+        -155.82093872
+      ],
+      [
+        0.17765506,
+        1.12516394,
+        -202.16928576
+      ],
+      [
+        0.00097941,
+        -0.00053163,
+        1.0
+      ]
+    ],
+    "matching_stats": {
+      "total_matches": 12,
+      "good_matches": 7,
+      "ratio_test_passed": 7,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5103934601777295,
+      "median_distance_ratio": 0.5352602173184717
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.011827468872070312,
+      "inlier_count": 7,
+      "outlier_count": 0
+    },
+    "ransac_method": "RANSAC",
+    "distance_ratio": 0.75,
+    "mace": {
+      "mace": 405.882080078125,
+      "corner_errors": [
+        450.1041564941406,
+        368.4550476074219,
+        369.8234558105469,
+        435.1455993652344
+      ],
+      "max_corner_error": 450.1041564941406,
+      "min_corner_error": 368.4550476074219,
+      "std_corner_error": 37.124629974365234
+    },
+    "reprojection_error": {
+      "mean_reprojection_error": 403.1875305175781,
+      "median_reprojection_error": 395.626953125,
+      "max_reprojection_error": 450.1041564941406,
+      "std_reprojection_error": 31.340789794921875
+    },
+    "rmse": 404.4037780761719,
+    "matching_metrics": {
+      "matching_precision": 1.0,
+      "matching_recall": 0.5833333333333334,
+      "f1_score": 0.7368421052631579,
+      "inlier_ratio": 1.0
+    },
+    "matrix_error": {
+      "frobenius_norm": 450.1043176720801,
+      "max_element_error": 354.1684810549967,
+      "mean_element_error": 70.28136282744347
+    },
+    "performance": {
+      "computation_time": 0.027657270431518555,
+      "memory_usage_mb": 65.171875
+    },
+    "failure_mode": "high_error_estimation",
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 19,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8789551826117268,
+      "median_distance_ratio": 0.8789551826117268
+    },
+    "image_name": "20241222_081954_680_IR_Oranges",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 26,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 10,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 8,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7656673218146913,
+      "median_distance_ratio": 0.9426291804044984
+    },
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 6,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.3834405149890602,
+      "median_distance_ratio": 0.12630716933883598
+    },
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 10,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 9,
+    "num_keypoints_B": 15,
+    "num_matches": 1,
+    "matching_stats": {
+      "total_matches": 9,
+      "good_matches": 1,
+      "ratio_test_passed": 1,
+      "ratio_test_failed": 8,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8461073915825856,
+      "median_distance_ratio": 0.924114996298837
+    },
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 9,
+    "num_keypoints_B": 2,
+    "num_matches": 2,
+    "matching_stats": {
+      "total_matches": 9,
+      "good_matches": 2,
+      "ratio_test_passed": 2,
+      "ratio_test_failed": 7,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7723261435960748,
+      "median_distance_ratio": 0.8495593783811862
+    },
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 0,
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 2,
+    "num_keypoints_B": 4,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 2,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 2,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.8189061391905372,
+      "median_distance_ratio": 0.8189061391905372
+    },
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 21,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241222_141317_881_IR_Oranges",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 2,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 3,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 3,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 0,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 2,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 5,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0008"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 3,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0009"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 12,
+    "image_name": "20241223_120131_487_IR_Oranges",
+    "pair_name": "pair_0010"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 7,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 8,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.5913968763167445,
+      "median_distance_ratio": 0.9120311633565317
+    },
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0001"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 12,
+    "num_matches": 0,
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 0,
+      "ratio_test_passed": 0,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.9588230561349123,
+      "median_distance_ratio": 0.9573977976015586
+    },
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0002"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 2,
+    "num_matches": 3,
+    "matching_stats": {
+      "total_matches": 8,
+      "good_matches": 3,
+      "ratio_test_passed": 3,
+      "ratio_test_failed": 5,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.7810732238879744,
+      "median_distance_ratio": 0.7940562989354831
+    },
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0003"
+  },
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 6,
+    "num_keypoints_B": 11,
+    "num_matches": 5,
+    "matching_stats": {
+      "total_matches": 6,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 1,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.15502907707338262,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 0,
+      "outlier_count": 5
+    },
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0004"
+  },
+  {
+    "success": false,
+    "error": "Homography estimation failed",
+    "num_keypoints_A": 5,
+    "num_keypoints_B": 11,
+    "num_matches": 5,
+    "matching_stats": {
+      "total_matches": 5,
+      "good_matches": 5,
+      "ratio_test_passed": 5,
+      "ratio_test_failed": 0,
+      "matching_time": 0.0,
+      "ratio_threshold": 0.75,
+      "mean_distance_ratio": 0.0,
+      "median_distance_ratio": 0.0
+    },
+    "ransac_stats": {
+      "method": "RANSAC",
+      "estimation_time": 0.0,
+      "inlier_count": 0,
+      "outlier_count": 5
+    },
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0005"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 8,
+    "num_keypoints_B": 1,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0006"
+  },
+  {
+    "success": false,
+    "error": "Insufficient matches",
+    "num_keypoints_A": 1,
+    "num_keypoints_B": 5,
+    "num_matches": 0,
+    "matching_stats": {
+      "error": "Insufficient descriptors",
+      "good_matches": 0
+    },
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0007"
+  },
+  {
+    "success": false,
+    "error": "No keypoints detected",
+    "num_keypoints_A": 0,
+    "num_keypoints_B": 5,
+    "image_name": "20241223_120707_069_IR_Oranges",
+    "pair_name": "pair_0008"
+  }
+]

@@ -1,11 +1,14 @@
 """
 generate_comparison_results.py
 
+Fixed version that handles RANSAC variant directories dynamically.
+
 Generates comprehensive cross-method comparison results including:
 1. Cross-method comparison JSON
 2. Performance matrix CSV
 3. Per-datatype comparison JSON
 4. Colormap/category analysis JSON
+5. RANSAC variant comparison JSON
 
 Author: Homography Benchmarking Project
 Date: 2025
@@ -24,10 +27,28 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results', 'Traditional_methods_results')
 
-# Methods to compare
-METHODS = ['SIFT', 'ORB', 'AKAZE', 'BRISK', 'KAZE']
 
-# Colormap categories for analysis with scientific justifications
+def get_all_method_configs():
+    """
+    Dynamically discover all method configurations from results directory.
+    Returns list of method directory names (e.g., ['SIFT_RANSAC', 'SIFT_MLESAC', ...])
+    """
+    if not os.path.exists(RESULTS_DIR):
+        return []
+
+    configs = []
+    for item in os.listdir(RESULTS_DIR):
+        item_path = os.path.join(RESULTS_DIR, item)
+        if os.path.isdir(item_path):
+            # Check if it's a method directory (has a summary file)
+            summary_file = os.path.join(item_path, f'{item}_summary.json')
+            if os.path.exists(summary_file):
+                configs.append(item)
+
+    return sorted(configs)
+
+
+# Colormap categories for analysis
 COLORMAP_CATEGORIES = {
     'grayscale': {
         'colormaps': ['greys', 'preprocessed', 'raw'],
@@ -97,15 +118,7 @@ COLORMAP_CATEGORIES = {
 
 
 def load_method_summary(method_name):
-    """
-    Load overall summary for a method.
-
-    Args:
-        method_name: Name of the method
-
-    Returns:
-        Dictionary with summary data or None if not found
-    """
+    """Load overall summary for a method."""
     summary_file = os.path.join(RESULTS_DIR, method_name, f'{method_name}_summary.json')
 
     if not os.path.exists(summary_file):
@@ -117,15 +130,7 @@ def load_method_summary(method_name):
 
 
 def load_method_per_datatype(method_name):
-    """
-    Load per-datatype summary for a method.
-
-    Args:
-        method_name: Name of the method
-
-    Returns:
-        Dictionary with per-datatype data or None if not found
-    """
+    """Load per-datatype summary for a method."""
     per_datatype_file = os.path.join(RESULTS_DIR, method_name, f'{method_name}_per_datatype_summary.json')
 
     if not os.path.exists(per_datatype_file):
@@ -137,36 +142,34 @@ def load_method_per_datatype(method_name):
 
 
 def get_colormap_category(datatype):
-    """
-    Get the category of a colormap with intelligent matching.
-
-    Args:
-        datatype: Name of the datatype/colormap
-
-    Returns:
-        Category name (no 'unknown' - all colormaps are categorized)
-    """
+    """Get the category of a colormap."""
     datatype_lower = datatype.lower().replace('colormap_', '')
 
     for category, info in COLORMAP_CATEGORIES.items():
         if any(cm in datatype_lower for cm in info['colormaps']):
             return category
 
-    # Fallback: shouldn't happen with proper categorization
     print(f"WARNING: Uncategorized colormap detected: {datatype}")
-    return 'miscellaneous'  # Default fallback instead of 'unknown'
+    return 'miscellaneous'
 
 
 def generate_cross_method_comparison():
-    """
-    Generate cross-method comparison JSON with rankings and analysis.
-    """
+    """Generate cross-method comparison JSON with rankings and analysis."""
     print("\n" + "="*80)
     print("GENERATING CROSS-METHOD COMPARISON")
     print("="*80)
 
+    # Get all method configurations dynamically
+    methods = get_all_method_configs()
+
+    if not methods:
+        print("  ERROR: No method results found!")
+        return None
+
+    print(f"  Found {len(methods)} method configurations: {', '.join(methods)}")
+
     comparison = {
-        'methods_compared': METHODS,
+        'methods_compared': methods,
         'methods': {},
         'rankings': {},
         'analysis': {}
@@ -174,73 +177,76 @@ def generate_cross_method_comparison():
 
     # Load all summaries
     summaries = {}
-    for method in METHODS:
+    for method in methods:
         summary = load_method_summary(method)
         if summary:
             summaries[method] = summary
             comparison['methods'][method] = summary.copy()
             comparison['methods'][method]['method'] = method
 
+    if not summaries:
+        print("  ERROR: No valid summaries loaded!")
+        return None
+
     # Rankings by different criteria
-    if summaries:
-        # By success rate
-        success_rates = {m: s['success_rate'] for m, s in summaries.items()}
-        ranked_by_success = sorted(success_rates.items(), key=lambda x: x[1], reverse=True)
-        comparison['rankings']['by_success_rate'] = [
-            {'method': m, 'success_rate': float(r)} for m, r in ranked_by_success
-        ]
+    # By success rate
+    success_rates = {m: s.get('success_rate', 0) for m, s in summaries.items()}
+    ranked_by_success = sorted(success_rates.items(), key=lambda x: x[1], reverse=True)
+    comparison['rankings']['by_success_rate'] = [
+        {'method': m, 'success_rate': float(r)} for m, r in ranked_by_success
+    ]
 
-        # By mean MACE (lower is better)
-        mean_mace = {
-            m: s.get('mace_statistics', {}).get('mean', float('inf'))
-            for m, s in summaries.items()
-        }
-        ranked_by_mace = sorted(mean_mace.items(), key=lambda x: x[1])
-        comparison['rankings']['by_mean_mace'] = [
-            {'method': m, 'mean_mace': float(e) if e != float('inf') else None}
-            for m, e in ranked_by_mace
-        ]
+    # By mean MACE (lower is better)
+    mean_mace = {
+        m: s.get('mace_statistics', {}).get('mean', float('inf'))
+        for m, s in summaries.items()
+    }
+    ranked_by_mace = sorted(mean_mace.items(), key=lambda x: x[1])
+    comparison['rankings']['by_mean_mace'] = [
+        {'method': m, 'mean_mace': float(e) if e != float('inf') else None}
+        for m, e in ranked_by_mace
+    ]
 
-        # By computation time (lower is better)
-        mean_times = {
-            m: s.get('performance_statistics', {}).get('mean_computation_time', float('inf'))
-            for m, s in summaries.items()
-        }
-        ranked_by_time = sorted(mean_times.items(), key=lambda x: x[1])
-        comparison['rankings']['by_computation_time'] = [
-            {'method': m, 'mean_time': float(t) if t != float('inf') else None}
-            for m, t in ranked_by_time
-        ]
+    # By computation time (lower is better)
+    mean_times = {
+        m: s.get('performance_statistics', {}).get('mean_computation_time', float('inf'))
+        for m, s in summaries.items()
+    }
+    ranked_by_time = sorted(mean_times.items(), key=lambda x: x[1])
+    comparison['rankings']['by_computation_time'] = [
+        {'method': m, 'mean_time': float(t) if t != float('inf') else None}
+        for m, t in ranked_by_time
+    ]
 
-        # By precision
-        mean_precision = {
-            m: s.get('matching_statistics', {}).get('mean_precision', 0)
-            for m, s in summaries.items()
-        }
-        ranked_by_precision = sorted(mean_precision.items(), key=lambda x: x[1], reverse=True)
-        comparison['rankings']['by_precision'] = [
-            {'method': m, 'mean_precision': float(p)} for m, p in ranked_by_precision
-        ]
+    # By precision
+    mean_precision = {
+        m: s.get('matching_statistics', {}).get('mean_precision', 0)
+        for m, s in summaries.items()
+    }
+    ranked_by_precision = sorted(mean_precision.items(), key=lambda x: x[1], reverse=True)
+    comparison['rankings']['by_precision'] = [
+        {'method': m, 'mean_precision': float(p)} for m, p in ranked_by_precision
+    ]
 
-        # By F1 score
-        mean_f1 = {
-            m: s.get('matching_statistics', {}).get('mean_f1_score', 0)
-            for m, s in summaries.items()
-        }
-        ranked_by_f1 = sorted(mean_f1.items(), key=lambda x: x[1], reverse=True)
-        comparison['rankings']['by_f1_score'] = [
-            {'method': m, 'mean_f1': float(f)} for m, f in ranked_by_f1
-        ]
+    # By F1 score
+    mean_f1 = {
+        m: s.get('matching_statistics', {}).get('mean_f1_score', 0)
+        for m, s in summaries.items()
+    }
+    ranked_by_f1 = sorted(mean_f1.items(), key=lambda x: x[1], reverse=True)
+    comparison['rankings']['by_f1_score'] = [
+        {'method': m, 'mean_f1': float(f)} for m, f in ranked_by_f1
+    ]
 
-        # Overall analysis
-        comparison['analysis'] = {
-            'most_accurate_mace': ranked_by_mace[0][0] if ranked_by_mace else None,
-            'most_reliable': ranked_by_success[0][0] if ranked_by_success else None,
-            'fastest': ranked_by_time[0][0] if ranked_by_time else None,
-            'best_precision': ranked_by_precision[0][0] if ranked_by_precision else None,
-            'best_f1_score': ranked_by_f1[0][0] if ranked_by_f1 else None,
-            'best_overall': ranked_by_success[0][0] if ranked_by_success else None  # Based on success rate
-        }
+    # Overall analysis
+    comparison['analysis'] = {
+        'most_accurate_mace': ranked_by_mace[0][0] if ranked_by_mace else None,
+        'most_reliable': ranked_by_success[0][0] if ranked_by_success else None,
+        'fastest': ranked_by_time[0][0] if ranked_by_time else None,
+        'best_precision': ranked_by_precision[0][0] if ranked_by_precision else None,
+        'best_f1_score': ranked_by_f1[0][0] if ranked_by_f1 else None,
+        'best_overall': ranked_by_success[0][0] if ranked_by_success else None
+    }
 
     # Save comparison
     output_file = os.path.join(RESULTS_DIR, 'cross_method_comparison.json')
@@ -248,19 +254,25 @@ def generate_cross_method_comparison():
         json.dump(comparison, f, indent=2)
 
     print(f"\n  Cross-method comparison saved to: {output_file}")
+    print(f"  Compared {len(summaries)} method configurations")
 
     return comparison
 
 
 def generate_performance_matrix_csv():
-    """
-    Generate performance matrix CSV with all methods and metrics.
-    """
+    """Generate performance matrix CSV with all methods and metrics."""
     print("\n" + "="*80)
     print("GENERATING PERFORMANCE MATRIX CSV")
     print("="*80)
 
-    # Metrics to include (updated to match actual summary structure)
+    # Get all method configurations dynamically
+    methods = get_all_method_configs()
+
+    if not methods:
+        print("  ERROR: No method results found!")
+        return None
+
+    # Metrics to include
     metrics = [
         'Total Pairs',
         'Successful Pairs',
@@ -288,12 +300,12 @@ def generate_performance_matrix_csv():
     matrix = []
 
     # Header row
-    header = ['Metric'] + METHODS
+    header = ['Metric'] + methods
     matrix.append(header)
 
     # Load all summaries
     summaries = {}
-    for method in METHODS:
+    for method in methods:
         summary = load_method_summary(method)
         if summary:
             summaries[method] = summary
@@ -302,7 +314,7 @@ def generate_performance_matrix_csv():
     for metric in metrics:
         row = [metric]
 
-        for method in METHODS:
+        for method in methods:
             if method not in summaries:
                 row.append('N/A')
                 continue
@@ -311,13 +323,13 @@ def generate_performance_matrix_csv():
 
             # Extract value based on metric
             if metric == 'Total Pairs':
-                value = summary['total_pairs']
+                value = summary.get('total_pairs', 'N/A')
             elif metric == 'Successful Pairs':
-                value = summary['successful_pairs']
+                value = summary.get('successful_pairs', 'N/A')
             elif metric == 'Failed Pairs':
-                value = summary['failed_pairs']
+                value = summary.get('failed_pairs', 'N/A')
             elif metric == 'Success Rate (%)':
-                value = f"{summary['success_rate'] * 100:.2f}"
+                value = f"{summary.get('success_rate', 0) * 100:.2f}"
             elif metric == 'Mean MACE (px)':
                 value = summary.get('mace_statistics', {}).get('mean', 'N/A')
                 if isinstance(value, (int, float)):
@@ -396,21 +408,27 @@ def generate_performance_matrix_csv():
         writer.writerows(matrix)
 
     print(f"\n  Performance matrix saved to: {output_file}")
+    print(f"  Includes {len(methods)} method configurations and {len(metrics)} metrics")
 
     return matrix
 
 
 def generate_per_datatype_comparison():
-    """
-    Generate per-datatype comparison JSON showing how each method performs on each data type.
-    """
+    """Generate per-datatype comparison JSON."""
     print("\n" + "="*80)
     print("GENERATING PER-DATATYPE COMPARISON")
     print("="*80)
 
+    # Get all method configurations dynamically
+    methods = get_all_method_configs()
+
+    if not methods:
+        print("  ERROR: No method results found!")
+        return None
+
     # Load all per-datatype summaries
     per_datatype_data = {}
-    for method in METHODS:
+    for method in methods:
         data = load_method_per_datatype(method)
         if data:
             per_datatype_data[method] = data
@@ -428,7 +446,7 @@ def generate_per_datatype_comparison():
 
     # Build comparison structure
     comparison = {
-        'methods': METHODS,
+        'methods': methods,
         'data_types': all_datatypes,
         'per_datatype_comparison': {},
         'best_performers': {}
@@ -438,7 +456,7 @@ def generate_per_datatype_comparison():
     for datatype in all_datatypes:
         dt_comparison = {}
 
-        for method in METHODS:
+        for method in methods:
             if method not in per_datatype_data:
                 continue
 
@@ -448,12 +466,12 @@ def generate_per_datatype_comparison():
                 'total_pairs': dt_results.get('total_pairs', 0),
                 'successful_pairs': dt_results.get('successful_pairs', 0),
                 'success_rate': dt_results.get('success_rate', 0),
-                'mean_mace': dt_results.get('mace_statistics', {}).get('mean', None),
-                'median_mace': dt_results.get('mace_statistics', {}).get('median', None),
-                'mean_time': dt_results.get('performance_statistics', {}).get('mean_computation_time', None),
-                'mean_precision': dt_results.get('matching_statistics', {}).get('mean_precision', None),
-                'mean_recall': dt_results.get('matching_statistics', {}).get('mean_recall', None),
-                'mean_f1_score': dt_results.get('matching_statistics', {}).get('mean_f1_score', None)
+                'mean_mace': dt_results.get('mace_statistics', {}).get('mean'),
+                'median_mace': dt_results.get('mace_statistics', {}).get('median'),
+                'mean_time': dt_results.get('performance_statistics', {}).get('mean_computation_time'),
+                'mean_precision': dt_results.get('matching_statistics', {}).get('mean_precision'),
+                'mean_recall': dt_results.get('matching_statistics', {}).get('mean_recall'),
+                'mean_f1_score': dt_results.get('matching_statistics', {}).get('mean_f1_score')
             }
 
         comparison['per_datatype_comparison'][datatype] = dt_comparison
@@ -491,22 +509,27 @@ def generate_per_datatype_comparison():
         json.dump(comparison, f, indent=2)
 
     print(f"\n  Per-datatype comparison saved to: {output_file}")
+    print(f"  Analyzed {len(all_datatypes)} data types across {len(methods)} methods")
 
     return comparison
 
 
 def generate_category_analysis():
-    """
-    Generate comprehensive analysis by colormap categories.
-    Answers: Which colormaps/categories work well? Which don't? Why?
-    """
+    """Generate comprehensive analysis by colormap categories."""
     print("\n" + "="*80)
     print("GENERATING CATEGORY ANALYSIS")
     print("="*80)
 
+    # Get all method configurations dynamically
+    methods = get_all_method_configs()
+
+    if not methods:
+        print("  ERROR: No method results found!")
+        return None
+
     # Load all per-datatype summaries
     per_datatype_data = {}
-    for method in METHODS:
+    for method in methods:
         data = load_method_per_datatype(method)
         if data:
             per_datatype_data[method] = data
@@ -533,11 +556,17 @@ def generate_category_analysis():
         'method_performance_by_category': {}
     }
 
-    # Track individual colormap performance for best/worst analysis
+    # Track individual colormap performance
     colormap_performance = {}
 
     for category, datatypes in datatypes_by_category.items():
-        category_info = COLORMAP_CATEGORIES[category]
+        category_info = COLORMAP_CATEGORIES.get(category, {
+            'description': 'Unknown category',
+            'characteristics': 'N/A',
+            'pros': 'N/A',
+            'cons': 'N/A',
+            'expected_performance': 'Unknown'
+        })
 
         category_stats = {
             'datatypes': datatypes,
@@ -551,10 +580,10 @@ def generate_category_analysis():
             'individual_colormap_performance': {}
         }
 
-        # Track performance for each individual colormap in this category
+        # Track performance for each individual colormap
         for datatype in datatypes:
             colormap_results = {}
-            for method in METHODS:
+            for method in methods:
                 if method not in per_datatype_data:
                     continue
                 dt_results = per_datatype_data[method].get('per_datatype_results', {}).get(datatype, {})
@@ -574,7 +603,7 @@ def generate_category_analysis():
                 colormap_performance[datatype] = float(avg_success)
 
         # Analyze each method's performance on this category
-        for method in METHODS:
+        for method in methods:
             if method not in per_datatype_data:
                 continue
 
@@ -585,12 +614,15 @@ def generate_category_analysis():
                     method_results.append(dt_results)
 
             if method_results:
-                # Aggregate statistics for this method on this category
-                success_rates = [r['success_rate'] for r in method_results]
-                mace_values = [r.get('mace_statistics', {}).get('mean') for r in method_results if r.get('mace_statistics', {}).get('mean') is not None]
-                times = [r.get('performance_statistics', {}).get('mean_computation_time') for r in method_results if r.get('performance_statistics', {}).get('mean_computation_time') is not None]
-                precisions = [r.get('matching_statistics', {}).get('mean_precision') for r in method_results if r.get('matching_statistics', {}).get('mean_precision') is not None]
-                f1_scores = [r.get('matching_statistics', {}).get('mean_f1_score') for r in method_results if r.get('matching_statistics', {}).get('mean_f1_score') is not None]
+                success_rates = [r.get('success_rate', 0) for r in method_results]
+                mace_values = [r.get('mace_statistics', {}).get('mean') for r in method_results
+                              if r.get('mace_statistics', {}).get('mean') is not None]
+                times = [r.get('performance_statistics', {}).get('mean_computation_time') for r in method_results
+                        if r.get('performance_statistics', {}).get('mean_computation_time') is not None]
+                precisions = [r.get('matching_statistics', {}).get('mean_precision') for r in method_results
+                            if r.get('matching_statistics', {}).get('mean_precision') is not None]
+                f1_scores = [r.get('matching_statistics', {}).get('mean_f1_score') for r in method_results
+                            if r.get('matching_statistics', {}).get('mean_f1_score') is not None]
 
                 category_stats['methods'][method] = {
                     'avg_success_rate': float(np.mean(success_rates)) if success_rates else 0,
@@ -616,7 +648,7 @@ def generate_category_analysis():
             category_stats['best_method_by_success'] = best_by_success[0]
             category_stats['best_method_by_accuracy'] = best_by_accuracy[0] if best_by_accuracy[0] else None
 
-            # Calculate category difficulty (lower success rate = harder)
+            # Calculate category difficulty
             all_success_rates = [s['avg_success_rate'] for s in category_stats['methods'].values()]
             category_stats['difficulty_score'] = 1.0 - float(np.mean(all_success_rates)) if all_success_rates else 1.0
             category_stats['avg_success_rate_across_methods'] = float(np.mean(all_success_rates)) if all_success_rates else 0
@@ -629,70 +661,67 @@ def generate_category_analysis():
 
     # Overall insights
     if category_analysis['categories']:
-        # Rank categories by difficulty
         categories_by_difficulty = sorted(
             category_analysis['categories'].items(),
             key=lambda x: x[1].get('difficulty_score', 1.0),
             reverse=True
         )
 
-        # Find best and worst individual colormaps
+        # Best and worst colormaps
         if colormap_performance:
             best_colormap = max(colormap_performance.items(), key=lambda x: x[1])
             worst_colormap = min(colormap_performance.items(), key=lambda x: x[1])
             performance_range = best_colormap[1] - worst_colormap[1]
 
-            # Top 5 and bottom 5 colormaps
             sorted_colormaps = sorted(colormap_performance.items(), key=lambda x: x[1], reverse=True)
             top_5 = sorted_colormaps[:5]
             bottom_5 = sorted_colormaps[-5:]
 
-        category_analysis['overall_insights'] = {
-            'easiest_category': categories_by_difficulty[-1][0] if categories_by_difficulty else None,
-            'hardest_category': categories_by_difficulty[0][0] if categories_by_difficulty else None,
-            'categories_ranked_by_difficulty': [
-                {
-                    'category': cat,
-                    'difficulty_score': stats.get('difficulty_score', 1.0),
-                    'avg_success_rate': stats.get('avg_success_rate_across_methods', 0),
-                    'performance_gap': stats.get('performance_gap', 0),
-                    'description': stats.get('description', '')
-                }
-                for cat, stats in categories_by_difficulty
-            ],
-            'best_colormap': {
-                'name': best_colormap[0],
-                'avg_success_rate': best_colormap[1],
-                'category': get_colormap_category(best_colormap[0])
-            } if colormap_performance else None,
-            'worst_colormap': {
-                'name': worst_colormap[0],
-                'avg_success_rate': worst_colormap[1],
-                'category': get_colormap_category(worst_colormap[0])
-            } if colormap_performance else None,
-            'performance_range': {
-                'range': performance_range if colormap_performance else 0,
-                'interpretation': f"Performance varies by {performance_range*100:.1f}% between best and worst colormaps"
-            } if colormap_performance else None,
-            'top_5_colormaps': [
-                {'name': name, 'avg_success_rate': rate, 'category': get_colormap_category(name)}
-                for name, rate in top_5
-            ] if colormap_performance else [],
-            'bottom_5_colormaps': [
-                {'name': name, 'avg_success_rate': rate, 'category': get_colormap_category(name)}
-                for name, rate in bottom_5
-            ] if colormap_performance else []
-        }
+            category_analysis['overall_insights'] = {
+                'easiest_category': categories_by_difficulty[-1][0] if categories_by_difficulty else None,
+                'hardest_category': categories_by_difficulty[0][0] if categories_by_difficulty else None,
+                'categories_ranked_by_difficulty': [
+                    {
+                        'category': cat,
+                        'difficulty_score': stats.get('difficulty_score', 1.0),
+                        'avg_success_rate': stats.get('avg_success_rate_across_methods', 0),
+                        'performance_gap': stats.get('performance_gap', 0),
+                        'description': stats.get('description', '')
+                    }
+                    for cat, stats in categories_by_difficulty
+                ],
+                'best_colormap': {
+                    'name': best_colormap[0],
+                    'avg_success_rate': best_colormap[1],
+                    'category': get_colormap_category(best_colormap[0])
+                },
+                'worst_colormap': {
+                    'name': worst_colormap[0],
+                    'avg_success_rate': worst_colormap[1],
+                    'category': get_colormap_category(worst_colormap[0])
+                },
+                'performance_range': {
+                    'range': performance_range,
+                    'interpretation': f"Performance varies by {performance_range*100:.1f}% between best and worst colormaps"
+                },
+                'top_5_colormaps': [
+                    {'name': name, 'avg_success_rate': rate, 'category': get_colormap_category(name)}
+                    for name, rate in top_5
+                ],
+                'bottom_5_colormaps': [
+                    {'name': name, 'avg_success_rate': rate, 'category': get_colormap_category(name)}
+                    for name, rate in bottom_5
+                ]
+            }
 
         # Method performance across categories
-        for method in METHODS:
+        for method in methods:
             method_category_performance = {}
             for category, stats in category_analysis['categories'].items():
                 if method in stats['methods']:
                     method_category_performance[category] = stats['methods'][method]
 
             if method_category_performance:
-                # Find best and worst categories for this method
                 best_category = max(
                     method_category_performance.items(),
                     key=lambda x: x[1]['avg_success_rate']
@@ -714,129 +743,33 @@ def generate_category_analysis():
         json.dump(category_analysis, f, indent=2)
 
     print(f"\n  Category analysis saved to: {output_file}")
+    print(f"  Analyzed {len(datatypes_by_category)} categories with {len(all_datatypes)} data types")
 
     return category_analysis
 
 
-def print_category_insights(category_analysis):
-    """
-    Print human-readable insights from category analysis.
-    """
-    if not category_analysis or 'overall_insights' not in category_analysis:
-        return
-
+def generate_ransac_variant_comparison():
+    """Generate comparison analysis across RANSAC variants."""
     print("\n" + "="*80)
-    print("CATEGORY INSIGHTS & ANALYSIS")
+    print("GENERATING RANSAC VARIANT COMPARISON")
     print("="*80)
 
-    insights = category_analysis['overall_insights']
+    # Get all method configurations
+    all_methods = get_all_method_configs()
 
-    # Best and Worst Colormaps
-    print(f"\n{'='*80}")
-    print("INDIVIDUAL COLORMAP PERFORMANCE")
-    print(f"{'='*80}")
+    # Filter only RANSAC variant results
+    ransac_methods = [m for m in all_methods if '_RANSAC' in m or '_MLESAC' in m or '_PROSAC' in m]
 
-    if insights.get('best_colormap'):
-        best = insights['best_colormap']
-        worst = insights['worst_colormap']
-        perf_range = insights['performance_range']
-
-        print(f"\nBEST Colormap:")
-        print(f"  Name: {best['name']}")
-        print(f"  Category: {best['category']}")
-        print(f"  Avg Success Rate: {best['avg_success_rate']*100:.2f}%")
-
-        print(f"\nWORST Colormap:")
-        print(f"  Name: {worst['name']}")
-        print(f"  Category: {worst['category']}")
-        print(f"  Avg Success Rate: {worst['avg_success_rate']*100:.2f}%")
-
-        print(f"\nPerformance Range:")
-        print(f"  {perf_range['interpretation']}")
-
-        print(f"\nTop 5 Performing Colormaps:")
-        for idx, cm in enumerate(insights['top_5_colormaps'], 1):
-            print(f"  {idx}. {cm['name']:25s} - {cm['avg_success_rate']*100:6.2f}% ({cm['category']})")
-
-        print(f"\nBottom 5 Performing Colormaps:")
-        for idx, cm in enumerate(insights['bottom_5_colormaps'], 1):
-            print(f"  {idx}. {cm['name']:25s} - {cm['avg_success_rate']*100:6.2f}% ({cm['category']})")
-
-    # Category Ranking
-    print(f"\n{'='*80}")
-    print("CATEGORY DIFFICULTY RANKING")
-    print(f"{'='*80}")
-
-    print(f"\nEasiest Category: {insights.get('easiest_category', 'N/A')}")
-    print(f"Hardest Category: {insights.get('hardest_category', 'N/A')}")
-
-    print(f"\nDetailed Ranking (Hardest to Easiest):")
-    for idx, cat_info in enumerate(insights.get('categories_ranked_by_difficulty', []), 1):
-        print(f"\n  {idx}. {cat_info['category'].upper():20s}")
-        print(f"     Avg Success: {cat_info['avg_success_rate']*100:6.2f}%")
-        print(f"     Performance Gap: {cat_info.get('performance_gap', 0)*100:5.2f}%")
-        print(f"     Description: {cat_info.get('description', 'N/A')}")
-
-    # Category Details with Justifications
-    print(f"\n{'='*80}")
-    print("CATEGORY ANALYSIS WITH JUSTIFICATIONS")
-    print(f"{'='*80}")
-
-    for idx, cat_info in enumerate(insights.get('categories_ranked_by_difficulty', []), 1):
-        category = cat_info['category']
-        cat_data = category_analysis['categories'].get(category, {})
-
-        print(f"\n{idx}. {category.upper()}")
-        print(f"   Colormaps: {', '.join(cat_data.get('datatypes', []))}")
-        print(f"   {'='*76}")
-        print(f"   Description: {cat_data.get('description', 'N/A')}")
-        print(f"   Characteristics: {cat_data.get('characteristics', 'N/A')}")
-        print(f"\n   PROS: {cat_data.get('pros', 'N/A')}")
-        print(f"   CONS: {cat_data.get('cons', 'N/A')}")
-        print(f"\n   Expected Performance: {cat_data.get('expected_performance', 'N/A')}")
-        print(f"   Actual Avg Success: {cat_info['avg_success_rate']*100:.2f}%")
-        print(f"   Best Method: {cat_data.get('best_method_by_success', 'N/A')}")
-
-    # Method Performance by Category
-    print(f"\n{'='*80}")
-    print("METHOD PERFORMANCE BY CATEGORY")
-    print(f"{'='*80}")
-
-    for method, perf in category_analysis.get('method_performance_by_category', {}).items():
-        print(f"\n{method}:")
-        print(f"  Best Category: {perf['best_category']}")
-        print(f"  Worst Category: {perf['worst_category']}")
-
-
-def generate_ransac_variant_comparison():
-    """
-    Generate comparison analysis across RANSAC variants.
-    Analyzes performance differences between RANSAC, MLESAC, and PROSAC.
-
-    Returns:
-        Dictionary with RANSAC variant analysis
-    """
-    print("\n  Generating RANSAC variant comparison...")
-
-    # Collect all method directories that include RANSAC variant suffix
-    all_methods = []
-    if os.path.exists(RESULTS_DIR):
-        for item in os.listdir(RESULTS_DIR):
-            item_path = os.path.join(RESULTS_DIR, item)
-            if os.path.isdir(item_path):
-                # Check if directory name includes RANSAC variant
-                if '_RANSAC' in item or '_MLESAC' in item or '_PROSAC' in item:
-                    all_methods.append(item)
-
-    if not all_methods:
+    if not ransac_methods:
         print("  No RANSAC variant results found. Skipping RANSAC comparison.")
         return {}
 
-    # Parse method names to extract base method and RANSAC variant
+    print(f"  Found {len(ransac_methods)} RANSAC variant configurations")
+
+    # Parse method names
     variant_data = defaultdict(lambda: defaultdict(dict))
 
-    for method_full in all_methods:
-        # Parse: METHOD_RANSACVARIANT (e.g., SIFT_MLESAC)
+    for method_full in ransac_methods:
         parts = method_full.rsplit('_', 1)
         if len(parts) == 2:
             base_method, ransac_variant = parts
@@ -852,7 +785,9 @@ def generate_ransac_variant_comparison():
     ransac_analysis = {
         'variants_compared': list(variant_data.keys()),
         'base_methods': list(set([m for v in variant_data.values() for m in v.keys()])),
-        'variants': {}
+        'variants': {},
+        'rankings': {},
+        'best_variant': {}
     }
 
     for variant, methods in variant_data.items():
@@ -863,7 +798,7 @@ def generate_ransac_variant_comparison():
             'per_method_performance': {}
         }
 
-        # Aggregate statistics across all methods for this variant
+        # Aggregate statistics
         all_success_rates = []
         all_mace = []
         all_times = []
@@ -895,7 +830,6 @@ def generate_ransac_variant_comparison():
                 'mean_f1_score': matching_stats.get('mean_f1_score', 0)
             }
 
-        # Overall statistics for this variant
         variant_stats['overall_statistics'] = {
             'avg_success_rate': float(np.mean(all_success_rates)) if all_success_rates else 0,
             'avg_mace': float(np.mean(all_mace)) if all_mace else 0,
@@ -906,14 +840,14 @@ def generate_ransac_variant_comparison():
 
         ransac_analysis['variants'][variant] = variant_stats
 
-    # Rankings and insights
+    # Rankings
     if ransac_analysis['variants']:
-        # Rank by success rate
         by_success = sorted(
             ransac_analysis['variants'].items(),
             key=lambda x: x[1]['overall_statistics']['avg_success_rate'],
             reverse=True
         )
+
         ransac_analysis['rankings'] = {
             'by_success_rate': [
                 {'variant': v[0], 'avg_success_rate': v[1]['overall_statistics']['avg_success_rate']}
@@ -931,7 +865,6 @@ def generate_ransac_variant_comparison():
             )
         }
 
-        # Best variant analysis
         ransac_analysis['best_variant'] = {
             'by_success_rate': by_success[0][0] if by_success else 'N/A',
             'by_accuracy': min(ransac_analysis['variants'].items(),
@@ -945,126 +878,46 @@ def generate_ransac_variant_comparison():
     with open(output_file, 'w') as f:
         json.dump(ransac_analysis, f, indent=2)
 
-    print(f"  RANSAC variant comparison saved to: {output_file}")
+    print(f"\n  RANSAC variant comparison saved to: {output_file}")
+    print(f"  Compared {len(variant_data)} RANSAC variants")
 
     return ransac_analysis
 
 
-def print_ransac_insights(ransac_analysis):
-    """
-    Print human-readable insights from RANSAC variant analysis.
-    """
-    if not ransac_analysis or 'variants' not in ransac_analysis:
-        return
-
-    print("\n" + "="*80)
-    print("RANSAC VARIANT PERFORMANCE ANALYSIS")
-    print("="*80)
-
-    variants = ransac_analysis.get('variants', {})
-    if not variants:
-        print("\nNo RANSAC variant data available.")
-        return
-
-    print(f"\nVariants Tested: {', '.join(variants.keys())}")
-    print(f"Base Methods: {', '.join(ransac_analysis.get('base_methods', []))}")
-
-    # Overall Statistics
-    print(f"\n{'='*80}")
-    print("OVERALL VARIANT PERFORMANCE")
-    print(f"{'='*80}")
-
-    for variant_name, variant_data in variants.items():
-        stats = variant_data['overall_statistics']
-        print(f"\n{variant_name}:")
-        print(f"  Avg Success Rate: {stats['avg_success_rate']*100:6.2f}%")
-        print(f"  Avg MACE: {stats['avg_mace']:8.2f} px")
-        print(f"  Avg Time: {stats['avg_computation_time']:8.4f} s")
-        print(f"  Avg Precision: {stats['avg_precision']:7.4f}")
-        print(f"  Avg F1 Score: {stats['avg_f1_score']:7.4f}")
-
-    # Rankings
-    if 'rankings' in ransac_analysis:
-        print(f"\n{'='*80}")
-        print("RANSAC VARIANT RANKINGS")
-        print(f"{'='*80}")
-
-        rankings = ransac_analysis['rankings']
-
-        print("\nBy Success Rate:")
-        for idx, item in enumerate(rankings['by_success_rate'], 1):
-            print(f"  {idx}. {item['variant']:10s} - {item['avg_success_rate']*100:6.2f}%")
-
-        print("\nBy Accuracy (Lower MACE is better):")
-        for idx, item in enumerate(rankings['by_accuracy'], 1):
-            print(f"  {idx}. {item['variant']:10s} - {item['avg_mace']:8.2f} px")
-
-        print("\nBy Speed (Lower time is better):")
-        for idx, item in enumerate(rankings['by_speed'], 1):
-            print(f"  {idx}. {item['variant']:10s} - {item['avg_time']:8.4f} s")
-
-    # Best Variant
-    if 'best_variant' in ransac_analysis:
-        best = ransac_analysis['best_variant']
-        print(f"\n{'='*80}")
-        print("BEST VARIANT BY METRIC")
-        print(f"{'='*80}")
-        print(f"\n  Success Rate: {best.get('by_success_rate', 'N/A')}")
-        print(f"  Accuracy (MACE): {best.get('by_accuracy', 'N/A')}")
-        print(f"  Speed: {best.get('by_speed', 'N/A')}")
-
-    # Per-Method Breakdown
-    print(f"\n{'='*80}")
-    print("PER-METHOD RANSAC VARIANT PERFORMANCE")
-    print(f"{'='*80}")
-
-    # Organize by base method
-    method_comparison = defaultdict(dict)
-    for variant_name, variant_data in variants.items():
-        for method, perf in variant_data.get('per_method_performance', {}).items():
-            method_comparison[method][variant_name] = perf
-
-    for method, variant_perfs in method_comparison.items():
-        print(f"\n{method}:")
-        for variant, perf in variant_perfs.items():
-            print(f"  {variant:10s}: Success={perf['success_rate']*100:5.2f}%, "
-                  f"MACE={perf['mean_mace']:7.2f}px, "
-                  f"Time={perf['mean_time']:7.4f}s")
-
-
 def main():
-    """
-    Generate all comparison results.
-    """
+    """Generate all comparison results."""
     print("="*80)
     print("GENERATING COMPARISON RESULTS FOR TRADITIONAL METHODS")
     print("="*80)
 
     print(f"\nResults directory: {RESULTS_DIR}")
-    print(f"Methods to compare: {', '.join(METHODS)}")
 
-    # Check if results directory exists
     if not os.path.exists(RESULTS_DIR):
         print(f"\nERROR: Results directory not found: {RESULTS_DIR}")
         print("Please run traditional methods first.")
         return
 
-    # Generate all comparisons
+    # Get all method configurations
+    methods = get_all_method_configs()
+    print(f"\nFound {len(methods)} method configurations to analyze")
+
     try:
         cross_method = generate_cross_method_comparison()
         performance_matrix = generate_performance_matrix_csv()
         per_datatype = generate_per_datatype_comparison()
         category_analysis = generate_category_analysis()
+        ransac_comparison = generate_ransac_variant_comparison()
 
         print("\n" + "="*80)
         print("COMPARISON RESULTS GENERATION COMPLETE")
         print("="*80)
 
         print("\nGenerated files:")
-        print(f"  1. {os.path.join(RESULTS_DIR, 'cross_method_comparison.json')}")
-        print(f"  2. {os.path.join(RESULTS_DIR, 'performance_matrix.csv')}")
-        print(f"  3. {os.path.join(RESULTS_DIR, 'per_datatype_comparison.json')}")
-        print(f"  4. {os.path.join(RESULTS_DIR, 'category_analysis.json')}")
+        print(f"  1. cross_method_comparison.json")
+        print(f"  2. performance_matrix.csv")
+        print(f"  3. per_datatype_comparison.json")
+        print(f"  4. category_analysis.json")
+        print(f"  5. ransac_variant_comparison.json")
 
         # Print quick summary
         if cross_method and 'analysis' in cross_method:
@@ -1076,10 +929,6 @@ def main():
             print(f"  Best Precision: {analysis.get('best_precision', 'N/A')}")
             print(f"  Best F1 Score: {analysis.get('best_f1_score', 'N/A')}")
             print(f"  Best Overall: {analysis.get('best_overall', 'N/A')}")
-
-        # Print category insights
-        if category_analysis:
-            print_category_insights(category_analysis)
 
         print("\n" + "="*80)
 
